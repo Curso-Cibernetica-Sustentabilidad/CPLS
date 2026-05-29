@@ -1,10 +1,20 @@
 # Procesamiento y manejo de datos
 
-## Presentación
+## Material de la sesión 
+
+### Presentación
 
 ```{=html}
 <iframe src="https://slides.com/bmbi/procesamiento-y-manejo-de-datos/embed" width="576" height="420" title="Procesamiento y manejo de datos" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 ```
+### Hoja de cálculo
+
+- [Hoja de cálculo utilizada en esta sesión](https://docs.google.com/spreadsheets/d/1s6u58dalvDiU4eJYTZInifFJBlIkQZVf7P8PPbow1kk/edit?usp=sharing)
+
+### Scripts 
+
+- [Script para preparar datos del tutorial](./preparar_datos_tutorial.R)
+- [Script para preparar datos del ejercicio](./preparar_datos_ejercicio.R)
 
 ## Principales archivos de datos
 

@@ -12,10 +12,10 @@ book:
     - programa.qmd
     - part: "I. Fundamentos del análisis de datos"
       chapters:
-        - lecciones/cibernetica_y_analisis_datos.qmd
-        - lecciones/intro_hojas_de_calculo.qmd
-        - lecciones/procesamiento_y_manejo_de_datos.qmd
-        - lecciones/practica_01.qmd
+        - modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.qmd
+        - modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.qmd
+        - modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.qmd
+        - modulo_01/practica_01/practica_01.qmd
     - part: "II. Visualización y comunicación de datos"
     - part: "III. Introducción a la programación en R"
     - part: "IV. Métodos computacionales para la sustentabilidad"

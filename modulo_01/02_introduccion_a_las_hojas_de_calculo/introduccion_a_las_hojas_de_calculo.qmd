@@ -2,13 +2,21 @@
 
 En esta sesión se presentan los fundamentos para el uso de las hojas de cálculo.
 
-## Presentación
+## Material de la sesión
+
+### Presentación
 
 ```{=html}
 <iframe src="https://slides.com/bmbi/introduccion-a-la-ciencia-de-datos-con-hojas-de-calculo/embed" width="576" height="420" title="cpls v26 - Introducción a la ciencia de datos con hojas de cálculo" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 ```
 
-## Hojas de cálculo
+### Hoja de cálculo
+
+- [Hoja de cálculo utilizada en esta sesión](https://docs.google.com/spreadsheets/d/1Apoq3sC2Gsety6vUomaY3wW_88E17zxYVcJ-YDkgZfU/edit?usp=sharing)
+
+
+
+## Tablas para organizar información
 
 - Una de las formas más utiles de organizar información es a través de tablas.
 - La siguiente tabla es la que se utilizó en el censo de México de 1930. Cada fila representa una persona y las columnas incluyen datos de cada persona: nombre y apellido, sexo edad, estado civil, si sabe leer y escribir, profesión, el lugar de nacimiento, nacionalidad, idioma, las pripiedades que posé, discapacidades, religión y situación laboral.
