@@ -1,4 +1,4 @@
-# Procesamiento y manejo de datos en hojas de cálculo
+# Procesamiento y manejo de datos
 
 ## Presentación
 
