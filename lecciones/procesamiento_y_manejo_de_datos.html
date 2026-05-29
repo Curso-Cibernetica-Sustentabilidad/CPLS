@@ -183,13 +183,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#presentación" id="toc-presentación" class="nav-link active" data-scroll-target="#presentación"><span class="header-section-number">3.1</span> Presentación</a></li>
-  <li><a href="#principales-archivos-de-datos" id="toc-principales-archivos-de-datos" class="nav-link" data-scroll-target="#principales-archivos-de-datos"><span class="header-section-number">3.2</span> Principales archivos de datos</a></li>
-  <li><a href="#importar-datos" id="toc-importar-datos" class="nav-link" data-scroll-target="#importar-datos"><span class="header-section-number">3.3</span> Importar datos</a></li>
-  <li><a href="#fijar-filas" id="toc-fijar-filas" class="nav-link" data-scroll-target="#fijar-filas"><span class="header-section-number">3.4</span> Fijar filas</a></li>
-  <li><a href="#ordenar" id="toc-ordenar" class="nav-link" data-scroll-target="#ordenar"><span class="header-section-number">3.5</span> Ordenar</a></li>
-  <li><a href="#filtrar" id="toc-filtrar" class="nav-link" data-scroll-target="#filtrar"><span class="header-section-number">3.6</span> Filtrar</a></li>
-  <li><a href="#crear-gráficos" id="toc-crear-gráficos" class="nav-link" data-scroll-target="#crear-gráficos"><span class="header-section-number">3.7</span> Crear gráficos</a></li>
-  <li><a href="#función-unique" id="toc-función-unique" class="nav-link" data-scroll-target="#función-unique"><span class="header-section-number">3.8</span> Función <code>UNIQUE</code></a></li>
+  <li><a href="#hoja-de-cálculo" id="toc-hoja-de-cálculo" class="nav-link" data-scroll-target="#hoja-de-cálculo"><span class="header-section-number">3.2</span> Hoja de cálculo</a></li>
+  <li><a href="#principales-archivos-de-datos" id="toc-principales-archivos-de-datos" class="nav-link" data-scroll-target="#principales-archivos-de-datos"><span class="header-section-number">3.3</span> Principales archivos de datos</a></li>
+  <li><a href="#importar-datos" id="toc-importar-datos" class="nav-link" data-scroll-target="#importar-datos"><span class="header-section-number">3.4</span> Importar datos</a></li>
+  <li><a href="#fijar-filas" id="toc-fijar-filas" class="nav-link" data-scroll-target="#fijar-filas"><span class="header-section-number">3.5</span> Fijar filas</a></li>
+  <li><a href="#ordenar" id="toc-ordenar" class="nav-link" data-scroll-target="#ordenar"><span class="header-section-number">3.6</span> Ordenar</a></li>
+  <li><a href="#filtrar" id="toc-filtrar" class="nav-link" data-scroll-target="#filtrar"><span class="header-section-number">3.7</span> Filtrar</a></li>
+  <li><a href="#crear-gráficos" id="toc-crear-gráficos" class="nav-link" data-scroll-target="#crear-gráficos"><span class="header-section-number">3.8</span> Crear gráficos</a></li>
+  <li><a href="#función-unique" id="toc-función-unique" class="nav-link" data-scroll-target="#función-unique"><span class="header-section-number">3.9</span> Función <code>UNIQUE</code></a></li>
   </ul>
 </nav>
     </div>
@@ -219,8 +220,14 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="3.1" class="anchored" data-anchor-id="presentación"><span class="header-section-number">3.1</span> Presentación</h2>
 <iframe src="https://slides.com/bmbi/procesamiento-y-manejo-de-datos/embed" width="576" height="420" title="Procesamiento y manejo de datos" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 </section>
-<section id="principales-archivos-de-datos" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="principales-archivos-de-datos"><span class="header-section-number">3.2</span> Principales archivos de datos</h2>
+<section id="hoja-de-cálculo" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="hoja-de-cálculo"><span class="header-section-number">3.2</span> Hoja de cálculo</h2>
+<ul>
+<li><a href="https://docs.google.com/spreadsheets/d/1s6u58dalvDiU4eJYTZInifFJBlIkQZVf7P8PPbow1kk/edit?usp=sharing">Hoja de cálculo utilizada en esta sesión</a></li>
+</ul>
+</section>
+<section id="principales-archivos-de-datos" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="principales-archivos-de-datos"><span class="header-section-number">3.3</span> Principales archivos de datos</h2>
 <ul>
 <li>Existen muchos formas para almacenar datos. Cuando trabajamos con una cantidad no tan grande de datos podemos almacenar la información en archivos de datos como archivos de excel <code>.xls</code>, archivos de extensión <code>.txt</code> o <code>.csv</code>. Sin embargo, cuando se tienen enormes cantidades de datos, es mejor almacenar estos datos en bases de datos, que son programas especializados para organizar y almacenar datos de una manera eficiente.</li>
 <li>Una de las formas más faciles y amigables de almacenar datos es con archivos de excel, no obstante, esta forma de compartir datos tiene varias limitaciones. Por ejemplo, una persona que no tenga excel en su computadora no podrá abrir los archivos. Además como excel es un programa que le pertenece a Excel y no cualquiera puede saber cómo funciona internamente el programa si un día Microsoft decide dejar de desarrollar Excel la información almacenada en estos archivos se quedaría atrapada y obsoleta. Por lo tanto, no podemos depender de estos archivos para almacenar información.</li>
@@ -229,28 +236,28 @@ ul.task-list li input[type="checkbox"] {
 <li>Además de los archivos <code>.csv</code> hay otros formatos similares como los <code>.tsv</code> (<em>Tab</em> separated values), que son iguales que los archivos csv pero en lugar de usar comas para separar los valore se usan tabulaciones. Asi mimso hay otros formatos comunes como los <code>.json</code> que tienen estructuras más complicadas, pero también son archivos que se pueden abrir con cualquier programa y cuya información se puede leer como una tabla.</li>
 </ul>
 </section>
-<section id="importar-datos" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="importar-datos"><span class="header-section-number">3.3</span> Importar datos</h2>
+<section id="importar-datos" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="importar-datos"><span class="header-section-number">3.4</span> Importar datos</h2>
 <ul>
 <li>Para importar un archivo <code>csv</code> en Google sheets debemos dar click en: Archivo &gt; Importar &gt; Subir. Luego debemos tener cuidado en cómo queremos importar los datos ya que nos da varias opciones como: Importarlos en una nueva hoja de cálculo (un nuevo archivo), Reemplazar la hoja de cálculo actual (borrando todo lo que ya tenemos), Agregarla como una hoja nueva dentro de la misma hoja y Agregarla a la hoja donde estamos (reemplazando o no lo que tenemos dentro de ella).</li>
 </ul>
 </section>
-<section id="fijar-filas" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="fijar-filas"><span class="header-section-number">3.4</span> Fijar filas</h2>
+<section id="fijar-filas" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="fijar-filas"><span class="header-section-number">3.5</span> Fijar filas</h2>
 <ul>
 <li>Cuando tenemos tablas de datos con muchas filas es útil fijar la primera fila con los nombres para saber qué contiene cada columna.</li>
 <li>Para fijar la primera fila podemos arrastrar la barra gris arriba de la fila 1 o dar click en Ver &gt; Inmovilizar &gt; 1 fila.</li>
 </ul>
 </section>
-<section id="ordenar" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="ordenar"><span class="header-section-number">3.5</span> Ordenar</h2>
+<section id="ordenar" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="ordenar"><span class="header-section-number">3.6</span> Ordenar</h2>
 <ul>
 <li>Para ordenar datos de acuerdo a los valores de una columna podemos dar click en el triangulito en la letra de la columna y luego seleccionar si queremos ordenar los datos de manera ascendente (Ordenrar hoja de la A a la Z) o descendente (Ordenar hoja de la Z a la A).</li>
 <li>Si quisiéramos ordenar por los valores de dos columnas, debemos aplicar un ordenamiento seguido del otro.</li>
 </ul>
 </section>
-<section id="filtrar" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="filtrar"><span class="header-section-number">3.6</span> Filtrar</h2>
+<section id="filtrar" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="filtrar"><span class="header-section-number">3.7</span> Filtrar</h2>
 <ul>
 <li>Filtrar permite quedarse sólo con los valores que cumplen cierto criterio para una o varias columnas.</li>
 <li>Para filtrar primero debemos entrar al modo de filtro para una tabla. Para ello primero debemos seleccionar toda la tabla de datos. Para seleccionar una tabla podemos poner el cursor sobre cualquier celda que contenga datos de la tabla y presionar <code>CTRL</code>+<code>A</code> (nota que si presionas <code>CTRL</code>+<code>A</code> dos veces se seleccionarán todas las celdas de la hoja)</li>
@@ -264,16 +271,16 @@ ul.task-list li input[type="checkbox"] {
 <li>Para salir del modo filtro solo debemos dar click de nuevo en el ícono de filtro y se mostrarán de nuevo todos los valores.</li>
 </ul>
 </section>
-<section id="crear-gráficos" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="crear-gráficos"><span class="header-section-number">3.7</span> Crear gráficos</h2>
+<section id="crear-gráficos" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="crear-gráficos"><span class="header-section-number">3.8</span> Crear gráficos</h2>
 <ul>
 <li>Google sheets tiene funcionalidades básicas para crear gráficos. Para ello primero debemos seleccionar los datos que queremos graficar y luego dar click en Insertar &gt; Gráfico.</li>
 <li>A partir de los datos seleccionados Google sheets sugiere automáticamente un gráfico, que muchas veces es el adecuado, sin embargo, muchas veces es poco útil y uno debe configurar manualmente el tipo de gráfico y elegir correctamente los valores a mapear.</li>
 <li>En este momento no profundizaremos mucho en configurar gráficos ya que utilizaremos otras herramientas más poderosas para crear una mayor diversidad de gráficos.</li>
 </ul>
 </section>
-<section id="función-unique" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="función-unique"><span class="header-section-number">3.8</span> Función <code>UNIQUE</code></h2>
+<section id="función-unique" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="función-unique"><span class="header-section-number">3.9</span> Función <code>UNIQUE</code></h2>
 <ul>
 <li>La función <code>UNIQUE</code> permite quedarse únicamente con los valores distintos de un rango de valores. Esta función recibe como único argumento el rango de valores y retorna un arreglo con los valores únicos.</li>
 </ul>

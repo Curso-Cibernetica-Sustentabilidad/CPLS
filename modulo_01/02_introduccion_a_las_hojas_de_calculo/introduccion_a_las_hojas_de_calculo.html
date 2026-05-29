@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Introducción a las hojas de cálculo – Cibernética para la sustentabilidad</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html" rel="next">
+<link href="../../modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c1f345ed0e37e4dad5cdc835eb9b7278.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html">I. Fundamentos del análisis de datos</a></li><li class="breadcrumb-item"><a href="../../modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a las hojas de cálculo</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Cibernética para la sustentabilidad</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inicio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../programa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programa</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">I. Fundamentos del análisis de datos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cibernética y análisis de datos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a las hojas de cálculo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Procesamiento y manejo de datos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modulo_01/practica_01/practica_01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Práctica 1: Incendios en ANP</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">II. Visualización y comunicación de datos</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">III. Introducción a la programación en R</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">IV. Métodos computacionales para la sustentabilidad</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referencias</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#material-de-la-sesión" id="toc-material-de-la-sesión" class="nav-link active" data-scroll-target="#material-de-la-sesión"><span class="header-section-number">2.1</span> Material de la sesión</a>
+  <ul class="collapse">
+  <li><a href="#presentación" id="toc-presentación" class="nav-link" data-scroll-target="#presentación"><span class="header-section-number">2.1.1</span> Presentación</a></li>
+  <li><a href="#hoja-de-cálculo" id="toc-hoja-de-cálculo" class="nav-link" data-scroll-target="#hoja-de-cálculo"><span class="header-section-number">2.1.2</span> Hoja de cálculo</a></li>
+  </ul></li>
+  <li><a href="#tablas-para-organizar-información" id="toc-tablas-para-organizar-información" class="nav-link" data-scroll-target="#tablas-para-organizar-información"><span class="header-section-number">2.2</span> Tablas para organizar información</a></li>
+  <li><a href="#terminología-básica" id="toc-terminología-básica" class="nav-link" data-scroll-target="#terminología-básica"><span class="header-section-number">2.3</span> Terminología básica</a></li>
+  <li><a href="#navegar-una-hoja-de-cáclculo" id="toc-navegar-una-hoja-de-cáclculo" class="nav-link" data-scroll-target="#navegar-una-hoja-de-cáclculo"><span class="header-section-number">2.4</span> Navegar una hoja de cáclculo</a></li>
+  <li><a href="#tipos-de-datos" id="toc-tipos-de-datos" class="nav-link" data-scroll-target="#tipos-de-datos"><span class="header-section-number">2.5</span> Tipos de datos</a></li>
+  <li><a href="#autocompletado" id="toc-autocompletado" class="nav-link" data-scroll-target="#autocompletado"><span class="header-section-number">2.6</span> Autocompletado</a></li>
+  <li><a href="#operadores-básicos" id="toc-operadores-básicos" class="nav-link" data-scroll-target="#operadores-básicos"><span class="header-section-number">2.7</span> Operadores básicos</a></li>
+  <li><a href="#operadores-de-comparaciones" id="toc-operadores-de-comparaciones" class="nav-link" data-scroll-target="#operadores-de-comparaciones"><span class="header-section-number">2.8</span> Operadores de comparaciones</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">2.9</span> Referencias</a>
+  <ul class="collapse">
+  <li><a href="#referencias-relativas" id="toc-referencias-relativas" class="nav-link" data-scroll-target="#referencias-relativas"><span class="header-section-number">2.9.1</span> Referencias relativas</a></li>
+  <li><a href="#referencias-absolutas" id="toc-referencias-absolutas" class="nav-link" data-scroll-target="#referencias-absolutas"><span class="header-section-number">2.9.2</span> Referencias absolutas</a></li>
+  <li><a href="#referencias-mixtas" id="toc-referencias-mixtas" class="nav-link" data-scroll-target="#referencias-mixtas"><span class="header-section-number">2.9.3</span> Referencias mixtas</a></li>
+  </ul></li>
+  <li><a href="#referencias-a-rangos-de-datos" id="toc-referencias-a-rangos-de-datos" class="nav-link" data-scroll-target="#referencias-a-rangos-de-datos"><span class="header-section-number">2.10</span> Referencias a rangos de datos</a></li>
+  <li><a href="#refer" id="toc-refer" class="nav-link" data-scroll-target="#refer"><span class="header-section-number">2.11</span> Refer</a></li>
+  <li><a href="#funciones" id="toc-funciones" class="nav-link" data-scroll-target="#funciones"><span class="header-section-number">2.12</span> Funciones</a>
+  <ul class="collapse">
+  <li><a href="#funciones-lógicas" id="toc-funciones-lógicas" class="nav-link" data-scroll-target="#funciones-lógicas"><span class="header-section-number">2.12.1</span> Funciones lógicas</a></li>
+  <li><a href="#funciones-matemáticas" id="toc-funciones-matemáticas" class="nav-link" data-scroll-target="#funciones-matemáticas"><span class="header-section-number">2.12.2</span> Funciones matemáticas</a></li>
+  <li><a href="#funciones-de-texto" id="toc-funciones-de-texto" class="nav-link" data-scroll-target="#funciones-de-texto"><span class="header-section-number">2.12.3</span> Funciones de texto</a></li>
+  <li><a href="#funciones-de-fechas" id="toc-funciones-de-fechas" class="nav-link" data-scroll-target="#funciones-de-fechas"><span class="header-section-number">2.12.4</span> Funciones de fechas</a></li>
+  <li><a href="#funciones-estadísticas" id="toc-funciones-estadísticas" class="nav-link" data-scroll-target="#funciones-estadísticas"><span class="header-section-number">2.12.5</span> Funciones estadísticas</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html">I. Fundamentos del análisis de datos</a></li><li class="breadcrumb-item"><a href="../../modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a las hojas de cálculo</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a las hojas de cálculo</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>En esta sesión se presentan los fundamentos para el uso de las hojas de cálculo.</p>
+<section id="material-de-la-sesión" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="material-de-la-sesión"><span class="header-section-number">2.1</span> Material de la sesión</h2>
+<section id="presentación" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="presentación"><span class="header-section-number">2.1.1</span> Presentación</h3>
+<iframe src="https://slides.com/bmbi/introduccion-a-la-ciencia-de-datos-con-hojas-de-calculo/embed" width="576" height="420" title="cpls v26 - Introducción a la ciencia de datos con hojas de cálculo" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</section>
+<section id="hoja-de-cálculo" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="hoja-de-cálculo"><span class="header-section-number">2.1.2</span> Hoja de cálculo</h3>
+<ul>
+<li><a href="https://docs.google.com/spreadsheets/d/1Apoq3sC2Gsety6vUomaY3wW_88E17zxYVcJ-YDkgZfU/edit?usp=sharing">Hoja de cálculo utilizada en esta sesión</a></li>
+</ul>
+</section>
+</section>
+<section id="tablas-para-organizar-información" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="tablas-para-organizar-información"><span class="header-section-number">2.2</span> Tablas para organizar información</h2>
+<ul>
+<li>Una de las formas más utiles de organizar información es a través de tablas.</li>
+<li>La siguiente tabla es la que se utilizó en el censo de México de 1930. Cada fila representa una persona y las columnas incluyen datos de cada persona: nombre y apellido, sexo edad, estado civil, si sabe leer y escribir, profesión, el lugar de nacimiento, nacionalidad, idioma, las pripiedades que posé, discapacidades, religión y situación laboral.</li>
+<li>Hoy en día los censos en México incluyen mucha más información y se capturan de manera electrónica, sin embarog, sus resultados se siguen organizando y presentado como grandes tablas de datos.</li>
+<li><a href="https://www.inegi.org.mx/programas/ccpv/2000/default.html">Los registros más antiguos en México de censos datan de la Época Prehispánica en 1116</a>. Cuando el rey chichimeca Xólotl ordenó que se contara a todos sus súbditos. Se cree que para contarlos cada persona iba tirando pierdas en un montón que se llamó Nepohualco. De acuerodo a los códices ese censo contó a 3 millones 200 mil personas.</li>
+<li>Los registros de usos de tablas para registrar información son de los egipcios hace 4,500 años y que fueron descubiertos en 2013. Estos son los papiros más viejos de Egipto y son el diaro de un oficial egipcio que trabajo en la construcción de las pirámides. Estas tablas dan información sobre la construcción de las pirámides: unas son listas de tares (<em>checklists</em>) y otros muestran la distribución de porciones de alimento para los trabajadores.</li>
+<li>Hoy en día continuamos utilizando tablas para almacenar datos, pero la forma más común de estas es digital, como en los hojas de cálculo o <em>spreadsheets</em>. La palabra <a href="https://en.wikipedia.org/wiki/Spreadsheet"><em>spreadsheet</em></a> proviene de la palabra <em>worksheet</em>, que era la forma como se le conocía a los registros manuales que se realizaban en contaduría.</li>
+<li>Los primeros softwares de hojas de cálculo salieron en 1979 (VisiCalc para Apple) y 1983 (Lotus 1-2-3 para Windows). Microsoft Excel, la aplicación de hojas de cálculo más popular en el mercado salió por primera vez en 1985. Y en 2006 salió Google Sheets.</li>
+<li>En este curso utilizaremos Google Sheets. Aunque Microsoft Excel es la opción de hojas de cálculo más popular, Google Sheets es una muy buena alternativa por varias razones:
+<ul>
+<li>Dado que es parte del ecosistema de Google ha cobrado mucha popularidad.</li>
+<li>Si bien no tiene todas la funcionalidades que Excel, tiene la mayoría y las más importantes. Además la gran mayoría de sus funciones son muy similares a Excel.</li>
+<li>Es una aplicación web nativa por lo que corre muy bien en el navegador y no requiere ninguna instalación. En cambio la versión web de Excel es más lenta.</li>
+<li>Es una herramienta gratuita que únicamente requiere tener una cuenta de google. En cambio excel requiere una licencia que cuesta mucho.</li>
+<li>Es muy cómoda para la colaboración en tiempo real y para compartir.</li>
+</ul></li>
+</ul>
+</section>
+<section id="terminología-básica" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="terminología-básica"><span class="header-section-number">2.3</span> Terminología básica</h2>
+<ul>
+<li>Una hoja de cálculo está formada por <strong>hojas</strong> (<em>spreadsheet</em> o <em>sheets</em>). Cada uno se muestra como una pestaña distinta.</li>
+<li>Un conjunto de hojas forman un <strong>libro de trabajo</strong> (<em>workbook</em>).</li>
+<li>Cada hoja está formada por <strong>celdas</strong> (<em>cell</em>). Cada celda se forma de la intersección de una <strong>fila</strong> (<em>row</em>) con una <strong>columna</strong> (<em>column</em>)</li>
+<li>A las columnas se les identifica con letras y a las filas con números. Así a cada celda le corresponde una combinaión de letra con número. La primera celda es la celda <code>A1</code>.</li>
+</ul>
+</section>
+<section id="navegar-una-hoja-de-cáclculo" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="navegar-una-hoja-de-cáclculo"><span class="header-section-number">2.4</span> Navegar una hoja de cáclculo</h2>
+<ul>
+<li>Al estar sobre una celda podemos movernos a la que está abajo presionando <code>ENTER</code> dos veces (nota que la primera vez se coloca en modo edición). Para movernos hacia arriba presionamos la combinación <code>SHIFT+ENTER</code> dos veces.</li>
+<li>Podemos movernos a la celda de la derecha presionando <code>TAB</code> y para moverse a la izquierda damos <code>SHIFT+TAB</code>.</li>
+<li>Además podemos navegar en la hoja con las flechas, sin embargo, para un movimiento más rápido en la hoja es recomendable familiarizarse con <code>ENTER</code> y <code>SHIFT</code>.</li>
+</ul>
+</section>
+<section id="tipos-de-datos" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="tipos-de-datos"><span class="header-section-number">2.5</span> Tipos de datos</h2>
+<ul>
+<li>Las celdas pueden almacenar distintos tipos de datos:
+<ul>
+<li><strong>números</strong>: valores númericos</li>
+<li><strong>booleanos</strong>: verdadero (<code>TRUE</code>) o falso (<code>FALSE</code>)</li>
+<li><strong>cadenas de texto</strong> (<em>strings</em>): secuencias de caracteres</li>
+<li><strong>fechas</strong>: en distintos formatos. Nota como en realidad las fechas son números contados a partir de una referencia, por ejemplo, en Google sheets el número 1 corresponde al 31/12/1899, el 2 al 01/01/1900, etc.</li>
+</ul></li>
+<li>Nota como el valor de las celdas se puede ver tanto en la celda como en la barra superior que dice <em>fx</em>, ahí tambien puedes ingresar y modificar los valores de una celda.</li>
+<li>A los valores se les pueden dar distintos formatos dando click en <em>Más formatos</em>. Por ejemplo, a los números se les puede tratar como moneda (agrega un signo de pesos), porcentaje (supone que el número está dado en decimal) y notación científica (e.g., <code>E+12</code> = <span class="math inline">\(\times 10^{12}\)</span>, <code>E-12</code> = <span class="math inline">\(\times 10{-12}\)</span>).</li>
+<li>Google sheets es sufientemente listo como para detectar automáticamente el tipo de dato que recibe una celda (e.g., reconocer un valor de <code>$5</code>, como un número y no como una cadena de texto), sin embargo, siempre es importante asegurarnos de que google sheets está asignando correctamente a los valores el tipo de dato que queremos. Para eso puedes seleccionar los datos y asignarle el tipo de dato que quieres manualmente dando click en <em>Más formatos</em>.</li>
+<li>Nota que en las celdas las cadenas de texto estan justificadas a la izquierda de la celda, los valores numéricos y fechas a la derecha y los booleanos están centrados. Esto se puede sobreescribir, pero es bueno no cambiarlo para poder verificar visualmente el tipo de dato que hay en las celdas.</li>
+</ul>
+</section>
+<section id="autocompletado" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="autocompletado"><span class="header-section-number">2.6</span> Autocompletado</h2>
+<ul>
+<li>Al desplazar el pequeño recuadro en la parte inferior derecha de las celdas permiten <strong>autocompletar</strong>.</li>
+<li>La el resultado de autocompletar depende de las celdas que estén seleccionadas:
+<ul>
+<li>Resultado: Copiar el mismo valor a otras celdas
+<ul>
+<li>Selección: una sola celda con valor númerico</li>
+</ul></li>
+<li>Resultado: Completar una serie de números o fechas
+<ul>
+<li>Selección: al menos 2 celdas contiguas con la secuencia de números/fechas deseada. Nota que la serie no necesariemane debe aumentar de 1 en uno (e.g., puede hacerse una serie de números de 3 en 3: 3, 6, 9, …)</li>
+</ul></li>
+<li>Resultado: Completar un patron de texto + número
+<ul>
+<li>Selección: una celda con una cadena de texto que incluye una parte numérica (e.g., <code>A1</code>)</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="operadores-básicos" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="operadores-básicos"><span class="header-section-number">2.7</span> Operadores básicos</h2>
+<ul>
+<li>Las celdas a demas de permitir almacenar valores permiten realizar operaciones y aplicar funciones a los datos. Para introducir una operacion o fórmula se debe empezar introducir un signo de igual en una celda: <code>=</code> (e.g., <code>=1+1</code>).</li>
+<li>Algunas operaciones básicas que se pueden hacer con valores numéricos son:
+<ol type="1">
+<li><strong>suma <code>+</code></strong>: e.g., <code>=3+2</code></li>
+<li><strong>resta <code>-</code></strong>: e.g., <code>=3-2</code></li>
+<li><strong>multiplicación <code>*</code></strong>: e.g., <code>=3*2</code></li>
+<li><strong>división <code>/</code></strong>: e.g., <code>=3/2</code></li>
+<li><strong>exponenciación <code>^</code></strong>: e.g., <code>=3^2</code></li>
+</ol></li>
+<li>Se pueden mezclar las operaciones para realizar cálculos más complicados. Por ejemplo <code>=3+2*3</code> esto retornará 9 ya que realiza primero la multiplicación. El orden en que se ejecutan las operaciones sigue la jerarquía clásica de operaciones: (1) exponentes, (2) multiplicación y división y (3) suma y resta. Si se quiere cambiar el orden se pueden agrupar las operaciones usando paréntesis, e.g., <code>=(3+2)*3</code> dará como resultado 15.</li>
+<li>Algunas operaciones que se pueden hacer con valores que son cadenas de texto son:
+<ul>
+<li><strong>concatenación <code>&amp;</code></strong>: e.g., `=“Hola” &amp; ” ” &amp; “mundo”. Nota que cuando se está en modo de fórmula (cuando se pone algo en una celda iniciando con un igual) se deben de poner comillas alrededor de las cadenas de texto.</li>
+</ul></li>
+</ul>
+</section>
+<section id="operadores-de-comparaciones" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="operadores-de-comparaciones"><span class="header-section-number">2.8</span> Operadores de comparaciones</h2>
+<ul>
+<li>En las hojas de cálculo también podemos hacer pruebas utilizando los operadores de comparación, nota que estos comparan números y nos retornan un booleano indicando si la comparación es verdadera o falsa:
+<ul>
+<li><strong>igual</strong>: <code>=</code></li>
+<li><strong>mayor qué</strong>: <code>&gt;</code></li>
+<li><strong>mayor o igual qué</strong>: <code>&gt;=</code></li>
+<li><strong>menor qué</strong>: <code>&lt;</code></li>
+<li><strong>menor o igual qué</strong>: <code>&lt;=</code></li>
+<li><strong>no igual</strong>:<code>&lt;&gt;</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="referencias" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="referencias"><span class="header-section-number">2.9</span> Referencias</h2>
+<section id="referencias-relativas" class="level3" data-number="2.9.1">
+<h3 data-number="2.9.1" class="anchored" data-anchor-id="referencias-relativas"><span class="header-section-number">2.9.1</span> Referencias relativas</h3>
+<ul>
+<li>Los valores de una celda se pueden referenciar utilizando su identificador de columna + fila. Por ejemplo, para multiplicar el valor en la celda <code>A2</code> se puede escribir la fórmula <code>=A2*2</code>.</li>
+<li>A esta forma de referenciar se le conoce como <strong>referencia relativa</strong>. Lo que caracteriza a una referencia relativa es que la referencia depende de la posición donde está la celda, por lo que al usar la función de autocompletar esta cambiará tambien la celda a la que apunta la referencia.</li>
+</ul>
+</section>
+<section id="referencias-absolutas" class="level3" data-number="2.9.2">
+<h3 data-number="2.9.2" class="anchored" data-anchor-id="referencias-absolutas"><span class="header-section-number">2.9.2</span> Referencias absolutas</h3>
+<ul>
+<li>Para evitar que la referencia a una celda cambie al autocompletar necesitamos usar <strong>referencias absolutas</strong>, las cuales fijan a una celda. Para ello debemos agregar signos de pesos antes de la letra y número. Por ejemplo, para hacer una referencia absoluta de la celda <code>A2</code> debemos poner <code>$A$2</code>.</li>
+<li>Un atajo para agregar los signos de pesos es dar click en <code>F4</code>.</li>
+</ul>
+</section>
+<section id="referencias-mixtas" class="level3" data-number="2.9.3">
+<h3 data-number="2.9.3" class="anchored" data-anchor-id="referencias-mixtas"><span class="header-section-number">2.9.3</span> Referencias mixtas</h3>
+<ul>
+<li>Algunas veces necesitamos fijar una referencia en las filas pero no en las columnas o vicversa. Para eso podemos usar <strong>referencias mixtas</strong>, que consisten en agregar solo un signo de pesos correspondiente a la parte en la que queremos fijar: <code>$A2</code> para fijar la columna A pero permitir que la referencia cambie en las filas, o <code>A$2</code> para fijar la fila 2 pero permitir la referencia cambie en la columnas.</li>
+<li>Nota que si se presionan varias veces <code>F4</code> podemos cambiar de referencia relativa a absoluta y luego a mixta.</li>
+</ul>
+</section>
+</section>
+<section id="referencias-a-rangos-de-datos" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="referencias-a-rangos-de-datos"><span class="header-section-number">2.10</span> Referencias a rangos de datos</h2>
+<ul>
+<li>Además de referencias celdas individuales podemos referenciar rangos de datos. Las referencias de rangos de datos tienen la siguiente forma: <code>celda_extremo_sup_iz:celda_extremo_inf_der</code>, por ejemplo, si se quieren tomar todos los datos desde la celda <code>A2</code> hasta la <code>D7</code> se utilizaría el rango: <code>A2:D7</code>.</li>
+<li>Para seleccionar todos los elementos de una columna o una fila se puede poner sólo la letra (columna) o número (fila) correspondiente, por ejemplo para seleccionar todos los valores de la columna <code>B</code> se puede poner: <code>B:B</code>. Si se quieren solo los valores desde la celda <code>B2</code> se puede poner: <code>B2:B</code>.</li>
+</ul>
+</section>
+<section id="refer" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="refer"><span class="header-section-number">2.11</span> Refer</h2>
+</section>
+<section id="funciones" class="level2" data-number="2.12">
+<h2 data-number="2.12" class="anchored" data-anchor-id="funciones"><span class="header-section-number">2.12</span> Funciones</h2>
+<ul>
+<li>Las hojas de cálculo cuentan <strong>funciones</strong>, las cuales reciben entradas, las procesan y generan una salida.</li>
+<li>Las funciones se ven de la siguiente manera <code>NOMBRE(arumento1, argumento2, argumento3)</code>
+<ul>
+<li>Las funciones tienen un nombre. Nota que el nombre se puede poner en mayúsculas o minúsuclas. Sin embargo, es buena práctica escribirlas en mayúsculas para poder facilmente detectar las fórmulas al ver el contenido de una celda.</li>
+<li>Luego tienen unos paréntesis dentro de los cuales se escriben los argumentos separados por comas</li>
+<li>Los argumentos son valores que recibe una función y que modifican su comportamiento determinando cual es la salida que obtenemos</li>
+<li>El número de argumentos varía dependiendo de la función.</li>
+</ul></li>
+</ul>
+<section id="funciones-lógicas" class="level3" data-number="2.12.1">
+<h3 data-number="2.12.1" class="anchored" data-anchor-id="funciones-lógicas"><span class="header-section-number">2.12.1</span> Funciones lógicas</h3>
+<ul>
+<li>Las funciones lógicas operan con expresiones lógicas, es decir expresiones que retornan valores booleanos (TRUE/FALSE) y son las siguientes:
+<ul>
+<li><code>AND</code>: retorna verdadero solo si todas sus expresiones lógicas son verdaderas.</li>
+<li><code>OR</code>: retorna verdadero si al menos una de sus expresiones lógicas son verdaderas.</li>
+<li><code>NOT</code>: retorna el valor contrario a la expresiones lógica que recibe.</li>
+<li><code>IF</code>: evalua una expresión lógica y dependiendo del resultado retorna el resultado correspondeiente.</li>
+<li><code>IFS</code>: hacer múltiples pruebas lógicas y retronar el resultado correspondiente.</li>
+</ul></li>
+</ul>
+</section>
+<section id="funciones-matemáticas" class="level3" data-number="2.12.2">
+<h3 data-number="2.12.2" class="anchored" data-anchor-id="funciones-matemáticas"><span class="header-section-number">2.12.2</span> Funciones matemáticas</h3>
+<ul>
+<li>Algunas funciones matemáticas básicas son:
+<ul>
+<li><code>SUM</code>: suma un conjunto de valores e.g., <code>SUM(1,2,A1)</code></li>
+<li><code>MINUS</code>: resta un par de valores e.g., <code>MINUS(3,2)</code></li>
+<li><code>PRODUCT</code>: multiplica un conjunto de valores e.g., <code>PRODUCT(1,2,A1)</code></li>
+<li><code>DIVIDE</code>: divide un par de valores e.g., <code>DIVIDE(1,2)</code></li>
+</ul></li>
+<li>Algunas funciones matemáticas se pueden juntar con las condiciones lógicas, por ejemplo, podemos sumar solo los valores que cumplen algún criterio con <code>SUMIF</code> y <code>SUMIFS</code>.</li>
+</ul>
+</section>
+<section id="funciones-de-texto" class="level3" data-number="2.12.3">
+<h3 data-number="2.12.3" class="anchored" data-anchor-id="funciones-de-texto"><span class="header-section-number">2.12.3</span> Funciones de texto</h3>
+<ul>
+<li>Algunas funciones que funcionan contexto son:
+<ul>
+<li><code>TEXTJOIN</code>: junta cadenas utilizando un separador.</li>
+<li><code>SPLIT</code>: separa una cadena de texto en varias celdas usando un separador.</li>
+<li><code>FIND</code>: encuentra la primera posición de un caracter en una cadena de texto,</li>
+<li><code>MID</code>: extrae una parte de una cadena de texto.</li>
+<li>Además estan las funciones <code>REGEXMATCH</code>, <code>REGEXEXTRACT</code>, <code>REGEXREPLACE</code>, que permiten encontrar patrones complejos en cadenas de texto.</li>
+</ul></li>
+</ul>
+</section>
+<section id="funciones-de-fechas" class="level3" data-number="2.12.4">
+<h3 data-number="2.12.4" class="anchored" data-anchor-id="funciones-de-fechas"><span class="header-section-number">2.12.4</span> Funciones de fechas</h3>
+<ul>
+<li>Algunas funciones para trabajar con fechas son:
+<ul>
+<li><code>YEAR</code>, <code>MONTH</code>, <code>DAY</code>: extraen el año, mes y día de una fecha, respectivamente (también hay funciones para extraer hora, minuto y segundo).</li>
+<li><code>DATE</code>: obtener una fecha a partir de los valores individuales de año, mes y día.</li>
+<li><code>TODAY</code>: da la fecha de hoy.</li>
+<li><code>DATEDIF</code>: da la diferencia entre dos fechas en una unidad deseada.</li>
+<li><code>TEXT</code>: permite dar formato a un valor.</li>
+</ul></li>
+</ul>
+</section>
+<section id="funciones-estadísticas" class="level3" data-number="2.12.5">
+<h3 data-number="2.12.5" class="anchored" data-anchor-id="funciones-estadísticas"><span class="header-section-number">2.12.5</span> Funciones estadísticas</h3>
+<ul>
+<li>Algunas funciones estdisticas útiles son:
+<ul>
+<li><code>COUNT</code>: cuenta los valores numéricos en un rango</li>
+<li><code>AVERAGE</code>: calcular el promedio de los valores de un rango</li>
+<li><code>MEDIAN</code>: calcular la mediana de un conjunto de datos.</li>
+<li><code>MODE</code>: calcular la moda de un conjunto de datos.</li>
+<li><code>MAX</code>: calcular el valor máximo de un conjunto de datos.</li>
+<li><code>MIN</code>: calcular el valor mínimo de un conjunto de datos.</li>
+<li><code>STDEV</code>: calcular la desviación estandar de un rango de valores. Hay dos opciones <code>STDEV.P</code> y <code>STED.S</code> que sacan la desviación estándar para una población y una muestra, respectivamente.</li>
+<li><code>QUARTILE</code>: calcular el cuartil que se le indique para un conjunto de datos. Los valores posibles de cuartiles son: 0 (min), 1, 2 (moda), 3, 4 (max).</li>
+<li><code>RANK</code>: asignar el rango a un valor dentro de un conjunto de datos.</li>
+</ul></li>
+<li>Algunas funciones estadístias se pueden juntar con las lógicas para que solamente consideren los valores que cumplen algun criterio, por ejemplo las funciones: <code>AVERAGEIF</code> y <code>COUNTIF</code>.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html" class="pagination-link" aria-label="Cibernética y análisis de datos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cibernética y análisis de datos</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html" class="pagination-link" aria-label="Procesamiento y manejo de datos">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Procesamiento y manejo de datos</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

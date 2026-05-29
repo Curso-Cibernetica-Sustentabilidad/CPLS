@@ -110,8 +110,8 @@
     ]
   },
   {
-    "objectID": "lecciones/cibernetica_y_analisis_datos.html",
-    "href": "lecciones/cibernetica_y_analisis_datos.html",
+    "objectID": "modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html",
+    "href": "modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html",
     "title": "1  Cibernética y análisis de datos",
     "section": "",
     "text": "1.1 Presentación\nEn esta primera sesión se presenta brevemente el origen de la palabra cibernética y su relación con el análisis de datos.",
@@ -121,8 +121,8 @@
     ]
   },
   {
-    "objectID": "lecciones/cibernetica_y_analisis_datos.html#qué-es-la-cibernética",
-    "href": "lecciones/cibernetica_y_analisis_datos.html#qué-es-la-cibernética",
+    "objectID": "modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html#qué-es-la-cibernética",
+    "href": "modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html#qué-es-la-cibernética",
     "title": "1  Cibernética y análisis de datos",
     "section": "1.2 ¿Qué es la cibernética?",
     "text": "1.2 ¿Qué es la cibernética?\n\nLa palabra cibernética se suele usar en tres contextos diferentes:\n\npara referirse de manera general a la computación, (e.g., cyber café, cyber criminal).\ncomo un concepto asociado a la ciencia ficción, (e.g., cyborgs, cyberpunk).\npara referirse a una disciplina académica de estudio.\n\nLa palabra cibernética se introdujo en el tercer contexto, para referirse a una disciplina académica.\nLa palabra cibernética proviene del griego kybernḗtēs que significa «quien controla un barco» (i.e., que mueve el timón).\nUn conductor de un barco debe ajustar constantemente el rumbo para llegar a un destino deseado. Un conductor a través de observar su posición y dirección actual mueve el timón para ajustar el rumbo. Después de un rato se tendra una nueva posición y dirección. Éstas son la informacion que posteriomente utilizará para hacer nuevas modificaciones en el rumbo. Así el control de un barco consiste en un proceso de retroalimentación.\nLa retroalimentación es el mecanismo en el que la salida de un sistema se redirige a la entrada y controla su comportamiento. El concepto de retoalimentación se puede aplicar a sistemas de naturaleza muy distinta. Por ejemplo: sistemas de control de misiles (tema en el que trabajaban los pioneros de la cibernética), un animal que caza a su presa, el control de la temperatura en el cuerpo humano, un sistema de aire acondicionado.\nNorbert Weiner fue un científico de mediados del siglo XX que al reconocer como la retroalimentación es un mecanismo presente en sistemas de naturaleza muy diferente propuso introducirlo como una disciplina de estudio. Y escribió un libro titulado «Cybernetics on Control and Communication in the Animal and the Machine». Su trabajo fue muy importante para introducir la idea de cómo los comportamientos inteligentes son resultado de mecanismos de retroalimentaciones, por lo que se le considera como un pionero de la inteligencia artificial.\nLa cibernética como línea de investigación no tuvo una vida muy larga, esto se debió en parte a que las ideas de la cibernética tomaron fuerza en la URSS durante la guerra fría, lo que hizo que en occidente se fueran abandonando y favoreciendo otras líneas de investigación relacionadas como la Inteligencia artificial. Sin embargo la cibernética representa uno antecendente importante de las ciencias de la complejidad que relacionada a áreas de investigación más actuales como la Ciencia de datos y el Big Data, la Ciencia de redes, la Inteligencia artificial y el Modelado de agentes.",
@@ -132,8 +132,8 @@
     ]
   },
   {
-    "objectID": "lecciones/cibernetica_y_analisis_datos.html#un-ejemplo-de-un-sistema-cibernético",
-    "href": "lecciones/cibernetica_y_analisis_datos.html#un-ejemplo-de-un-sistema-cibernético",
+    "objectID": "modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html#un-ejemplo-de-un-sistema-cibernético",
+    "href": "modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html#un-ejemplo-de-un-sistema-cibernético",
     "title": "1  Cibernética y análisis de datos",
     "section": "1.3 Un ejemplo de un sistema cibernético",
     "text": "1.3 Un ejemplo de un sistema cibernético\n\nTenemos un ejemplo de un caso donde las ideas de la cibernética fueron llevadas a la realidad para tratar de construir una sociedad tecnológica. Este experimento se llevo a cabo en el Chile socialista de la década de 1980 bajo el mando de Salvador Allende, quien fue el primer presidente socialista electo democráticamente.\nStafford Beer fue un investigador inglés que aplicó las ideas de cibernética de Wiener al manejo de organizaciones. Los asesores de Salvador Allende vieron en las ideas de Beer una forma de generar un sistema para organizar la economía socialista de Chile e invitaron a Beer a diseñar e implementar el Cybersyn (una palabra que proviene de: Cibernética + simbiosis). El proyecto Cybersyn consistía en 4 cosas:\n\nUna red para comunicar a las fábricas del país (cybernet). Algunos consideran que esto puede considerarse como el primer internet.\nUn centro de control futurista donde se tomaban las grandes decisiones sobre la economía del país.\nUn sistema de simulaciones y modelos estadísticos para apoyar la toma de decisiones.\nUna red para conocer en tiempo real el estado social de la gente (cyberfolk)\n\nEl sistema no fue implementado en su totalidad, pero si ayudó a hacer más eficiente la toma de decisiones. No obstante, fue un experimento de corta duración ya que el golpe de estado de Pinochet derrocó a Allende, y con ello todo el proyecto fue abandonado y elimindado.\nAlgo importante que se puede recuperar del ejemplo chileno del Cybersyn es el papel central que los datos tomaban en la toma de decisiones. La información que fluía por la red entre fábricas, sociedad y gobierno y los resultados de las simulaciones y modelos estadísticos eran el eje central para tomar decisiones. Hoy en este proceso de tomar decisiones basadas en datos es lo que realiza el Análisis de datos.",
@@ -143,8 +143,8 @@
     ]
   },
   {
-    "objectID": "lecciones/cibernetica_y_analisis_datos.html#análisis-de-datos",
-    "href": "lecciones/cibernetica_y_analisis_datos.html#análisis-de-datos",
+    "objectID": "modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html#análisis-de-datos",
+    "href": "modulo_01/01_cibernetica_y_analisis_de_datos/cibernetica_y_analisis_de_datos.html#análisis-de-datos",
     "title": "1  Cibernética y análisis de datos",
     "section": "1.4 Análisis de datos",
     "text": "1.4 Análisis de datos\n\nEl análisis de datos es hoy en día un área muy activa en cualquier institución. En el mundo digital de hoy en día se producen enormes cantidad de información en el día a día. Utilizar redes sociales, navegar utilizando un GPS, comparar en línea, todas estas actividades generan nueva información que es utilizada para hacer más eficientes distintos productos (e.g., retener más tiempo la atención del usuario, perfeccionar los sistemas de monitoreo de tráfico, alimentar los algoritmos de recomendación de productos).\nLas actividades que implica el análisis de datos se pueden clasificar en 6 fases:\n\nDefinir una pregunta. Primero debemos definir nuestro objetivo y cuál es el problema que intentamos solucionar. Esto permite determinar cuál es el resultado esperado y determinar criterios para saber si estamos cumpliendo satisfactoriamente con lo que deseamos.\nObtener los datos. Ya que tenemos identificado un problema el siguiente paso es recolectar los datos necesarios para responder a nuestra pregunta y objetivos. Los datos se pueden obtener de distintas fuentes como bases de datos públicas y privadas o registros físicos. En muchas ocasiones los datos que necesitamos no existen por lo que debemos generarlos, hay varias formas de obtenerlos por ejemplo haciendo encuestas o recopilando datos no estructurados (e.g., scapping en páginas web).\nLimpiar y tansformar los datos. Los datos muy rara vez vienen completamente listos para analizarlos. La mayoría de las veces debemos limpiar y procesar los datos. Esto implica cosas como manejar los valores vacios, quitar los registros duplicados, estandarizar y normalizar, etc.\nAnalizar los datos. El análisis es uno de los pasos más importantes ya que es donde descubrimos, patrones, tendencias y relaciones en los datos. Esto implica cosas como el Análisis Exploratorio de Datos (EDA, por sus siglas en inglés), el calcular estadísticos básicos como las medidas de tendencia central o de dispersión y aplicar modelos estadísticos (e.g., modelos lineales, correlaciones, modelos generalizados, modelos de machine learning)\nVisualizar los resultados. El siguiente paso consiste en crear materiales para compartir y comunicar los resultados. Esto implica la creación de visualizaciones como gráficos, tablas y diagramas.\nInterpetación y toma de decisiones. El propósito final de todo análisis de datos es obtener información para tomar mejores decisiones. El último paso consiste en convertir los resultados obtenidos en acciones, esto genrealmente toma la forma de hacer recomendaciones para mejorar un proceso.\n\nPara transformar los datos en información util un analista de datos debe utilizar distintas herramientas. Algunas de las principales herramientas que los analistas de datos utilizan en su día a día son:\n\nHojas de cálculo (Excel, Google sheets)\nProgramación (python, R)\nBases de datos (SQL, sqlite, MySQL)\nHerramientas para la visualización de datos (Tableau, PowerBI, Datawrapper, Flourish)\n\nEn este curso aprenderemos los principios del análisis de datos y como los podemos utilizar para mejorar la toma de decisiones para la sustentabilidad. Así un nombre moderno más apropiado para este curso es: Análisis de datos para la sustentabilidad.",
@@ -154,30 +154,41 @@
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html",
-    "href": "lecciones/intro_hojas_de_calculo.html",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "",
-    "text": "2.1 Presentación\nEn esta sesión se presentan los fundamentos para el uso de las hojas de cálculo.",
+    "text": "2.1 Material de la sesión\nEn esta sesión se presentan los fundamentos para el uso de las hojas de cálculo.",
     "crumbs": [
       "I. Fundamentos del análisis de datos",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a las hojas de cálculo</span>"
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#hojas-de-cálculo",
-    "href": "lecciones/intro_hojas_de_calculo.html#hojas-de-cálculo",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#material-de-la-sesión",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#material-de-la-sesión",
     "title": "2  Introducción a las hojas de cálculo",
-    "section": "2.2 Hojas de cálculo",
-    "text": "2.2 Hojas de cálculo\n\nUna de las formas más utiles de organizar información es a través de tablas.\nLa siguiente tabla es la que se utilizó en el censo de México de 1930. Cada fila representa una persona y las columnas incluyen datos de cada persona: nombre y apellido, sexo edad, estado civil, si sabe leer y escribir, profesión, el lugar de nacimiento, nacionalidad, idioma, las pripiedades que posé, discapacidades, religión y situación laboral.\nHoy en día los censos en México incluyen mucha más información y se capturan de manera electrónica, sin embarog, sus resultados se siguen organizando y presentado como grandes tablas de datos.\nLos registros más antiguos en México de censos datan de la Época Prehispánica en 1116. Cuando el rey chichimeca Xólotl ordenó que se contara a todos sus súbditos. Se cree que para contarlos cada persona iba tirando pierdas en un montón que se llamó Nepohualco. De acuerodo a los códices ese censo contó a 3 millones 200 mil personas.\nLos registros de usos de tablas para registrar información son de los egipcios hace 4,500 años y que fueron descubiertos en 2013. Estos son los papiros más viejos de Egipto y son el diaro de un oficial egipcio que trabajo en la construcción de las pirámides. Estas tablas dan información sobre la construcción de las pirámides: unas son listas de tares (checklists) y otros muestran la distribución de porciones de alimento para los trabajadores.\nHoy en día continuamos utilizando tablas para almacenar datos, pero la forma más común de estas es digital, como en los hojas de cálculo o spreadsheets. La palabra spreadsheet proviene de la palabra worksheet, que era la forma como se le conocía a los registros manuales que se realizaban en contaduría.\nLos primeros softwares de hojas de cálculo salieron en 1979 (VisiCalc para Apple) y 1983 (Lotus 1-2-3 para Windows). Microsoft Excel, la aplicación de hojas de cálculo más popular en el mercado salió por primera vez en 1985. Y en 2006 salió Google Sheets.\nEn este curso utilizaremos Google Sheets. Aunque Microsoft Excel es la opción de hojas de cálculo más popular, Google Sheets es una muy buena alternativa por varias razones:\n\nDado que es parte del ecosistema de Google ha cobrado mucha popularidad.\nSi bien no tiene todas la funcionalidades que Excel, tiene la mayoría y las más importantes. Además la gran mayoría de sus funciones son muy similares a Excel.\nEs una aplicación web nativa por lo que corre muy bien en el navegador y no requiere ninguna instalación. En cambio la versión web de Excel es más lenta.\nEs una herramienta gratuita que únicamente requiere tener una cuenta de google. En cambio excel requiere una licencia que cuesta mucho.\nEs muy cómoda para la colaboración en tiempo real y para compartir.",
+    "section": "",
+    "text": "2.1.1 Presentación\n\n\n\n2.1.2 Hoja de cálculo\n\nHoja de cálculo utilizada en esta sesión",
     "crumbs": [
       "I. Fundamentos del análisis de datos",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a las hojas de cálculo</span>"
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#terminología-básica",
-    "href": "lecciones/intro_hojas_de_calculo.html#terminología-básica",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#tablas-para-organizar-información",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#tablas-para-organizar-información",
+    "title": "2  Introducción a las hojas de cálculo",
+    "section": "2.2 Tablas para organizar información",
+    "text": "2.2 Tablas para organizar información\n\nUna de las formas más utiles de organizar información es a través de tablas.\nLa siguiente tabla es la que se utilizó en el censo de México de 1930. Cada fila representa una persona y las columnas incluyen datos de cada persona: nombre y apellido, sexo edad, estado civil, si sabe leer y escribir, profesión, el lugar de nacimiento, nacionalidad, idioma, las pripiedades que posé, discapacidades, religión y situación laboral.\nHoy en día los censos en México incluyen mucha más información y se capturan de manera electrónica, sin embarog, sus resultados se siguen organizando y presentado como grandes tablas de datos.\nLos registros más antiguos en México de censos datan de la Época Prehispánica en 1116. Cuando el rey chichimeca Xólotl ordenó que se contara a todos sus súbditos. Se cree que para contarlos cada persona iba tirando pierdas en un montón que se llamó Nepohualco. De acuerodo a los códices ese censo contó a 3 millones 200 mil personas.\nLos registros de usos de tablas para registrar información son de los egipcios hace 4,500 años y que fueron descubiertos en 2013. Estos son los papiros más viejos de Egipto y son el diaro de un oficial egipcio que trabajo en la construcción de las pirámides. Estas tablas dan información sobre la construcción de las pirámides: unas son listas de tares (checklists) y otros muestran la distribución de porciones de alimento para los trabajadores.\nHoy en día continuamos utilizando tablas para almacenar datos, pero la forma más común de estas es digital, como en los hojas de cálculo o spreadsheets. La palabra spreadsheet proviene de la palabra worksheet, que era la forma como se le conocía a los registros manuales que se realizaban en contaduría.\nLos primeros softwares de hojas de cálculo salieron en 1979 (VisiCalc para Apple) y 1983 (Lotus 1-2-3 para Windows). Microsoft Excel, la aplicación de hojas de cálculo más popular en el mercado salió por primera vez en 1985. Y en 2006 salió Google Sheets.\nEn este curso utilizaremos Google Sheets. Aunque Microsoft Excel es la opción de hojas de cálculo más popular, Google Sheets es una muy buena alternativa por varias razones:\n\nDado que es parte del ecosistema de Google ha cobrado mucha popularidad.\nSi bien no tiene todas la funcionalidades que Excel, tiene la mayoría y las más importantes. Además la gran mayoría de sus funciones son muy similares a Excel.\nEs una aplicación web nativa por lo que corre muy bien en el navegador y no requiere ninguna instalación. En cambio la versión web de Excel es más lenta.\nEs una herramienta gratuita que únicamente requiere tener una cuenta de google. En cambio excel requiere una licencia que cuesta mucho.\nEs muy cómoda para la colaboración en tiempo real y para compartir.",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a las hojas de cálculo</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#terminología-básica",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#terminología-básica",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "2.3 Terminología básica",
     "text": "2.3 Terminología básica\n\nUna hoja de cálculo está formada por hojas (spreadsheet o sheets). Cada uno se muestra como una pestaña distinta.\nUn conjunto de hojas forman un libro de trabajo (workbook).\nCada hoja está formada por celdas (cell). Cada celda se forma de la intersección de una fila (row) con una columna (column)\nA las columnas se les identifica con letras y a las filas con números. Así a cada celda le corresponde una combinaión de letra con número. La primera celda es la celda A1.",
@@ -187,8 +198,8 @@
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#navegar-una-hoja-de-cáclculo",
-    "href": "lecciones/intro_hojas_de_calculo.html#navegar-una-hoja-de-cáclculo",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#navegar-una-hoja-de-cáclculo",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#navegar-una-hoja-de-cáclculo",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "2.4 Navegar una hoja de cáclculo",
     "text": "2.4 Navegar una hoja de cáclculo\n\nAl estar sobre una celda podemos movernos a la que está abajo presionando ENTER dos veces (nota que la primera vez se coloca en modo edición). Para movernos hacia arriba presionamos la combinación SHIFT+ENTER dos veces.\nPodemos movernos a la celda de la derecha presionando TAB y para moverse a la izquierda damos SHIFT+TAB.\nAdemás podemos navegar en la hoja con las flechas, sin embargo, para un movimiento más rápido en la hoja es recomendable familiarizarse con ENTER y SHIFT.",
@@ -198,8 +209,8 @@
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#tipos-de-datos",
-    "href": "lecciones/intro_hojas_de_calculo.html#tipos-de-datos",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#tipos-de-datos",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#tipos-de-datos",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "2.5 Tipos de datos",
     "text": "2.5 Tipos de datos\n\nLas celdas pueden almacenar distintos tipos de datos:\n\nnúmeros: valores númericos\nbooleanos: verdadero (TRUE) o falso (FALSE)\ncadenas de texto (strings): secuencias de caracteres\nfechas: en distintos formatos. Nota como en realidad las fechas son números contados a partir de una referencia, por ejemplo, en Google sheets el número 1 corresponde al 31/12/1899, el 2 al 01/01/1900, etc.\n\nNota como el valor de las celdas se puede ver tanto en la celda como en la barra superior que dice fx, ahí tambien puedes ingresar y modificar los valores de una celda.\nA los valores se les pueden dar distintos formatos dando click en Más formatos. Por ejemplo, a los números se les puede tratar como moneda (agrega un signo de pesos), porcentaje (supone que el número está dado en decimal) y notación científica (e.g., E+12 = \\(\\times 10^{12}\\), E-12 = \\(\\times 10{-12}\\)).\nGoogle sheets es sufientemente listo como para detectar automáticamente el tipo de dato que recibe una celda (e.g., reconocer un valor de $5, como un número y no como una cadena de texto), sin embargo, siempre es importante asegurarnos de que google sheets está asignando correctamente a los valores el tipo de dato que queremos. Para eso puedes seleccionar los datos y asignarle el tipo de dato que quieres manualmente dando click en Más formatos.\nNota que en las celdas las cadenas de texto estan justificadas a la izquierda de la celda, los valores numéricos y fechas a la derecha y los booleanos están centrados. Esto se puede sobreescribir, pero es bueno no cambiarlo para poder verificar visualmente el tipo de dato que hay en las celdas.",
@@ -209,8 +220,8 @@
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#autocompletado",
-    "href": "lecciones/intro_hojas_de_calculo.html#autocompletado",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#autocompletado",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#autocompletado",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "2.6 Autocompletado",
     "text": "2.6 Autocompletado\n\nAl desplazar el pequeño recuadro en la parte inferior derecha de las celdas permiten autocompletar.\nLa el resultado de autocompletar depende de las celdas que estén seleccionadas:\n\nResultado: Copiar el mismo valor a otras celdas\n\nSelección: una sola celda con valor númerico\n\nResultado: Completar una serie de números o fechas\n\nSelección: al menos 2 celdas contiguas con la secuencia de números/fechas deseada. Nota que la serie no necesariemane debe aumentar de 1 en uno (e.g., puede hacerse una serie de números de 3 en 3: 3, 6, 9, …)\n\nResultado: Completar un patron de texto + número\n\nSelección: una celda con una cadena de texto que incluye una parte numérica (e.g., A1)",
@@ -220,8 +231,8 @@
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#operadores-básicos",
-    "href": "lecciones/intro_hojas_de_calculo.html#operadores-básicos",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#operadores-básicos",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#operadores-básicos",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "2.7 Operadores básicos",
     "text": "2.7 Operadores básicos\n\nLas celdas a demas de permitir almacenar valores permiten realizar operaciones y aplicar funciones a los datos. Para introducir una operacion o fórmula se debe empezar introducir un signo de igual en una celda: = (e.g., =1+1).\nAlgunas operaciones básicas que se pueden hacer con valores numéricos son:\n\nsuma +: e.g., =3+2\nresta -: e.g., =3-2\nmultiplicación *: e.g., =3*2\ndivisión /: e.g., =3/2\nexponenciación ^: e.g., =3^2\n\nSe pueden mezclar las operaciones para realizar cálculos más complicados. Por ejemplo =3+2*3 esto retornará 9 ya que realiza primero la multiplicación. El orden en que se ejecutan las operaciones sigue la jerarquía clásica de operaciones: (1) exponentes, (2) multiplicación y división y (3) suma y resta. Si se quiere cambiar el orden se pueden agrupar las operaciones usando paréntesis, e.g., =(3+2)*3 dará como resultado 15.\nAlgunas operaciones que se pueden hacer con valores que son cadenas de texto son:\n\nconcatenación &: e.g., `=“Hola” & ” ” & “mundo”. Nota que cuando se está en modo de fórmula (cuando se pone algo en una celda iniciando con un igual) se deben de poner comillas alrededor de las cadenas de texto.",
@@ -231,8 +242,8 @@
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#operadores-de-comparaciones",
-    "href": "lecciones/intro_hojas_de_calculo.html#operadores-de-comparaciones",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#operadores-de-comparaciones",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#operadores-de-comparaciones",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "2.8 Operadores de comparaciones",
     "text": "2.8 Operadores de comparaciones\n\nEn las hojas de cálculo también podemos hacer pruebas utilizando los operadores de comparación, nota que estos comparan números y nos retornan un booleano indicando si la comparación es verdadera o falsa:\n\nigual: =\nmayor qué: &gt;\nmayor o igual qué: &gt;=\nmenor qué: &lt;\nmenor o igual qué: &lt;=\nno igual:&lt;&gt;",
@@ -242,8 +253,8 @@
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#referencias",
-    "href": "lecciones/intro_hojas_de_calculo.html#referencias",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#referencias",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#referencias",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "2.9 Referencias",
     "text": "2.9 Referencias\n\n2.9.1 Referencias relativas\n\nLos valores de una celda se pueden referenciar utilizando su identificador de columna + fila. Por ejemplo, para multiplicar el valor en la celda A2 se puede escribir la fórmula =A2*2.\nA esta forma de referenciar se le conoce como referencia relativa. Lo que caracteriza a una referencia relativa es que la referencia depende de la posición donde está la celda, por lo que al usar la función de autocompletar esta cambiará tambien la celda a la que apunta la referencia.\n\n\n\n2.9.2 Referencias absolutas\n\nPara evitar que la referencia a una celda cambie al autocompletar necesitamos usar referencias absolutas, las cuales fijan a una celda. Para ello debemos agregar signos de pesos antes de la letra y número. Por ejemplo, para hacer una referencia absoluta de la celda A2 debemos poner $A$2.\nUn atajo para agregar los signos de pesos es dar click en F4.\n\n\n\n2.9.3 Referencias mixtas\n\nAlgunas veces necesitamos fijar una referencia en las filas pero no en las columnas o vicversa. Para eso podemos usar referencias mixtas, que consisten en agregar solo un signo de pesos correspondiente a la parte en la que queremos fijar: $A2 para fijar la columna A pero permitir que la referencia cambie en las filas, o A$2 para fijar la fila 2 pero permitir la referencia cambie en la columnas.\nNota que si se presionan varias veces F4 podemos cambiar de referencia relativa a absoluta y luego a mixta.",
@@ -253,8 +264,8 @@
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#referencias-a-rangos-de-datos",
-    "href": "lecciones/intro_hojas_de_calculo.html#referencias-a-rangos-de-datos",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#referencias-a-rangos-de-datos",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#referencias-a-rangos-de-datos",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "2.10 Referencias a rangos de datos",
     "text": "2.10 Referencias a rangos de datos\n\nAdemás de referencias celdas individuales podemos referenciar rangos de datos. Las referencias de rangos de datos tienen la siguiente forma: celda_extremo_sup_iz:celda_extremo_inf_der, por ejemplo, si se quieren tomar todos los datos desde la celda A2 hasta la D7 se utilizaría el rango: A2:D7.\nPara seleccionar todos los elementos de una columna o una fila se puede poner sólo la letra (columna) o número (fila) correspondiente, por ejemplo para seleccionar todos los valores de la columna B se puede poner: B:B. Si se quieren solo los valores desde la celda B2 se puede poner: B2:B.",
@@ -264,8 +275,8 @@
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#refer",
-    "href": "lecciones/intro_hojas_de_calculo.html#refer",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#refer",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#refer",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "2.11 Refer",
     "text": "2.11 Refer",
@@ -275,8 +286,8 @@
     ]
   },
   {
-    "objectID": "lecciones/intro_hojas_de_calculo.html#funciones",
-    "href": "lecciones/intro_hojas_de_calculo.html#funciones",
+    "objectID": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#funciones",
+    "href": "modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html#funciones",
     "title": "2  Introducción a las hojas de cálculo",
     "section": "2.12 Funciones",
     "text": "2.12 Funciones\n\nLas hojas de cálculo cuentan funciones, las cuales reciben entradas, las procesan y generan una salida.\nLas funciones se ven de la siguiente manera NOMBRE(arumento1, argumento2, argumento3)\n\nLas funciones tienen un nombre. Nota que el nombre se puede poner en mayúsculas o minúsuclas. Sin embargo, es buena práctica escribirlas en mayúsculas para poder facilmente detectar las fórmulas al ver el contenido de una celda.\nLuego tienen unos paréntesis dentro de los cuales se escriben los argumentos separados por comas\nLos argumentos son valores que recibe una función y que modifican su comportamiento determinando cual es la salida que obtenemos\nEl número de argumentos varía dependiendo de la función.\n\n\n\n2.12.1 Funciones lógicas\n\nLas funciones lógicas operan con expresiones lógicas, es decir expresiones que retornan valores booleanos (TRUE/FALSE) y son las siguientes:\n\nAND: retorna verdadero solo si todas sus expresiones lógicas son verdaderas.\nOR: retorna verdadero si al menos una de sus expresiones lógicas son verdaderas.\nNOT: retorna el valor contrario a la expresiones lógica que recibe.\nIF: evalua una expresión lógica y dependiendo del resultado retorna el resultado correspondeiente.\nIFS: hacer múltiples pruebas lógicas y retronar el resultado correspondiente.\n\n\n\n\n2.12.2 Funciones matemáticas\n\nAlgunas funciones matemáticas básicas son:\n\nSUM: suma un conjunto de valores e.g., SUM(1,2,A1)\nMINUS: resta un par de valores e.g., MINUS(3,2)\nPRODUCT: multiplica un conjunto de valores e.g., PRODUCT(1,2,A1)\nDIVIDE: divide un par de valores e.g., DIVIDE(1,2)\n\nAlgunas funciones matemáticas se pueden juntar con las condiciones lógicas, por ejemplo, podemos sumar solo los valores que cumplen algún criterio con SUMIF y SUMIFS.\n\n\n\n2.12.3 Funciones de texto\n\nAlgunas funciones que funcionan contexto son:\n\nTEXTJOIN: junta cadenas utilizando un separador.\nSPLIT: separa una cadena de texto en varias celdas usando un separador.\nFIND: encuentra la primera posición de un caracter en una cadena de texto,\nMID: extrae una parte de una cadena de texto.\nAdemás estan las funciones REGEXMATCH, REGEXEXTRACT, REGEXREPLACE, que permiten encontrar patrones complejos en cadenas de texto.\n\n\n\n\n2.12.4 Funciones de fechas\n\nAlgunas funciones para trabajar con fechas son:\n\nYEAR, MONTH, DAY: extraen el año, mes y día de una fecha, respectivamente (también hay funciones para extraer hora, minuto y segundo).\nDATE: obtener una fecha a partir de los valores individuales de año, mes y día.\nTODAY: da la fecha de hoy.\nDATEDIF: da la diferencia entre dos fechas en una unidad deseada.\nTEXT: permite dar formato a un valor.\n\n\n\n\n2.12.5 Funciones estadísticas\n\nAlgunas funciones estdisticas útiles son:\n\nCOUNT: cuenta los valores numéricos en un rango\nAVERAGE: calcular el promedio de los valores de un rango\nMEDIAN: calcular la mediana de un conjunto de datos.\nMODE: calcular la moda de un conjunto de datos.\nMAX: calcular el valor máximo de un conjunto de datos.\nMIN: calcular el valor mínimo de un conjunto de datos.\nSTDEV: calcular la desviación estandar de un rango de valores. Hay dos opciones STDEV.P y STED.S que sacan la desviación estándar para una población y una muestra, respectivamente.\nQUARTILE: calcular el cuartil que se le indique para un conjunto de datos. Los valores posibles de cuartiles son: 0 (min), 1, 2 (moda), 3, 4 (max).\nRANK: asignar el rango a un valor dentro de un conjunto de datos.\n\nAlgunas funciones estadístias se pueden juntar con las lógicas para que solamente consideren los valores que cumplen algun criterio, por ejemplo las funciones: AVERAGEIF y COUNTIF.",
@@ -286,19 +297,30 @@
     ]
   },
   {
-    "objectID": "lecciones/procesamiento_y_manejo_de_datos.html",
-    "href": "lecciones/procesamiento_y_manejo_de_datos.html",
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html",
     "title": "3  Procesamiento y manejo de datos",
     "section": "",
-    "text": "3.1 Presentación",
+    "text": "3.1 Material de la sesión",
     "crumbs": [
       "I. Fundamentos del análisis de datos",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procesamiento y manejo de datos</span>"
     ]
   },
   {
-    "objectID": "lecciones/procesamiento_y_manejo_de_datos.html#principales-archivos-de-datos",
-    "href": "lecciones/procesamiento_y_manejo_de_datos.html#principales-archivos-de-datos",
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#material-de-la-sesión",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#material-de-la-sesión",
+    "title": "3  Procesamiento y manejo de datos",
+    "section": "",
+    "text": "3.1.1 Presentación\n\n\n\n3.1.2 Hoja de cálculo\n\nHoja de cálculo utilizada en esta sesión\n\n\n\n3.1.3 Scripts\n\nScript para preparar datos del tutorial\nScript para preparar datos del ejercicio",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procesamiento y manejo de datos</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#principales-archivos-de-datos",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#principales-archivos-de-datos",
     "title": "3  Procesamiento y manejo de datos",
     "section": "3.2 Principales archivos de datos",
     "text": "3.2 Principales archivos de datos\n\nExisten muchos formas para almacenar datos. Cuando trabajamos con una cantidad no tan grande de datos podemos almacenar la información en archivos de datos como archivos de excel .xls, archivos de extensión .txt o .csv. Sin embargo, cuando se tienen enormes cantidades de datos, es mejor almacenar estos datos en bases de datos, que son programas especializados para organizar y almacenar datos de una manera eficiente.\nUna de las formas más faciles y amigables de almacenar datos es con archivos de excel, no obstante, esta forma de compartir datos tiene varias limitaciones. Por ejemplo, una persona que no tenga excel en su computadora no podrá abrir los archivos. Además como excel es un programa que le pertenece a Excel y no cualquiera puede saber cómo funciona internamente el programa si un día Microsoft decide dejar de desarrollar Excel la información almacenada en estos archivos se quedaría atrapada y obsoleta. Por lo tanto, no podemos depender de estos archivos para almacenar información.\nUn formato de archivo que es muy accesible para almacenar datos son los archivos con extensión .csv. Estos son archivos que se pueden abrir con cualquier editor de texto como el “Block de Notas” y por lo tanto no dependen de ninguna empresa para que funcionen. csv significa Comma Separated Values, es decir, valores separados por comas. Si abrimos este archivo con un editor de notas, veremos que tenemos tal cual eso: filas de valores numéricos o cadenas, separadas por comas. Generalmente la primer fila son los nombres de las columnas y en las siguientes filas vienen los valores correspondientes en el orden correspondiente.\nSí abrimos un archivo .csv con un programaa de hojas de cálculo como Excel o Google sheets, estos automáticamente lo formatearán como una tabla.\nAdemás de los archivos .csv hay otros formatos similares como los .tsv (Tab separated values), que son iguales que los archivos csv pero en lugar de usar comas para separar los valore se usan tabulaciones. Asi mimso hay otros formatos comunes como los .json que tienen estructuras más complicadas, pero también son archivos que se pueden abrir con cualquier programa y cuya información se puede leer como una tabla.",
@@ -308,8 +330,8 @@
     ]
   },
   {
-    "objectID": "lecciones/procesamiento_y_manejo_de_datos.html#importar-datos",
-    "href": "lecciones/procesamiento_y_manejo_de_datos.html#importar-datos",
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#importar-datos",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#importar-datos",
     "title": "3  Procesamiento y manejo de datos",
     "section": "3.3 Importar datos",
     "text": "3.3 Importar datos\n\nPara importar un archivo csv en Google sheets debemos dar click en: Archivo &gt; Importar &gt; Subir. Luego debemos tener cuidado en cómo queremos importar los datos ya que nos da varias opciones como: Importarlos en una nueva hoja de cálculo (un nuevo archivo), Reemplazar la hoja de cálculo actual (borrando todo lo que ya tenemos), Agregarla como una hoja nueva dentro de la misma hoja y Agregarla a la hoja donde estamos (reemplazando o no lo que tenemos dentro de ella).",
@@ -319,8 +341,8 @@
     ]
   },
   {
-    "objectID": "lecciones/procesamiento_y_manejo_de_datos.html#fijar-filas",
-    "href": "lecciones/procesamiento_y_manejo_de_datos.html#fijar-filas",
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#fijar-filas",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#fijar-filas",
     "title": "3  Procesamiento y manejo de datos",
     "section": "3.4 Fijar filas",
     "text": "3.4 Fijar filas\n\nCuando tenemos tablas de datos con muchas filas es útil fijar la primera fila con los nombres para saber qué contiene cada columna.\nPara fijar la primera fila podemos arrastrar la barra gris arriba de la fila 1 o dar click en Ver &gt; Inmovilizar &gt; 1 fila.",
@@ -330,8 +352,8 @@
     ]
   },
   {
-    "objectID": "lecciones/procesamiento_y_manejo_de_datos.html#ordenar",
-    "href": "lecciones/procesamiento_y_manejo_de_datos.html#ordenar",
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#ordenar",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#ordenar",
     "title": "3  Procesamiento y manejo de datos",
     "section": "3.5 Ordenar",
     "text": "3.5 Ordenar\n\nPara ordenar datos de acuerdo a los valores de una columna podemos dar click en el triangulito en la letra de la columna y luego seleccionar si queremos ordenar los datos de manera ascendente (Ordenrar hoja de la A a la Z) o descendente (Ordenar hoja de la Z a la A).\nSi quisiéramos ordenar por los valores de dos columnas, debemos aplicar un ordenamiento seguido del otro.",
@@ -341,8 +363,8 @@
     ]
   },
   {
-    "objectID": "lecciones/procesamiento_y_manejo_de_datos.html#filtrar",
-    "href": "lecciones/procesamiento_y_manejo_de_datos.html#filtrar",
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#filtrar",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#filtrar",
     "title": "3  Procesamiento y manejo de datos",
     "section": "3.6 Filtrar",
     "text": "3.6 Filtrar\n\nFiltrar permite quedarse sólo con los valores que cumplen cierto criterio para una o varias columnas.\nPara filtrar primero debemos entrar al modo de filtro para una tabla. Para ello primero debemos seleccionar toda la tabla de datos. Para seleccionar una tabla podemos poner el cursor sobre cualquier celda que contenga datos de la tabla y presionar CTRL+A (nota que si presionas CTRL+A dos veces se seleccionarán todas las celdas de la hoja)\nYa que tenemos la tabla seleccionada damos click en el ícono de aplicar filtro en la barra de herramientas y notarás que los bordes de la tabla se ponen verdes indicando que estamos en el modo de filtro.\nPara filtrar podemos dar click en las tres rayas en forma de tríangulo que salen al lado del nombre de las columnas, ahí podemos elegir varias opciones:\n\nFiltrar por un valor, útil para filtrar por valores específicos de una columna de texto\nFiltrar por condición, útil para aplicar criterios más complejos como revisar si un valor numérico es mayor o menor que un valor determinado, o para reconocer un patrón de texto en una columna.\n\nNota que se pueden aplicar múltiples filtros de varias columnas simultáneamente.\nPara salir del modo filtro solo debemos dar click de nuevo en el ícono de filtro y se mostrarán de nuevo todos los valores.",
@@ -352,8 +374,8 @@
     ]
   },
   {
-    "objectID": "lecciones/procesamiento_y_manejo_de_datos.html#crear-gráficos",
-    "href": "lecciones/procesamiento_y_manejo_de_datos.html#crear-gráficos",
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#crear-gráficos",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#crear-gráficos",
     "title": "3  Procesamiento y manejo de datos",
     "section": "3.7 Crear gráficos",
     "text": "3.7 Crear gráficos\n\nGoogle sheets tiene funcionalidades básicas para crear gráficos. Para ello primero debemos seleccionar los datos que queremos graficar y luego dar click en Insertar &gt; Gráfico.\nA partir de los datos seleccionados Google sheets sugiere automáticamente un gráfico, que muchas veces es el adecuado, sin embargo, muchas veces es poco útil y uno debe configurar manualmente el tipo de gráfico y elegir correctamente los valores a mapear.\nEn este momento no profundizaremos mucho en configurar gráficos ya que utilizaremos otras herramientas más poderosas para crear una mayor diversidad de gráficos.",
@@ -363,8 +385,8 @@
     ]
   },
   {
-    "objectID": "lecciones/procesamiento_y_manejo_de_datos.html#función-unique",
-    "href": "lecciones/procesamiento_y_manejo_de_datos.html#función-unique",
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#función-unique",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#función-unique",
     "title": "3  Procesamiento y manejo de datos",
     "section": "3.8 Función UNIQUE",
     "text": "3.8 Función UNIQUE\n\nLa función UNIQUE permite quedarse únicamente con los valores distintos de un rango de valores. Esta función recibe como único argumento el rango de valores y retorna un arreglo con los valores únicos.",
@@ -374,8 +396,8 @@
     ]
   },
   {
-    "objectID": "lecciones/practica_01.html",
-    "href": "lecciones/practica_01.html",
+    "objectID": "modulo_01/practica_01/practica_01.html",
+    "href": "modulo_01/practica_01/practica_01.html",
     "title": "4  Práctica 1: Incendios en ANP",
     "section": "",
     "text": "4.1 Instrucciones\nEn esta práctica explorarás la base de datos del Monitor de incendios forestales en Áreas Naturales Protegidas de la Comisión Nacional Forestal (CONAFOR) y la Comisión Nacional de Áreas Naturales Protegidas (CONANP) para el año 2025.\nEl objetivo de esta práctica es que crees un dashboard interactivo que permita explorar los de incendios para cada entidad.",
@@ -385,8 +407,8 @@
     ]
   },
   {
-    "objectID": "lecciones/practica_01.html#instrucciones",
-    "href": "lecciones/practica_01.html#instrucciones",
+    "objectID": "modulo_01/practica_01/practica_01.html#instrucciones",
+    "href": "modulo_01/practica_01/practica_01.html#instrucciones",
     "title": "4  Práctica 1: Incendios en ANP",
     "section": "",
     "text": "4.1.1 Obtener los datos\n\nEntra a la página del Monitor de incendios forestales en Áreas Naturales Protegidas\nSelecciona el año 2025 y da click en Filtrar para quedarte solo con los datos del 2025.\nDescarga los datos en archivo csv en la tabla que se encuentra hasta abajo de la página.\nCarga los datos en una hoja de Google sheets\n\n\n\n4.1.2 Entendiendo los datos\nLas variables que contiene la base de datos son las siguentes:\n\nSemana: número de semana del año cuando se registró el incendio\nÁrea natural protegida: nombre del ANP donde se registró el incendio\nCategoría: categoría del ANP\nTipo: tipo de ANP (federal, estatal, municipal)\nEstado: entidad federativa en la cual ocurrió el incendio\nMunicipio: municipio en el cual ocurrió el incendio\nPosible causa: posible causa del incendio\nTipo de vegetación: tipo de vegetación donde ocurrió el incendio\nSuperficie: área afectada por el incendio (en ha)\nTotal dias persona: número de combatientes del incendio (calculado en días/persona, que corresponde a una jornada laboral de 8 horas)\nTipo de atención: tipo de atención que se le dió al incendio (combate o monitoreo)\nLatitud y Longitud: latitud y longitud del registro del incendio\n\n\n\n4.1.3 Construye un dashboard interactivo\nEl dashboard debe cumplir los siguientes requisitos:\n\nTener un desplegable que permita seleccionar una entidad.\nUn monitor que muestre el número total de incendios que hubo en la entidad seleccionada.\nUn monitor que muestre el área total afectada en la entidad seleccionada.\nUna gráfica de columnas que muestre el número de incendios que hubo en cada semana en la entidad seleccionada.\nUna gráfica de barras que muestre el las principales causas de incendios en la entidad seleccionada.\nUna gráfica extra que tu elijas que muestre información sobre la entidad seleccionada.\n\n\n\n4.1.4 Interpeta los datos\n\nElige una entidad.\nImprime una captura de tu dashboard.\nInterpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.\n\nEl reporte debe cumplir los siguientes requisitos:\n\nTener una extensión máxima de 300 palabras.\nIncluir:\n\nUn título descriptivo\nExplicar de donde provienen los datos\nExplicar los principales hallagos (e.g., temporadas con más incendios, principales causas, área total afectada)\nUna reflexión de qué se podría hacer para tener un mejor manejo de los incendios en la entidad que elegiste.\n\n\n\n\n4.1.5 Entrega\nAl Brightspace debes subir:\n\nUn solo archivo pdf que incluya la captura de tu dashboard y tu reporte\nEl enlace a tu hoja de cálculo donde esta tu dashboard",
