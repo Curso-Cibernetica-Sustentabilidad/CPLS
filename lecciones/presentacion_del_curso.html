@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; ¿Qué es la cibernética? – Cibernética para la sustentabilidad</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../lecciones/intro_analisis_datos.html" rel="next">
+<link href="../programa.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1f345ed0e37e4dad5cdc835eb9b7278.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lecciones/presentacion_del_curso.html">Análisis de datos</a></li><li class="breadcrumb-item"><a href="../lecciones/presentacion_del_curso.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">¿Qué es la cibernética?</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Cibernética para la sustentabilidad</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inicio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../programa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Programa</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Análisis de datos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lecciones/presentacion_del_curso.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">¿Qué es la cibernética?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lecciones/intro_analisis_datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introducción al análisis de datos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lecciones/intro_hojas_de_calculo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introducción a las hojas de cálculo</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Fundamentos programación</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Visualización de datos</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Ciencia de redes</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Modelado basado en agentes</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Aprendizaje de máquina</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referencias</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#un-ejemplo-de-un-sistema-cibernético" id="toc-un-ejemplo-de-un-sistema-cibernético" class="nav-link active" data-scroll-target="#un-ejemplo-de-un-sistema-cibernético"><span class="header-section-number">2.1</span> Un ejemplo de un sistema cibernético</a></li>
+  <li><a href="#análisis-de-datos" id="toc-análisis-de-datos" class="nav-link" data-scroll-target="#análisis-de-datos"><span class="header-section-number">2.2</span> Análisis de datos</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lecciones/presentacion_del_curso.html">Análisis de datos</a></li><li class="breadcrumb-item"><a href="../lecciones/presentacion_del_curso.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">¿Qué es la cibernética?</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">¿Qué es la cibernética?</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<ul>
+<li><p>La palabra cibernética se suele usar en tres contextos diferentes:</p>
+<ol type="1">
+<li>para referirse de manera general a la <em>computación</em>, (e.g., cyber café, cyber criminal).</li>
+<li>como un concepto asociado a la <em>ciencia ficción</em>, (e.g., cyborgs, cyberpunk).</li>
+<li>para referirse a una disciplina académica de estudio.</li>
+</ol></li>
+<li><p>La palabra cibernética se introdujo en el tercer contexto, para referirse a una disciplina académica.</p></li>
+<li><p>La palabra cibernética proviene del griego <em>kybernḗtēs</em> que significa «quien controla un barco» (i.e., que mueve el timón).</p></li>
+<li><p>Un conductor de un barco debe ajustar constantemente el rumbo para llegar a un destino deseado. Un conductor a través de observar su posición y dirección actual mueve el timón para ajustar el rumbo. Después de un rato se tendra una nueva posición y dirección. Éstas son la informacion que posteriomente utilizará para hacer nuevas modificaciones en el rumbo. Así el control de un barco consiste en un proceso de retroalmientación.</p></li>
+<li><p>La <strong>retroalimentación</strong> es el mecanismo en el que la salida de un sistema se redirige a la entrada y controla su comportamiento.</p></li>
+<li><p>El concepto de retoalimentación se puede aplicar a sistemas de naturaleza muy distinta. Por ejemplo: sistemas de control de misiles (tema en el que trabajaba Weiner, el pionero de la cibernética), un animal que caza a su presa, el control de la temperatura en el cuerpo humano, un sistema de aire acondicionado.</p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Norbert_Wiener">Norbert Weiner</a> fue un científico de mediados del siglo XX que al reconocer como la retroalimentación es un mecanismo presente en sistemas de naturaleza muy diferente propuso introducirlo como una disciplina de estudio. Y escribió un libro titulado «Cybernetics on Control and Communication in the Animal and the Machine». Su trabajo fue muy importante para introducir la idea de cómo los comportamientos inteligentes son resultado de mecanismos de retroalimentaciones, por lo que se le considera como un pionero de la inteligencia artificial, además de haber influenciado a varios personajes centrales en el desarrollo de la computación como a John von Neumann.</p></li>
+<li><p>La cibernética como línea de investigación no tuvo una vida muy larga, esto se debió en parte a que las ideas de la cibernética tomaron fuerza en la URSS durante la guerra fría, lo que hizo que en occidente se fueran abandonando y favoreciendo otras líneas de investigación relacionadas como la Inteligencia artificial. Sin embargo la cibernética representa uno antecendente importante de las ciencias de la complejidad que relacionada a áreas de investigación más actuales como la Ciencia de datos y el <em>Big Data</em>, la Ciencia de redes, la Inteligencia artificial y el Modelado de agentes.</p></li>
+<li><p>Norbert Weiner fue crítico ante la tendencia de la hiperesecialización del conocimiento y un adepto a formas más holísticas e integrales de entender la realidad, como muestran las siguientes citas:</p>
+<blockquote class="blockquote">
+<p>Since Leibniz there has perhaps been no man who has had a full command of all the intellectual activity of his day. Since that time, science has been increasingly the task of specialists, in fields which show a tendency to grow progressively narrower. A century ago there may have been no Leibniz, but there was a Gauss, a Faraday, and a Darwin. Today there are few scholars who can call themselves mathematicians or physicists or biologists without restriction. —— Wiener, Norbert; Cybernetics; 1948.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>A man may be a topologist or an acoustician or a coleopterist. He will be filled with the jargon of his field, and will know all its literature and all its ramifications, but, more frequently than not, he will regard the next subject as something belonging to his colleague three doors down the corridor, and will consider any interest in it on his own part as an unwarrantable breach of privacy —— Wiener, Norbert; Cybernetics; 1948.</p>
+</blockquote></li>
+</ul>
+<section id="un-ejemplo-de-un-sistema-cibernético" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="un-ejemplo-de-un-sistema-cibernético"><span class="header-section-number">2.1</span> Un ejemplo de un sistema cibernético</h2>
+<ul>
+<li>Tenemos un ejemplo de un caso donde las ideas de la cibernética fueron llevadas a la realidad para tratar de construir una sociedad tecnológica. Este experimento se llevo a cabo en el Chile socialista de la década de 1980 bajo el mando de Salvador Allende, quien fue el primer presidente socialista electo democráticamente.</li>
+<li>Stafford Beer fue un investigador inglés que aplicó las ideas de cibernética de Wiener al manejo de organizaciones. Los asesores de Salvador Allende vieron en las ideas de Beer una forma de generar un sistema para organizar la economía socialista de Chile e invitaron a Beer a diseñar e implementar el <em>Cybersyn</em> (una palabra que proviene de: Cibernética + simbiosis). El proyecto Cybersyn consistía en 4 cosas:
+<ul>
+<li>Una red para comunicar a las fábricas del país (cybernet). Algunos consideran que esto puede considerarse como el primer internet.</li>
+<li>Un centro de control futurista donde se tomaban las grandes decisiones sobre la economía del país.</li>
+<li>Un sistema de simulaciones y modelos estadísticos para apoyar la toma de decisiones.</li>
+<li>Una red para conocer en tiempo real el estado social de la gente (cyberfolk)</li>
+</ul></li>
+<li>El sistema no fue implementado en su totalidad, pero si ayudó a hacer más eficiente la toma de decisiones. No obstante, fue un experimento de corta duración ya que el golpe de estado de Pinochet derrocó a Allende, y con ello todo el proyecto fue abandonado y elimindado.</li>
+<li>Algo importante que se puede recuperar del ejemplo chileno del Cybersyn es el papel central que los datos tomaban en la toma de decisiones. La información que fluía por la red entre fábricas, sociedad y gobierno y los resultados de las simulaciones y modelos estadísticos eran el eje central para tomar decisiones. Hoy en este proceso de tomar decisiones basadas en datos es lo que realiza el <em>Análisis de datos</em>.</li>
+</ul>
+</section>
+<section id="análisis-de-datos" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="análisis-de-datos"><span class="header-section-number">2.2</span> Análisis de datos</h2>
+<ul>
+<li>El análisis de datos es hoy en día un área muy activa en cualquier institución. En el mundo digital de hoy en día se producen enormes cantidad de información en el día a día. Utilizar redes sociales, navegar utilizando un GPS, comparar en línea, todas estas actividades generan nueva información que es utilizada para hacer más eficientes distintos productos (e.g., retener más tiempo la atención del usuario, perfeccionar los sistemas de monitoreo de tráfico, alimentar los algoritmos de recomendación de productos).</li>
+<li>Las actividades que implica el análisis de datos se pueden clasificar en 6 fases:
+<ol type="1">
+<li><strong>Definir una pregunta</strong>. Primero debemos definir nuestro objetivo y cuál es el problema que intentamos solucionar. Esto permite determinar cuál es el resultado esperado y determinar criterios para saber si estamos cumpliendo satisfactoriamente con lo que deseamos.</li>
+<li><strong>Obtener los datos</strong>. Ya que tenemos identificado un problema el siguiente paso es recolectar los datos necesarios para responder a nuestra pregunta y objetivos. Los datos se pueden obtener de distintas fuentes como bases de datos públicas y privadas o registros físicos. En muchas ocasiones los datos que necesitamos no existen por lo que debemos generarlos, hay varias formas de obtenerlos por ejemplo haciendo encuestas o recopilando datos no estructurados (e.g., scapping en páginas web).</li>
+<li><strong>Limpiar y tansformar los datos</strong>. Los datos muy rara vez vienen completamente listos para analizarlos. La mayoría de las veces debemos limpiar y procesar los datos. Esto implica cosas como manejar los valores vacios, quitar los registros duplicados, estandarizar y normalizar, etc.</li>
+<li><strong>Analizar los datos</strong>. El análisis es uno de los pasos más importantes ya que es donde descubrimos, patrones, tendencias y relaciones en los datos. Esto implica cosas como el Análisis Exploratorio de Datos (EDA, por sus siglas en inglés), el calcular estadísticos básicos como las medidas de tendencia central o de dispersión y aplicar modelos estadísticos (e.g., modelos lineales, correlaciones, modelos generalizados, modelos de machine learning)</li>
+<li><strong>Visualizar los resultados</strong>. El siguiente paso consiste en crear materiales para compartir y comunicar los resultados. Esto implica la creación de visualizaciones como gráficos, tablas y diagramas.</li>
+<li><strong>Interpetación y toma de decisiones</strong>. El propósito final de todo análisis de datos es obtener información para tomar mejores decisiones. El último paso consiste en convertir los resultados obtenidos en acciones, esto genrealmente toma la forma de hacer recomendaciones para mejorar un proceso.</li>
+</ol></li>
+<li>Para transformar los datos en información util un analista de datos debe utilizar distintas herramientas. Algunas de las principales herramientas que los analistas de datos utilizan en su día a día son:
+<ul>
+<li>Hojas de cálculo (Excel, Google sheets)</li>
+<li>Programación (python, R)</li>
+<li>Bases de datos (SQL, sqlite, MySQL)</li>
+<li>Herramientas para la visualización de datos (Tableau, PowerBI, Datawrapper, Flourish)</li>
+</ul></li>
+<li>En este curso aprenderemos los principios del análisis de datos y como los podemos utilizar para mejorar la toma de decisiones para la sustentabilidad. Así un nombre moderno más apropiado para este curso es: <em>Análisis de datos para la sustentabilidad</em>.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../programa.html" class="pagination-link" aria-label="Programa">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Programa</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../lecciones/intro_analisis_datos.html" class="pagination-link" aria-label="Introducción al análisis de datos">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introducción al análisis de datos</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
