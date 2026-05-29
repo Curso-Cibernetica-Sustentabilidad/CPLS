@@ -1,0 +1,53 @@
+# Procesamiento y manejo de datos en hojas de cálculo
+
+## Presentación
+
+```{=html}
+<iframe src="https://slides.com/bmbi/procesamiento-y-manejo-de-datos/embed" width="576" height="420" title="Procesamiento y manejo de datos" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+```
+
+## Principales archivos de datos
+
+- Existen muchos formas para almacenar datos. Cuando trabajamos con una cantidad no tan grande de datos podemos almacenar la información en archivos de datos como archivos de excel `.xls`, archivos de extensión `.txt` o `.csv`. Sin embargo, cuando se tienen enormes cantidades de datos, es mejor almacenar estos datos en bases de datos, que son programas especializados para organizar y almacenar datos de una manera eficiente. 
+- Una de las formas más faciles y amigables de almacenar datos es con archivos de excel, no obstante, esta forma de compartir datos tiene varias limitaciones. Por ejemplo, una persona que no tenga excel en su computadora no podrá abrir los archivos. Además como excel es un programa que le pertenece a Excel y no cualquiera puede saber cómo funciona internamente el programa si un día Microsoft decide dejar de desarrollar Excel la información almacenada en estos archivos se quedaría atrapada y obsoleta. Por lo tanto, no podemos depender de estos archivos para almacenar información.
+- Un formato de archivo que es muy accesible para almacenar datos son los archivos con extensión `.csv`. Estos son archivos que se pueden abrir con cualquier editor de texto como el "Block de Notas" y por lo tanto no dependen de ninguna empresa para que funcionen. `csv` significa Comma Separated Values, es decir, valores separados por comas. Si abrimos este archivo con un editor de notas, veremos que tenemos tal cual eso: filas de valores numéricos o cadenas, separadas por comas. Generalmente la primer fila son los nombres de las columnas y en las siguientes filas vienen los valores correspondientes en el orden correspondiente.
+- Sí abrimos un archivo `.csv` con un programaa de hojas de cálculo como Excel o Google sheets, estos automáticamente lo formatearán como una tabla.
+- Además de los archivos `.csv` hay otros formatos similares como los `.tsv` (_Tab_ separated values), que son iguales que los archivos csv pero en lugar de usar comas para separar los valore se usan tabulaciones. Asi mimso hay otros formatos comunes como los `.json` que tienen estructuras más complicadas, pero también son archivos que se pueden abrir con cualquier programa y cuya información se puede leer como una tabla.
+
+## Importar datos
+
+- Para importar un archivo `csv` en Google sheets debemos dar click en: Archivo > Importar > Subir. Luego debemos tener cuidado en cómo queremos importar los datos ya que nos da varias opciones como: Importarlos en una nueva hoja de cálculo (un nuevo archivo), Reemplazar la hoja de cálculo actual (borrando todo lo que ya tenemos), Agregarla como una hoja nueva dentro de la misma hoja y Agregarla a la hoja donde estamos (reemplazando o no lo que tenemos dentro de ella).
+
+## Fijar filas
+
+- Cuando tenemos tablas de datos con muchas filas es útil fijar la primera fila con los nombres para saber qué contiene cada columna.
+- Para fijar la primera fila podemos arrastrar la barra gris arriba de la fila 1 o dar click en Ver > Inmovilizar > 1 fila.
+
+
+## Ordenar
+
+- Para ordenar datos de acuerdo a los valores de una columna podemos dar click en el triangulito en la letra de la columna y luego seleccionar si queremos ordenar los datos de manera ascendente (Ordenrar hoja de la A a la Z) o descendente (Ordenar hoja de la Z a la A).
+- Si quisiéramos ordenar por los valores de dos columnas, debemos aplicar un ordenamiento seguido del otro.
+
+## Filtrar
+
+- Filtrar permite quedarse sólo con los valores que cumplen cierto criterio para una o varias columnas. 
+- Para filtrar primero debemos entrar al modo de filtro para una tabla. Para ello primero debemos seleccionar toda la tabla de datos. Para seleccionar una tabla podemos poner el cursor sobre cualquier celda que contenga datos de la tabla y presionar `CTRL`+`A` (nota que si presionas `CTRL`+`A` dos veces se seleccionarán todas las celdas de la hoja)
+- Ya que tenemos la tabla seleccionada damos click en el ícono de aplicar filtro en la barra de herramientas y notarás que los bordes de la tabla se ponen verdes indicando que estamos en el modo de filtro.
+- Para filtrar podemos dar click en las tres rayas en forma de tríangulo que salen al lado del nombre de las columnas, ahí podemos elegir varias opciones:
+   - Filtrar por un valor, útil para filtrar por valores específicos de una columna de texto
+   - Filtrar por condición, útil para aplicar criterios más complejos como revisar si un valor numérico es mayor o menor que un valor determinado, o para reconocer un patrón de texto en una columna.
+- Nota que se pueden aplicar múltiples filtros de varias columnas simultáneamente.
+- Para salir del modo filtro solo debemos dar click de nuevo en el ícono de filtro y se mostrarán de nuevo todos los valores. 
+
+## Crear gráficos
+
+- Google sheets tiene funcionalidades básicas para crear gráficos. Para ello primero debemos seleccionar los datos que queremos graficar y luego dar click en Insertar > Gráfico. 
+- A partir de los datos seleccionados Google sheets sugiere automáticamente un gráfico, que muchas veces es el adecuado, sin embargo, muchas veces es poco útil y uno debe configurar manualmente el tipo de gráfico y elegir correctamente los valores a mapear. 
+- En este momento no profundizaremos mucho en configurar gráficos ya que utilizaremos otras herramientas más poderosas para crear una mayor diversidad de gráficos.
+
+## Función `UNIQUE`
+
+- La función `UNIQUE` permite quedarse únicamente con los valores distintos de un rango de valores. Esta función recibe como único argumento el rango de valores y retorna un arreglo con los valores únicos.
+
+

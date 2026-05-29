@@ -1,0 +1,151 @@
+# Programa {.unnumbered}
+
+## Información del curso
+
+- **Nombre del curso**: Cibernética para la sustentabilidad
+- **Créditos**: 6
+- **Modalidad**: Mixta
+- **Salón**: B111
+- **Horario**: 9-11
+   - lu, vi: en linea
+   - ma, mi, ju: presencial
+- **Aula virtual**: Brightspace
+
+## Información de contacto
+
+- **Profesor**: Luis Guillermo García Jácome
+- **correo**: luis.garcia [at] tuta.io
+
+## Descripción del curso
+
+Hoy en día se producen enormes cantidades de datos en todas las actividades que realizamos. Estos datos son centrales para entender los procesos y sistemas y así tomar mejores decisiones. Es por ello que para los estudiantes de sustentabilidad es fundamental adquirir nociones básicas en análisis de datos que les permitan convertir los datos en información útil para responder preguntas clave en la toma de decisiones para la sustentabilidad.
+
+Este curso es una introducción al análisis de datos en el contexto de la sustentabilidad ambiental. El curso busca proveer las herramientas básicas para organizar, limpiar, transformar, analizar y visualizar datos que puedan facilitar la investigación y gestión de sistemas socio ambientales. Así mismo el curso busca que los alumnos conozcan diversas herramientas y metodogías computacionales útiles para el estudio y gestión de sistemas socio ambientales. Este es un curso práctico donde se explorarán conjuntos de datos reales relevantes a la sustentabilidad. 
+
+## Objetivos
+
+### Objetivos generales
+
+Al final el curso el alumno desarrollará las competencias fundamentales para generar análisis de datos aplicados a sistemas socio ambientales, mediante el uso de herramientas computacionales para la organización, manejeo, análisis, modelado y visualización de información que apoye la compernsión y toma de decisiones en el contexto de la sustentabilidad ambiental.  
+
+### Objetios particulares
+
+Al finalizar este curso el alumno será capaz de:
+
+1. identificar los principales conceptos y herramientas utilizadas en el análisis de datos en el contexto de la sustentabilidad ambiental;
+2. aplicar técnicas para la organización, limpieza, transformación y análisis de datos socio ambientales utilizando diversas herramientas computacionales;
+3. diseñar visualizaciones de datos efectivas para la comuncación de evidencias y resultados en procesos de investigación y gestión de sistemas socio ambientales;
+4. reconocer el protencial de algunas metodologías computacionales que se utilizan en el estudio y gestión de sistemas socio ambientales (ciencia de redes, modelado basado en agentes y aprendizaje de máquina).
+
+## Temario
+
+El temario se organiza en cuatro módulos donde se utilizarán distintas herramientas computacionales:
+
+1. **Módulo 1: Fundamentos del análisis de datos para la sustentabilidad** (5 sesiones)
+
+   En este módulo se da una introdución al análisis de datos utilizando hojas de cálculo. Se utiliza Google Sheets para organizar, manipular y análizar conjuntos de datos socio ambientales. 
+
+2. **Módulo 2: Visualización y comunicación de datos para la sustentabilidad** (9 sesiones)
+
+   En este módulo se discutirán los principios para diseñar visualización de información efectivas. Se utilizirá Flourish y Tableau para diseñar gráficos y dasboards interactivos para la comunicación de resultados.
+
+3. **Módulo 3: Introducción a la programación en R para el análisis de datos** (8 sesiones)
+
+   En este módulo se presentarán las bases de la programación en R para el manejo y análisis de datos socio ambientales. Se presentarán las potencialidades de cómo la programación puede facilitar el procesamiento de datos y automatizar distintas tareas.
+
+4. **Módulo 3: Métodos computacionales para el estudio de la sustentabilidad** (7 sesiones)
+
+   En este módulo se presentarán tres metodologías computacionales ampliamente utilizadas para el estudio de sistemas socio ecológicos: la ciencia de redes, la modelación basada en agentes y autómatas celulares, y el aprendizaje de máquina.  
+
+## Evaluación 
+
+La calificación se integrará por los siguientes tres rubros:
+
+|Campo|Porcentaje|Descripción|
+|-|-|-|
+|Prácticas| 50% | Reportes tipo _Abstract_ de las prácticas computacionales (5 prácticas). |
+|Tareas| 20% | Cuestionarios, ejercicios y presentaciones. |
+|Proyecto final| 30% | Reporte y presentación de un análisis de datos de su elección. <br> **Fecha de entrega**: 02/julio/2026 |
+
+: {tbl-colwidths="[20,20,60]"}
+
+Las entregas tardías se califican sobre menor puntuación siguiendo el siguiente esquema:
+
+| Días de retraso | Se califica sobre |
+| -:| -:|
+| 0 | 10/10 |
+| 1 | 9/10 |
+| 2 | 8/10 |
+| 3 | 7/10 |
+| 4, 5, 6, 7 | 6/10 |
+| >7 | 0/10 |
+
+Para asignar la calificación final se utilizará el siguiente esquema:
+
+| Calificación calculada | Calificación final |
+| -:| -:| 
+| 9.5-10.0 | 10 |
+| 8.5- 9.4 |  9 |
+| 7.5- 8.4 |  8 |
+| 6.5- 7.4 |  7 |
+| 6.0- 6.4 |  6 |
+| <6.0     |  5 |
+| No se entregó nada | NP | 
+
+Para poder tener calificación aprobatoria deberán tener al menos un 80% de la asistencia.
+
+## Normativa sobre el uso de IA
+
+El uso de herramientas de IA está recomendado como un tutor personalizado para resolver dudas y clarificar conceptos. No obstante, **los materiales entregados en las prácticas, proyecto final y tares (reportes, visualizaciones y presentaciones) deben ser de su propia autoría**. El entendimiento y aprendizaje real se construye cuando aplicamos los conceptos por nosotros mismos. 
+
+Se podrá emplear la IA como apoyo técnico (e.g., mejorar la redacción, ubicar referencias, corregir errores de código), siempre y cuando **se cite su uso y se explique cómo y para qué se utilizó**. El uso de la IA debe ser responsable y ético, empleándolo para facilitar y enriquecer el aprendizaje, pero nunca para reemplazarlo. **En caso de detectarse un uso poco ético de herramientas de IA en algún trabajo** (e.g., entrega de material 100% generado por IA como propios) **se pondrá cero**.
+
+## Calendario
+
+* Nota: Este calendario está sujeto a cambios.
+
+|Semana | Día | Actividad |
+|-:|-:|-|
+|1|25/05/26 | Presentación del curso | 
+|1|26/05/26 | Procesamiento de datos en hojas de cálculo | 
+|1|27/05/26 | Procesamiento de datos en hojas de cálculo | 
+|1|28/05/26 | Tablas dinámicas | 
+|1|29/05/26 | Práctica 1: Dashboard de incendios en ANPs | 
+|2|01/06/26 | Fundamentos de la visualización de datos | 
+|2|02/06/26 | Historia de la visualización de datos | 
+|2|03/06/26 | Fundamentos e historia de la visualización de datos | 
+|2|04/06/26 | Visualización de datos con Flourish | 
+|2|05/06/26 | Visualización de datos con Flourish | 
+|3|08/06/26 | Práctica 2: Visualización de datos demográficos | 
+|3|09/06/26 | Visualizacion de datos con Tableau | 
+|3|10/06/26 | Visualizacion de datos con Tableau | 
+|3|11/06/26 | Práctica 3: Dashboard de calidad del aire en la CDMX | 
+|3|12/06/26 | Introducción a Rstudio | 
+|4|15/06/26 | Fundamentos de programacion en R | 
+|4|16/06/26 | Manejo de datos con R | 
+|4|17/06/26 | Manejo de datos con R | 
+|4|18/06/26 | Visualización de datos con ggplot | 
+|4|19/06/26 | Visualización de datos con ggplot | 
+|5|22/06/26 | Práctica 4: Análsisis y visualizacion de microdatos de INEGI | 
+|5|23/06/26 | Práctica 4: Análsisis y visualizacion de microdatos de INEGI | 
+|5|24/06/26 | Introducción a la ciencia de redes | 
+|5|25/06/26 | Aplicaciones de la ciencia de redes a la sustentabilidad | 
+|5|26/06/26 | Práctica 5: Análisis de redes ecológicas | 
+|6|29/06/26 | Introducción al modelado basado en agentes y autómatas celulares | 
+|6|30/06/26 | Aplicaciones del modelado de agentes y autómatas celualres a la sustentabilidad | 
+|6|01/07/26 | Orígenes y nociones de Inteligencia artificial | 
+|6|02/07/26 | Presentación de proyectos finales | 
+|6|03/07/26 | Presentación de proyectos finales | 
+
+: {tbl-colwidths="[10, 20, 70]"}
+
+## Bibliografía
+
+- Biggs, R., Preiser, R., De Vos, A., Schlüter, M., Maciejewski, K., & Clements, H. (2021). _The Routledge Handbook of Research Methods for Social-Ecological Systems_ (1a ed.). Routledge. [https://doi.org/10.4324/9781003021339]()
+- Cairo, A. (2013). _The functional art: An introduction to information graphics and visualization_. New Riders.
+- Janssen, M. A. (2020). _Introduction to Agent-based modeling: With applications to social, ecological and social-ecological systems._
+- Mitchell, M. (2009). _Complexity: A guided tour_. Oxford University Press.
+- Mitchell, M. (2020). _Artificial intelligence: A guide for thinking humans_ (First Picador paperback edition, 2020). Picador.
+- Munro, T., & Pilkington, K. (2023). _Introduction to sustainability_. MacEwan Open Books. [Libro](https://openbooks.macewan.ca/introductiontosustainability/)
+- Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). _R for data science: Import, tidy, transform, visualize, and model data_ (2nd edition). O’Reilly. [Libro](https://r4ds.hadley.nz/)
+- Wilke, C. O. (2019). _Fundamentals of Data Visualization. [Libro](https://clauswilke.com/dataviz/directory-of-visualizations.html)

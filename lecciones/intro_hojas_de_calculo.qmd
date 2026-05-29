@@ -1,0 +1,166 @@
+# Introducción a las hojas de cálculo
+
+En esta sesión se presentan los fundamentos para el uso de las hojas de cálculo.
+
+## Presentación
+
+```{=html}
+<iframe src="https://slides.com/bmbi/introduccion-a-la-ciencia-de-datos-con-hojas-de-calculo/embed" width="576" height="420" title="cpls v26 - Introducción a la ciencia de datos con hojas de cálculo" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+```
+
+## Hojas de cálculo
+
+- Una de las formas más utiles de organizar información es a través de tablas.
+- La siguiente tabla es la que se utilizó en el censo de México de 1930. Cada fila representa una persona y las columnas incluyen datos de cada persona: nombre y apellido, sexo edad, estado civil, si sabe leer y escribir, profesión, el lugar de nacimiento, nacionalidad, idioma, las pripiedades que posé, discapacidades, religión y situación laboral.
+- Hoy en día los censos en México incluyen mucha más información y se capturan de manera electrónica, sin embarog, sus resultados se siguen organizando y presentado como grandes tablas de datos.
+- [Los registros más antiguos en México de censos datan de la Época Prehispánica en 1116](https://www.inegi.org.mx/programas/ccpv/2000/default.html). Cuando el rey chichimeca Xólotl ordenó que se contara a todos sus súbditos. Se cree que para contarlos cada persona iba tirando pierdas en un montón que se llamó Nepohualco. De acuerodo a los códices ese censo contó a 3 millones 200 mil personas. 
+- Los registros de usos de tablas para registrar información son de los egipcios hace 4,500 años y que fueron descubiertos en 2013. Estos son los papiros más viejos de Egipto y son el diaro de un oficial egipcio que trabajo en la construcción de las pirámides. Estas tablas dan información sobre la construcción de las pirámides: unas son listas de tares (_checklists_) y otros muestran la distribución de porciones de alimento para los trabajadores.
+- Hoy en día continuamos utilizando tablas para almacenar datos, pero la forma más común de estas es digital, como en los hojas de cálculo o _spreadsheets_. La palabra [_spreadsheet_](https://en.wikipedia.org/wiki/Spreadsheet) proviene de la palabra _worksheet_, que era la forma como se le conocía a los registros manuales que se realizaban en contaduría.
+- Los primeros softwares de hojas de cálculo salieron en 1979 (VisiCalc para Apple) y 1983 (Lotus 1-2-3 para Windows). Microsoft Excel, la aplicación de hojas de cálculo más popular en el mercado salió por primera vez en 1985. Y en 2006 salió Google Sheets.
+- En este curso utilizaremos Google Sheets. Aunque Microsoft Excel es la opción de hojas de cálculo más popular, Google Sheets es una muy buena alternativa por varias razones:
+   - Dado que es parte del ecosistema de Google ha cobrado mucha popularidad.
+   - Si bien no tiene todas la funcionalidades que Excel, tiene la mayoría y las más importantes. Además la gran mayoría de sus funciones son muy similares a Excel.
+   - Es una aplicación web nativa por lo que corre muy bien en el navegador y no requiere ninguna instalación. En cambio la versión web de Excel es más lenta.
+   - Es una herramienta gratuita que únicamente requiere tener una cuenta de google. En cambio excel requiere una licencia que cuesta mucho.
+   - Es muy cómoda para la colaboración en tiempo real y para compartir.
+
+## Terminología básica
+
+- Una hoja de cálculo está formada por **hojas** (_spreadsheet_ o _sheets_). Cada uno se muestra como una pestaña distinta.
+- Un conjunto de hojas forman un **libro de trabajo** (_workbook_).
+- Cada hoja está formada por **celdas** (_cell_). Cada celda se forma de la intersección de una **fila** (_row_) con una **columna** (_column_)
+- A las columnas se les identifica con letras y a las filas con números. Así a cada celda le corresponde una combinaión de letra con número. La primera celda es la celda `A1`. 
+
+## Navegar una hoja de cáclculo
+
+- Al estar sobre una celda podemos movernos a la que está abajo presionando `ENTER` dos veces (nota que la primera vez se coloca en modo edición). Para movernos hacia arriba presionamos la combinación `SHIFT+ENTER` dos veces.
+- Podemos movernos a la celda de la derecha presionando `TAB` y para moverse a la izquierda damos `SHIFT+TAB`.
+- Además podemos navegar en la hoja con las flechas, sin embargo, para un movimiento más rápido en la hoja es recomendable familiarizarse con `ENTER` y `SHIFT`.
+
+## Tipos de datos
+
+- Las celdas pueden almacenar distintos tipos de datos:
+  - **números**: valores númericos
+  - **booleanos**: verdadero (`TRUE`) o falso (`FALSE`)
+  - **cadenas de texto** (_strings_): secuencias de caracteres
+  - **fechas**: en distintos formatos. Nota como en realidad las fechas son números contados a partir de una referencia, por ejemplo, en Google sheets el número 1 corresponde al 31/12/1899, el 2 al 01/01/1900, etc.
+- Nota como el valor de las celdas se puede ver tanto en la celda como en la barra superior que dice _fx_, ahí tambien puedes ingresar y modificar los valores de una celda.
+- A los valores se les pueden dar distintos formatos dando click en _Más formatos_. Por ejemplo, a los 
+números se les puede tratar como moneda (agrega un signo de pesos), porcentaje (supone que el número está dado en decimal) y notación científica (e.g., `E+12` = $\times 10^{12}$, `E-12` = $\times 10{-12}$).
+- Google sheets es sufientemente listo como para detectar automáticamente el tipo de dato que recibe una celda (e.g., reconocer un valor de `$5`, como un número y no como una cadena de texto), sin embargo, siempre es importante asegurarnos de que google sheets está asignando correctamente a los valores el tipo de dato que queremos. Para eso puedes seleccionar los datos y asignarle el tipo de dato que quieres manualmente dando click en _Más formatos_.
+- Nota que en las celdas las cadenas de texto estan justificadas a la izquierda de la celda, los valores numéricos y fechas a la derecha y los booleanos están centrados. Esto se puede sobreescribir, pero es bueno no cambiarlo para poder verificar visualmente el tipo de dato que hay en las celdas.
+
+## Autocompletado
+
+- Al desplazar el pequeño recuadro en la parte inferior derecha de las celdas permiten **autocompletar**. 
+- La el resultado de autocompletar depende de las celdas que estén seleccionadas:
+  - Resultado: Copiar el mismo valor a otras celdas
+    - Selección: una sola celda con valor númerico
+  - Resultado: Completar una serie de números o fechas
+    - Selección: al menos 2 celdas contiguas con la secuencia de números/fechas deseada. Nota que la serie no necesariemane debe aumentar de 1 en uno (e.g., puede hacerse una serie de números de 3 en 3: 3, 6, 9, ...)
+  - Resultado: Completar un patron de texto + número
+    - Selección: una celda con una cadena de texto que incluye una parte numérica (e.g., `A1`)
+
+## Operadores básicos
+
+- Las celdas a demas de permitir almacenar valores permiten realizar operaciones y aplicar funciones a los datos. Para introducir una operacion o fórmula se debe empezar introducir un signo de igual en una celda: `=` (e.g., `=1+1`).
+- Algunas operaciones básicas que se pueden hacer con valores numéricos son:
+  1. **suma `+`**: e.g., `=3+2`
+  2. **resta `-`**: e.g., `=3-2`
+  3. **multiplicación `*`**: e.g., `=3*2` 
+  4. **división `/`**: e.g., `=3/2`
+  5. **exponenciación `^`**: e.g., `=3^2`
+- Se pueden mezclar las operaciones para realizar cálculos más complicados. Por ejemplo `=3+2*3` esto retornará 9 ya que realiza primero la multiplicación. El orden en que se ejecutan las operaciones sigue la jerarquía clásica de operaciones: (1) exponentes, (2) multiplicación y división y (3) suma y resta. Si se quiere cambiar el orden se pueden agrupar las operaciones usando paréntesis, e.g., `=(3+2)*3` dará como resultado 15.
+- Algunas operaciones que se pueden hacer con valores que son cadenas de texto son:
+  - **concatenación `&`**: e.g., `="Hola" & " " & "mundo". Nota que cuando se está en modo de fórmula (cuando se pone algo en una celda iniciando con un igual) se deben de poner comillas alrededor de las cadenas de texto.
+
+## Operadores de comparaciones
+
+- En las hojas de cálculo también podemos hacer pruebas utilizando los operadores de comparación, nota que estos comparan números y nos retornan un booleano indicando si la comparación es verdadera o falsa:
+   - **igual**: `=` 
+   - **mayor qué**: `>`
+   - **mayor o igual qué**: `>=`
+   - **menor qué**: `<`
+   - **menor o igual qué**: `<=`
+   - **no igual**:`<>`
+
+## Referencias 
+
+### Referencias relativas
+- Los valores de una celda se pueden referenciar utilizando su identificador de columna + fila. Por ejemplo, para multiplicar el valor en la celda `A2` se puede escribir la fórmula `=A2*2`.
+- A esta forma de referenciar se le conoce como **referencia relativa**. Lo que caracteriza a una referencia relativa es que la referencia depende de la posición donde está la celda, por lo que al usar la función de autocompletar esta cambiará tambien la celda a la que apunta la referencia.
+
+### Referencias absolutas
+- Para evitar que la referencia a una celda cambie al autocompletar necesitamos usar **referencias absolutas**, las cuales fijan a una celda. Para ello debemos agregar signos de pesos antes de la letra y número. Por ejemplo, para hacer una referencia absoluta de la celda `A2` debemos poner `$A$2`. 
+- Un atajo para agregar los signos de pesos es dar click en `F4`.
+
+### Referencias mixtas
+- Algunas veces necesitamos fijar una referencia en las filas pero no en las columnas o vicversa. Para eso podemos usar **referencias mixtas**, que consisten en agregar solo un signo de pesos correspondiente a la parte en la que queremos fijar: `$A2` para fijar la columna A pero permitir que la referencia cambie en las filas, o `A$2` para fijar la fila 2 pero permitir la referencia cambie en la columnas. 
+- Nota que si se presionan varias veces `F4` podemos cambiar de referencia relativa a absoluta y luego a mixta.
+
+## Referencias a rangos de datos
+
+- Además de referencias celdas individuales podemos referenciar rangos de datos. Las referencias de rangos de datos tienen la siguiente forma: `celda_extremo_sup_iz:celda_extremo_inf_der`, por ejemplo, si se quieren tomar todos los datos desde la celda `A2` hasta la `D7` se utilizaría el rango: `A2:D7`. 
+- Para seleccionar todos los elementos de una columna o una fila se puede poner sólo la letra (columna) o número (fila) correspondiente, por ejemplo para seleccionar todos los valores de la columna `B` se puede poner: `B:B`. Si se quieren solo los valores desde la celda `B2` se puede poner: `B2:B`.
+
+## Refer
+
+## Funciones
+
+- Las hojas de cálculo cuentan **funciones**, las cuales reciben entradas, las procesan y generan una salida.
+- Las funciones se ven de la siguiente manera
+  `NOMBRE(arumento1, argumento2, argumento3)` 
+  - Las funciones tienen un nombre. Nota que el nombre se puede poner en mayúsculas o minúsuclas. Sin embargo, es buena práctica escribirlas en mayúsculas para poder facilmente detectar las fórmulas al ver el contenido de una celda.
+  - Luego tienen unos paréntesis dentro de los cuales se escriben los argumentos separados por comas
+  - Los argumentos son valores que recibe una función y que modifican su comportamiento determinando cual es la salida que obtenemos
+  - El número de argumentos varía dependiendo de la función.
+
+### Funciones lógicas
+
+- Las funciones lógicas operan con expresiones lógicas, es decir expresiones que retornan valores booleanos (TRUE/FALSE) y son las siguientes:
+  - `AND`: retorna verdadero solo si todas sus expresiones lógicas son verdaderas.
+  - `OR`: retorna verdadero si al menos una de sus expresiones lógicas son verdaderas.
+  - `NOT`: retorna el valor contrario a la expresiones lógica que recibe.
+  - `IF`: evalua una expresión lógica y dependiendo del resultado retorna el resultado correspondeiente.
+  - `IFS`: hacer múltiples pruebas lógicas y retronar el resultado correspondiente.
+
+### Funciones matemáticas
+
+- Algunas funciones matemáticas básicas son:
+  - `SUM`: suma un conjunto de valores e.g., `SUM(1,2,A1)`
+  - `MINUS`: resta un par de valores e.g., `MINUS(3,2)`
+  - `PRODUCT`: multiplica un conjunto de valores e.g., `PRODUCT(1,2,A1)`
+  - `DIVIDE`: divide un par de valores e.g., `DIVIDE(1,2)`
+- Algunas funciones matemáticas se pueden juntar con las condiciones lógicas, por ejemplo, podemos sumar solo los valores que cumplen algún criterio con `SUMIF` y `SUMIFS`.
+
+### Funciones de texto
+
+- Algunas funciones que funcionan contexto son:
+  - `TEXTJOIN`: junta cadenas utilizando un separador.
+  - `SPLIT`: separa una cadena de texto en varias celdas usando un separador.
+  - `FIND`: encuentra la primera posición de un caracter en una cadena de texto,
+  - `MID`: extrae una parte de una cadena de texto.
+  - Además estan las funciones `REGEXMATCH`, `REGEXEXTRACT`, `REGEXREPLACE`, que permiten encontrar patrones complejos en cadenas de texto. 
+
+### Funciones de fechas
+
+- Algunas funciones para trabajar con fechas son:
+  - `YEAR`, `MONTH`, `DAY`: extraen el año, mes y día de una fecha, respectivamente (también hay funciones para extraer hora, minuto y segundo).
+  - `DATE`: obtener una fecha a partir de los valores individuales de año, mes y día.
+  - `TODAY`: da la fecha de hoy.
+  - `DATEDIF`: da la diferencia entre dos fechas en una unidad deseada.
+  - `TEXT`: permite dar formato a un valor.
+
+### Funciones estadísticas
+
+- Algunas funciones estdisticas útiles son:
+  - `COUNT`: cuenta los valores numéricos en un rango
+  - `AVERAGE`: calcular el promedio de los valores de un rango
+  - `MEDIAN`: calcular la mediana de un conjunto de datos.
+  - `MODE`: calcular la moda de un conjunto de datos.
+  - `MAX`: calcular el valor máximo de un conjunto de datos.
+  - `MIN`: calcular el valor mínimo de un conjunto de datos.
+  - `STDEV`: calcular la desviación estandar de un rango de valores. Hay dos opciones `STDEV.P` y `STED.S` que sacan la desviación estándar para una población y una muestra, respectivamente.
+  - `QUARTILE`: calcular el cuartil que se le indique para un conjunto de datos. Los valores posibles de cuartiles son: 0 (min), 1, 2 (moda), 3, 4 (max).
+  - `RANK`: asignar el rango a un valor dentro de un conjunto de datos.
+- Algunas funciones estadístias se pueden juntar con las lógicas para que solamente consideren los valores que cumplen algun criterio, por ejemplo las funciones: `AVERAGEIF` y `COUNTIF`.

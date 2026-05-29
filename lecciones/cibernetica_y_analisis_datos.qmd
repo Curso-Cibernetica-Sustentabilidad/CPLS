@@ -1,0 +1,50 @@
+# Cibernética y análisis de datos
+
+En esta primera sesión se presenta brevemente el origen de la palabra cibernética y su relación con el análisis de datos. 
+
+## Presentación 
+
+```{=html}
+<iframe src="https://slides.com/bmbi/deck-aeb6e2/embed" width="576" height="420" title="cpls v26 - Presentación del curso" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+```
+
+## ¿Qué es la cibernética?
+
+- La palabra cibernética se suele usar en tres contextos diferentes:
+  1. para referirse de manera general a la _computación_, (e.g., cyber café, cyber criminal).
+  2. como un concepto asociado a la _ciencia ficción_, (e.g., cyborgs, cyberpunk).
+  3. para referirse a una disciplina académica de estudio.
+- La palabra cibernética se introdujo en el tercer contexto, para referirse a una disciplina académica.
+- La palabra cibernética proviene del griego _kybernḗtēs_ que significa «quien controla un barco» (i.e., que mueve el timón). 
+- Un conductor de un barco debe ajustar constantemente el rumbo para llegar a un destino deseado. Un conductor a través de observar su posición y dirección actual mueve el timón para ajustar el rumbo. Después de un rato se tendra una nueva posición y dirección. Éstas son la informacion que posteriomente utilizará para hacer nuevas modificaciones en el rumbo. Así el control de un barco consiste en un proceso de retroalimentación.
+- La **retroalimentación** es el mecanismo en el que la salida de un sistema se redirige a la entrada y controla su comportamiento. El concepto de retoalimentación se puede aplicar a sistemas de naturaleza muy distinta. Por ejemplo: sistemas de control de misiles (tema en el que trabajaban los pioneros de la cibernética), un animal que caza a su presa, el control de la temperatura en el cuerpo humano, un sistema de aire acondicionado. 
+- [Norbert Weiner](https://en.wikipedia.org/wiki/Norbert_Wiener) fue un científico de mediados del siglo XX que al reconocer como la retroalimentación es un mecanismo presente en sistemas de naturaleza muy diferente propuso introducirlo como una disciplina de estudio. Y escribió un libro titulado «_Cybernetics on Control and Communication in the Animal and the Machine_». Su trabajo fue muy importante para introducir la idea de cómo los comportamientos inteligentes son resultado de mecanismos de retroalimentaciones, por lo que se le considera como un pionero de la inteligencia artificial. 
+- La cibernética como línea de investigación no tuvo una vida muy larga, esto se debió en parte a que las ideas de la cibernética tomaron fuerza en la URSS durante la guerra fría, lo que hizo que en occidente se fueran abandonando y favoreciendo otras líneas de investigación relacionadas como la Inteligencia artificial. Sin embargo la cibernética representa uno antecendente importante de las ciencias de la complejidad que relacionada a áreas de investigación más actuales como la Ciencia de datos y el _Big Data_, la Ciencia de redes, la Inteligencia artificial y el Modelado de agentes.
+
+## Un ejemplo de un sistema cibernético
+
+- Tenemos un ejemplo de un caso donde las ideas de la cibernética fueron llevadas a la realidad para tratar de construir una sociedad tecnológica. Este experimento se llevo a cabo en el Chile socialista de la década de 1980 bajo el mando de [Salvador Allende](https://en.wikipedia.org/wiki/Salvador_Allende), quien fue el primer presidente socialista electo democráticamente.
+- [Stafford Beer](https://en.wikipedia.org/wiki/Stafford_Beer) fue un investigador inglés que aplicó las ideas de cibernética de Wiener al manejo de organizaciones. Los asesores de Salvador Allende vieron en las ideas de Beer una forma de generar un sistema para organizar la economía socialista de Chile e invitaron a Beer a diseñar e implementar el [_Cybersyn_](https://es.wikipedia.org/wiki/Synco) (una palabra que proviene de: Cibernética + simbiosis). El proyecto Cybersyn consistía en 4 cosas:
+   - Una red para comunicar a las fábricas del país (cybernet). Algunos consideran que esto puede considerarse como el primer internet.
+   - Un centro de control futurista donde se tomaban las grandes decisiones sobre la economía del país.
+   - Un sistema de simulaciones y modelos estadísticos para apoyar la toma de decisiones.
+   - Una red para conocer en tiempo real el estado social de la gente (cyberfolk)
+- El sistema no fue implementado en su totalidad, pero si ayudó a hacer más eficiente la toma de decisiones. No obstante, fue un experimento de corta duración ya que el golpe de estado de Pinochet derrocó a Allende, y con ello todo el proyecto fue abandonado y elimindado.
+- Algo importante que se puede recuperar del ejemplo chileno del Cybersyn es el papel central que los datos tomaban en la toma de decisiones. La información que fluía por la red entre fábricas, sociedad y gobierno y los resultados de las simulaciones y modelos estadísticos eran el eje central para tomar decisiones. Hoy en este proceso de tomar decisiones basadas en datos es lo que realiza el _Análisis de datos_. 
+
+## Análisis de datos
+
+- El análisis de datos es hoy en día un área muy activa en cualquier institución. En el mundo digital de hoy en día se producen enormes cantidad de información en el día a día. Utilizar redes sociales, navegar utilizando un GPS, comparar en línea, todas estas actividades generan nueva información que es utilizada para hacer más eficientes distintos productos (e.g., retener más tiempo la atención del usuario, perfeccionar los sistemas de monitoreo de tráfico, alimentar los algoritmos de recomendación de productos).
+- Las actividades que implica el análisis de datos se pueden clasificar en 6 fases:
+  1. **Definir una pregunta**. Primero debemos definir nuestro objetivo y cuál es el problema que intentamos solucionar. Esto permite determinar cuál es el resultado esperado y determinar criterios para saber si estamos cumpliendo satisfactoriamente con lo que deseamos.
+  2. **Obtener los datos**. Ya que tenemos identificado un problema el siguiente paso es recolectar los datos necesarios para responder a nuestra pregunta y objetivos. Los datos se pueden obtener de distintas fuentes como bases de datos públicas y privadas o registros físicos. En muchas ocasiones los datos que necesitamos no existen por lo que debemos generarlos, hay varias formas de obtenerlos por ejemplo haciendo encuestas o recopilando datos no estructurados (e.g., scapping en páginas web).
+  3. **Limpiar y tansformar los datos**. Los datos muy rara vez vienen completamente listos para analizarlos. La mayoría de las veces debemos limpiar y procesar los datos. Esto implica cosas como manejar los valores vacios, quitar los registros duplicados, estandarizar y normalizar, etc.
+  4. **Analizar los datos**. El análisis es uno de los pasos más importantes ya que es donde descubrimos, patrones, tendencias y relaciones en los datos. Esto implica cosas como el Análisis Exploratorio de Datos (EDA, por sus siglas en inglés), el calcular estadísticos básicos como las medidas de tendencia central o de dispersión y aplicar modelos estadísticos (e.g., modelos lineales, correlaciones, modelos generalizados, modelos de machine learning)
+  5. **Visualizar los resultados**. El siguiente paso consiste en crear materiales para compartir y comunicar los resultados. Esto implica la creación de visualizaciones como gráficos, tablas y diagramas. 
+  6. **Interpetación y toma de decisiones**. El propósito final de todo análisis de datos es obtener información para tomar mejores decisiones. El último paso consiste en convertir los resultados obtenidos en acciones, esto genrealmente toma la forma de hacer recomendaciones para mejorar un proceso.
+- Para transformar los datos en información util un analista de datos debe utilizar distintas herramientas. Algunas de las principales herramientas que los analistas de datos utilizan en su día a día son:
+    - Hojas de cálculo (Excel, Google sheets)
+    - Programación (python, R)
+    - Bases de datos (SQL, sqlite, MySQL)
+    - Herramientas para la visualización de datos (Tableau, PowerBI, Datawrapper, Flourish)
+- En este curso aprenderemos los principios del análisis de datos y como los podemos utilizar para mejorar la toma de decisiones para la sustentabilidad. Así un nombre moderno más apropiado para este curso es: _Análisis de datos para la sustentabilidad_.

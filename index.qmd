@@ -1,0 +1,3 @@
+# Inicio {.unnumbered}
+
+Bienvenid@ a la página del curso **Cibernética para la sustentabilidad**. Aquí encontrarás distintos recursos del curso como: notas, presentaciones y notebooks.

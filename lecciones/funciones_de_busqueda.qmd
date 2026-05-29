@@ -1,0 +1,37 @@
+# Introducción
+
+- Muchas veces nos enfrentamos al problema de querer agregar una nueva columna en una tabla basada en un identificador que tenemos en otra columna. 
+- Por ejemplo podríamos tenemos una tabla con datos de la población de los países para distintos años pero la tabla podría no incluir el nombre de cada país sino un identificador numérico. Por otro lado podríamos tener una tabla que tiene los identificadores y el nombre del país. ¿Cómo las juntasmos?
+- Para solucionar este problema existen las funciones de búsqueda `VLOOKUP`, `HLOOKUP` y `XLOOKUP`.
+
+## `VLOOKUP`
+
+- `VLOOKUP` hace búsquedas verticales y recibe como argumentos:
+   1. El valor que queremos buscar,
+   2. El rango de datos donde está el valor que buscamos y el valor que queremos agregar
+   3. El índice de la columna donde está el valor que queremos agregar considerando que la primera columna del rango es 1.
+   4. Un argumento booleano que determina si se quiere una búsqueda exacta (FALSE) o si se busca el valor menor más cercano (TRUE), que es útil sobre todo cuando el rango de datos a buscar está ordenado por un valor numérico.
+
+## `HLOOKUP`
+
+- `HLOOKUP` es equivalente a `VLOOKUP` pero en lugar de hacer búsquedas verticales hace búsquedas horizontales. Sus argumentos son los mismos a excepción del tercro que en este caso es el índice de la fila donde esþa el valor que queremos agregar (igual considerando que la primera fila del rango es la 1).
+
+## `MATCH`
+
+- Otra función util es la función `MATCH` la cual retorna el número de índice en el que está una búsqueda dentro de un rango. Esta tiene los siguientes argumentos:
+  1. Valor a buscar,
+  2. Intervalo donde buscar,
+  3. El tipo de búsqueda, donde 0 es una búsqueda exacta, -1 el valor inferior más cercano y 1 el valor superior más cercano.
+- Esta función es útil para usarla junto con `HLOOKUP` cuando se quiere cambiar de manera dinámica la fila con el valor a retronar.
+
+## `XLOOKUP`
+
+- `VLOOKUP` es muy poderosa pero tiene un par de limitaciones:
+  1. Solo permite usar índices positivos en su segundo argumento, lo cual implica que la columna con el valor para reemplazar debe siempre estar a la derecha de la columna con los valores de búsqueda.
+  2. Cuando no encuntra una entrada nos pone un error que se ve feo (esto no es tanto un problema)
+- Una solución para esto es `XLOOKUP` la cual es mas flexible y poderosa y tiene los siguientes argumentos:
+  1. El valor a buscar,
+  2. El rango de búsqueda
+  3. El rango de los valores a reemplazar, 
+  4. El valor a poner cuando no se halla un valor en la búsqueda
+  5. El modo de búsqueda: 0 búsqueda exacta, -1 buscar el valor menor más cercano, 1 buscar el valor mayor más cercano, y otras opciones más específicas.

@@ -1,0 +1,35 @@
+project:
+  type: book
+
+lang: es
+
+book:
+  title: "Cibernética para la sustentabilidad"
+  author: "Luis Guillermo García Jácome"
+  date: "5/9/2026"
+  chapters:
+    - index.qmd
+    - programa.qmd
+    - part: "I. Fundamentos del análisis de datos"
+      chapters:
+        - lecciones/cibernetica_y_analisis_datos.qmd
+        - lecciones/intro_hojas_de_calculo.qmd
+        - lecciones/procesamiento_y_manejo_de_datos.qmd
+        - lecciones/practica_01.qmd
+    - part: "II. Visualización y comunicación de datos"
+    - part: "III. Introducción a la programación en R"
+    - part: "IV. Métodos computacionales para la sustentabilidad"
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+
+
