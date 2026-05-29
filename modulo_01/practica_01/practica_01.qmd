@@ -6,7 +6,7 @@ En esta práctica explorarás la base de datos del [Monitor de incendios foresta
 
 El objetivo de esta práctica es que crees un dashboard interactivo que permita explorar los de incendios para cada entidad. 
 
-![](../assets/img/dashboard_incendios.png)
+![](../../assets/img/dashboard_incendios.png)
 
 
 ## Instrucciones
