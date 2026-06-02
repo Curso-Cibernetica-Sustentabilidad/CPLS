@@ -9,6 +9,12 @@ Algunas preguntas interesantes que serían útiles a explorar para la organizaci
 3. ¿Cuáles son los tipos de vegetación más afectados a nivel nacional y/o a nivel de entidades?
 4. ¿En qué periodos del año hay más incendios?
 
+::: {.callout-note}
+# Para saber más
+
+Para saber más sobre las causas y manejo de incendios puedes consultar la [Guía de incendios para comucadores de la CONAFOR](http://www.conafor.gob.mx:8080/documentos/docs/10/236Gu%C3%ADa%20pr%C3%A1ctica%20para%20comunicadores%20-%20Incendios%20Forestales.pdf).
+:::
+
 Para esta práctica deberás crear lo siguiente:
 
 1. Una tabla y/o gráfica que resuma alguna variable sobre la situación de los incendios en las entidades de la república
