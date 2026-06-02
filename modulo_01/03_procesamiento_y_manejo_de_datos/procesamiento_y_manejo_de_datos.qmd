@@ -16,6 +16,7 @@
 - [Script para preparar datos del tutorial](./preparar_datos_tutorial.R)
 - [Script para preparar datos del ejercicio](./preparar_datos_ejercicio.R)
 
+
 ## Principales archivos de datos
 
 - Existen muchos formas para almacenar datos. Cuando trabajamos con una cantidad no tan grande de datos podemos almacenar la información en archivos de datos como archivos de excel `.xls`, archivos de extensión `.txt` o `.csv`. Sin embargo, cuando se tienen enormes cantidades de datos, es mejor almacenar estos datos en bases de datos, que son programas especializados para organizar y almacenar datos de una manera eficiente. 
@@ -33,6 +34,32 @@
 - Cuando tenemos tablas de datos con muchas filas es útil fijar la primera fila con los nombres para saber qué contiene cada columna.
 - Para fijar la primera fila podemos arrastrar la barra gris arriba de la fila 1 o dar click en Ver > Inmovilizar > 1 fila.
 
+## Limpiar datos
+
+- Uno de los pasos más importantes de ciencia de datos es la preparación de los datos para poder analizarlos y generar algo útil con ellos.
+- Las bases de datos muy rara vez vienen completamente limpias y listas para su análisis, más bien vienen llenos de inconsistencias. 
+- Algunos de los principales problemas con los datos suelen ser:
+   - Nombres de columna raros (en código, nombres muy largos, nombres en otros idiomas)
+   - Caracteres raros (caractéres no latinos, problemas de codificación)
+   - Formato de texto inconsistente (texto en mínusculas, en mayúsculas, capitalizado)
+   - Datos vacios y nulos (una forma común para representar datos nulos es `NA`)
+   - Valores inconsistentes (mezcla de números y texto en una misma columna, diversas formas de representar un mismo valor)
+   - Información repartida en varios archivos (información contenida en catálogos o archivos de metadatos)
+   - Registros duplicados
+   - Errores ortográficos
+   - etc.
+- La limpieza de datos puede ser un proceso largo y requiere algo de investigación como si se fuera un detective. Muchas veces la limpieza de datos es el proceso que más tiempo toma al realizar un análisis de datos.
+- En inglés al preprocesamiento de datos (que además de incluir la limpieza puede incluir otras modificaciones a los datos) se conoce como [data wrangling](https://www.ibm.com/es-es/think/topics/data-wrangling).
+- Algunas herramientas útiles en Google sheets para la limpieza de datos son:
+   - **Buscar y reemplazar**
+      - _Editar_ > _Buscar y reemplazar_ (`CTRL`+`H`)
+      - Permite buscar una cadena de texto en todo el documento, una hoja o un rango específico y reemplazarla por otra cadena de texto deseada (muchas veces la cadena de reemplazo deseada es un espacio en blanco)
+   - **Sugerencias de borrado**
+      - _Datos_ > _Limpieza de datos_ > _Sugerencia de borrado_
+      - Esta opción analiza los datos y abre una ventana emergente que sugiere cambios que podemos hacerle a los datos. En particular es útil para **identificar y eliminar duplicados**. En estas opciones uno puede reesaltar los datos duplicados y aceptar o rechazar eliminarlos uno por uno o todos de un jalón.
+   - **Estadística de columna**
+      - _Datos_ > _Estadística de columna_
+      - Esta opción genera un análisis estadístico rápido de los datos de una columna y provee una ventana emergente que da gráficos útiles para entender los valores en la columna (e.g., histogramas, listas de valores únicos, gráficos de barras de conteos de valores). Esta opción es útil para identificar valores raros en una columna que debamos tratar. 
 
 ## Ordenar
 
@@ -61,3 +88,47 @@
 - La función `UNIQUE` permite quedarse únicamente con los valores distintos de un rango de valores. Esta función recibe como único argumento el rango de valores y retorna un arreglo con los valores únicos.
 
 
+## Funciones de búsqueda
+
+- Muchas veces nos enfrentamos al problema de querer agregar una nueva columna en una tabla basada en un identificador que tenemos en otra columna. 
+- Por ejemplo podríamos tenemos una tabla con datos de la población de los países para distintos años pero la tabla podría no incluir el nombre de cada país sino un identificador numérico. Por otro lado podríamos tener una tabla que tiene los identificadores y el nombre del país. ¿Cómo las juntasmos?
+- Para solucionar este problema existen las funciones de búsqueda `VLOOKUP`, `HLOOKUP` y `XLOOKUP`.
+
+### `VLOOKUP`
+
+- `VLOOKUP` hace búsquedas verticales y recibe como argumentos:
+   1. El valor que queremos buscar,
+   2. El rango de datos donde está el valor que buscamos y el valor que queremos agregar
+   3. El índice de la columna donde está el valor que queremos agregar considerando que la primera columna del rango es 1.
+   4. Un argumento booleano que determina si se quiere una búsqueda exacta (FALSE) o si se busca el valor menor más cercano (TRUE), que es útil sobre todo cuando el rango de datos a buscar está ordenado por un valor numérico.
+
+### `HLOOKUP`
+
+- `HLOOKUP` es equivalente a `VLOOKUP` pero en lugar de hacer búsquedas verticales hace búsquedas horizontales. Sus argumentos son los mismos a excepción del tercro que en este caso es el índice de la fila donde esþa el valor que queremos agregar (igual considerando que la primera fila del rango es la 1).
+
+### `MATCH`
+
+- Otra función util es la función `MATCH` la cual retorna el número de índice en el que está una búsqueda dentro de un rango. Esta tiene los siguientes argumentos:
+  1. Valor a buscar,
+  2. Intervalo donde buscar,
+  3. El tipo de búsqueda, donde 0 es una búsqueda exacta, -1 el valor inferior más cercano y 1 el valor superior más cercano.
+- Esta función es útil para usarla junto con `HLOOKUP` cuando se quiere cambiar de manera dinámica la fila con el valor a retronar.
+
+### `INDEX`
+
+- Una función que muchas veces va de la mano de la función `MATCH` es la función `INDEX`, la cual retorna el contenido de un arreglo especificado por la fila y columna de lo que queremos obtener. Esta función recibe:
+   1. El rango de datos (un arreglo)
+   2. El número de fila de los datos que se buscan
+   3. El número de columna de los datos que se buscan.
+
+### `XLOOKUP`
+
+- `VLOOKUP` es muy poderosa pero tiene un par de limitaciones:
+  1. Solo permite usar índices positivos en su segundo argumento, lo cual implica que la columna con el valor para reemplazar debe siempre estar a la derecha de la columna con los valores de búsqueda.
+  2. Cuando no encuntra una entrada nos pone un error que se ve feo (esto no es tanto un problema)
+- Una solución para esto es `XLOOKUP` la cual es mas flexible y poderosa y tiene los siguientes argumentos:
+  1. El valor a buscar,
+  2. El rango de búsqueda
+  3. El rango de los valores a reemplazar, 
+  4. El valor a poner cuando no se halla un valor en la búsqueda
+  5. El modo de búsqueda: 0 búsqueda exacta, -1 buscar el valor menor más cercano, 1 buscar el valor mayor más cercano, y otras opciones más específicas.

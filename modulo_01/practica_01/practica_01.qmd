@@ -1,12 +1,27 @@
-
-
 # Práctica 1: Incendios en ANP
 
-En esta práctica explorarás la base de datos del [Monitor de incendios forestales en Áreas Naturales Protegidas](https://monitor_incendios.cnf.gob.mx/incendios_anp) de la Comisión Nacional Forestal (CONAFOR) y la Comisión Nacional de Áreas Naturales Protegidas (CONANP) para el año 2025.
+En esta práctica debes asesorar a una organización ambientalista que quieren empezar un programa de combate de incendios en las Áreas Naturales Protegidas (ANP). A esta organización le gustaría tener un reporte que hable la situación general de los incendios en las ANPs en México y que detalle la situación en una entidad particular. Te solicitan que investigues los datos del [Monitor de incendios forestales en Áreas Naturales Protegidas](https://monitor_incendios.cnf.gob.mx/incendios_anp) administrada por la Comisión Nacional Forestal (CONAFOR) y la Comisión Nacional de Áreas Naturales Protegidas (CONANP).
 
-El objetivo de esta práctica es que crees un dashboard interactivo que permita explorar los de incendios para cada entidad. 
+Algunas preguntas interesantes que serían útiles a explorar para la organización ambientalista son:
 
-![](../../assets/img/dashboard_incendios.png)
+1. ¿Cuál es la entidad con mayor número de incendios?
+2. ¿Cuáles son las principales causas de incendios a nivel nacional y/o a nivel de entidades?
+3. ¿Cuáles son los tipos de vegetación más afectados a nivel nacional y/o a nivel de entidades?
+4. ¿En qué periodos del año hay más incendios?
+
+Para esta práctica deberás crear lo siguiente:
+
+1. Una tabla y/o gráfica que resuma alguna variable sobre la situación de los incendios en las entidades de la república
+2. Un tablero interactivo que permita explorar gráficas y variables los de incendios para cada entidad. 
+3. Un breve reporte que discuta tus resultados.
+
+::: {layout-ncol=3}
+![Ejemplo de tabla dinámica](../../assets/img/tabla_dinamica_incendios.png)
+
+![Ejemplo de tablero interactivo](../../assets/img/dashboard_incendios.png)
+
+![Ejemplo de Reporte](../../assets/img/reporte_incendios.png)
+:::
 
 
 ## Instrucciones
@@ -22,48 +37,55 @@ El objetivo de esta práctica es que crees un dashboard interactivo que permita 
 
 Las variables que contiene la base de datos son las siguentes:
 
-- **Semana**: número de semana del año cuando se registró el incendio
-- **Área natural protegida**: nombre del ANP donde se registró el incendio
-- **Categoría**: categoría del ANP
+- **Semana**: número de semana del año cuando se registró el incendio.
+- **Área natural protegida**: nombre del ANP donde se registró el incendio.
+- **Categoría**: categoría del ANP.
 - **Tipo**: tipo de ANP (federal, estatal, municipal)
-- **Estado**: entidad federativa en la cual ocurrió el incendio
-- **Municipio**: municipio en el cual ocurrió el incendio
-- **Posible causa**: posible causa del incendio
-- **Tipo de vegetación**: tipo de vegetación donde ocurrió el incendio
-- **Superficie**: área afectada por el incendio (en ha)
-- **Total dias persona**: número de combatientes del incendio (calculado en días/persona, que corresponde a una jornada laboral de 8 horas)
-- **Tipo de atención**: tipo de atención que se le dió al incendio (combate o monitoreo)
-- **Latitud** y **Longitud**: latitud y longitud del registro del incendio
+- **Estado**: entidad federativa en la cual ocurrió el incendio.
+- **Municipio**: municipio en el cual ocurrió el incendio.
+- **Posible causa**: posible causa del incendio.
+- **Tipo de vegetación**: tipo de vegetación donde ocurrió el incendio.
+- **Superficie**: área afectada por el incendio (en ha).
+- **Total dias persona**: número de combatientes del incendio (calculado en días/persona, que corresponde a una jornada laboral de 8 horas).
+- **Tipo de atención**: tipo de atención que se le dió al incendio (combate o monitoreo).
+- **Latitud** y **Longitud**: latitud y longitud del registro del incendio.
 
-### Construye un dashboard interactivo
+### Construye una tabla dinámica
+
+Crea una tabla dinámica que resuma información a nivel de las entidades sobre los incendios. La tabla debe incluir:
+
+1. Una columna donde se resuma la la superficie total afectada por cada entidad.
+2. Una columna adicional que resuma información de una variable de tu interés.
+3. Opcionalmente puedes crear una gráfica a partir de los datos de tu tabla.
+
+### Construye un tablero interactivo
 
 El dashboard debe cumplir los siguientes requisitos:
 
 1. Tener un desplegable que permita seleccionar una entidad.
 2. Un monitor que muestre el número total de incendios que hubo en la entidad seleccionada.
 3. Un monitor que muestre el área total afectada en la entidad seleccionada.
-4. Una gráfica de columnas que muestre el número de incendios que hubo en cada semana en la entidad seleccionada.
+4. Una gráfica que muestre el número de incendios que hubo por cada semana del año.
 5. Una gráfica de barras que muestre el las principales causas de incendios en la entidad seleccionada.
 6. Una gráfica extra que tu elijas que muestre información sobre la entidad seleccionada.
 
-### Interpeta los datos
+### Escribe un reporte
 
 1. Elige una entidad.
-2. Imprime una captura de tu dashboard.
-3. Interpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.
+2. Interpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.
 
 El reporte debe cumplir los siguientes requisitos:
 
-- Tener una extensión máxima de 300 palabras.
+- Tener una extensión **máxima de 300 palabras**.
 - Incluir:
   - Un título descriptivo
   - Explicar de donde provienen los datos
-  - Explicar los principales hallagos (e.g., temporadas con más incendios, principales causas, área total afectada)
+  - Explicar los principales hallagos (e.g., temporadas con más incendios, principales causas, área total afectada, que posición de área afectada ocupa la entidad con respecto a todas las entidades de la república, etc.)
   - Una reflexión de qué se podría hacer para tener un mejor manejo de los incendios en la entidad que elegiste.
 
 ### Entrega
 
 Al Brightspace debes subir:
 
-1. Un solo archivo pdf que incluya la captura de tu dashboard y tu reporte
-2. El enlace a tu hoja de cálculo donde esta tu dashboard
+1. El reporte como un archivo pdf
+2. El enlace a tu hoja de cálculo donde estan tus tablas, gráficas y tablero (asegúrate de dar los permisos adecuados para que pueda acceder a tu hoja de cálculo).

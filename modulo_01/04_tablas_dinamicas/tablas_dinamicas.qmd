@@ -1,0 +1,45 @@
+# Tablas dinámicas
+
+## Material de la sesión 
+
+### Presentación
+
+```{=html}
+<iframe src="https://slides.com/bmbi/deck-8300a5/embed" width="576" height="420" title="cpls v26 - Tablas dinámicas" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+```
+### Hoja de cálculo
+
+- [Hoja de cálculo utilizada en esta sesión](https://docs.google.com/spreadsheets/d/1s6u58dalvDiU4eJYTZInifFJBlIkQZVf7P8PPbow1kk/edit?usp=sharing)
+
+### Datos
+
+#### Descarga los datos de la parte 1
+- Visitar la página de la [Dirección de Monitoreo Atmosférico](https://www.aire.cdmx.gob.mx/default.php)
+- Navegar a _Datos_ > _Promedio 24 horas_ > [_Partículas suspendidas_](https://www.aire.cdmx.gob.mx/default.php?opc=%27aKBhnmI=%27&opcion=ag==)
+- Descargar el archivo csv para el año 2024
+
+#### Descarga los datos de la parte 2
+- Visitar la página del [Servicio Meteorológico Nacional](https://smn.conagua.gob.mx/es/)
+- Navegar a _Climatología_ > _Temperaturas y Lluvias > [_Resúmenes Mensuales de Lluvia y Temperatura_](https://smn.conagua.gob.mx/es/climatologia/temperaturas-y-lluvias/resumenes-mensuales-de-temperaturas-y-lluvias)
+- En la sección _Mapas Mensuales de Lluvia y Temperatura_ seleccionar año, mes y variables y descargar todos los datos
+- Colocar los datos en una carpeta `data` y ejecutar el script de preparación de datos.
+
+### Scripts 
+
+- [Script para preparar datos del ejercicio](./preparar_datos_ejercicio.R)
+
+## Tablas dinámicas
+
+## Crear tabla dinámica
+
+## Agregar valores
+
+## Agregar filtros
+
+## Agregar columnas y filas
+
+## Grupos de fechas
+
+## Ordenar tabla por valores de una fila
+
+## Campos personalizados
