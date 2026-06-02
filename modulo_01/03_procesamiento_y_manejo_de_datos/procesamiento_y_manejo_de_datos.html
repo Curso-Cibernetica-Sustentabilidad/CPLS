@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../modulo_01/practica_01/practica_01.html" rel="next">
+<link href="../../modulo_01/04_tablas_dinamicas/tablas_dinamicas.html" rel="next">
 <link href="../../modulo_01/02_introduccion_a_las_hojas_de_calculo/introduccion_a_las_hojas_de_calculo.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -148,8 +148,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../modulo_01/04_tablas_dinamicas/tablas_dinamicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Tablas dinámicas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../modulo_01/practica_01/practica_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Práctica 1: Incendios en ANP</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Práctica 1: Incendios en ANP</span></span></a>
   </div>
 </li>
       </ul>
@@ -191,10 +197,19 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#principales-archivos-de-datos" id="toc-principales-archivos-de-datos" class="nav-link" data-scroll-target="#principales-archivos-de-datos"><span class="header-section-number">3.2</span> Principales archivos de datos</a></li>
   <li><a href="#importar-datos" id="toc-importar-datos" class="nav-link" data-scroll-target="#importar-datos"><span class="header-section-number">3.3</span> Importar datos</a></li>
   <li><a href="#fijar-filas" id="toc-fijar-filas" class="nav-link" data-scroll-target="#fijar-filas"><span class="header-section-number">3.4</span> Fijar filas</a></li>
-  <li><a href="#ordenar" id="toc-ordenar" class="nav-link" data-scroll-target="#ordenar"><span class="header-section-number">3.5</span> Ordenar</a></li>
-  <li><a href="#filtrar" id="toc-filtrar" class="nav-link" data-scroll-target="#filtrar"><span class="header-section-number">3.6</span> Filtrar</a></li>
-  <li><a href="#crear-gráficos" id="toc-crear-gráficos" class="nav-link" data-scroll-target="#crear-gráficos"><span class="header-section-number">3.7</span> Crear gráficos</a></li>
-  <li><a href="#función-unique" id="toc-función-unique" class="nav-link" data-scroll-target="#función-unique"><span class="header-section-number">3.8</span> Función <code>UNIQUE</code></a></li>
+  <li><a href="#limpiar-datos" id="toc-limpiar-datos" class="nav-link" data-scroll-target="#limpiar-datos"><span class="header-section-number">3.5</span> Limpiar datos</a></li>
+  <li><a href="#ordenar" id="toc-ordenar" class="nav-link" data-scroll-target="#ordenar"><span class="header-section-number">3.6</span> Ordenar</a></li>
+  <li><a href="#filtrar" id="toc-filtrar" class="nav-link" data-scroll-target="#filtrar"><span class="header-section-number">3.7</span> Filtrar</a></li>
+  <li><a href="#crear-gráficos" id="toc-crear-gráficos" class="nav-link" data-scroll-target="#crear-gráficos"><span class="header-section-number">3.8</span> Crear gráficos</a></li>
+  <li><a href="#función-unique" id="toc-función-unique" class="nav-link" data-scroll-target="#función-unique"><span class="header-section-number">3.9</span> Función <code>UNIQUE</code></a></li>
+  <li><a href="#funciones-de-búsqueda" id="toc-funciones-de-búsqueda" class="nav-link" data-scroll-target="#funciones-de-búsqueda"><span class="header-section-number">3.10</span> Funciones de búsqueda</a>
+  <ul class="collapse">
+  <li><a href="#vlookup" id="toc-vlookup" class="nav-link" data-scroll-target="#vlookup"><span class="header-section-number">3.10.1</span> <code>VLOOKUP</code></a></li>
+  <li><a href="#hlookup" id="toc-hlookup" class="nav-link" data-scroll-target="#hlookup"><span class="header-section-number">3.10.2</span> <code>HLOOKUP</code></a></li>
+  <li><a href="#match" id="toc-match" class="nav-link" data-scroll-target="#match"><span class="header-section-number">3.10.3</span> <code>MATCH</code></a></li>
+  <li><a href="#index" id="toc-index" class="nav-link" data-scroll-target="#index"><span class="header-section-number">3.10.4</span> <code>INDEX</code></a></li>
+  <li><a href="#xlookup" id="toc-xlookup" class="nav-link" data-scroll-target="#xlookup"><span class="header-section-number">3.10.5</span> <code>XLOOKUP</code></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -263,15 +278,54 @@ ul.task-list li input[type="checkbox"] {
 <li>Para fijar la primera fila podemos arrastrar la barra gris arriba de la fila 1 o dar click en Ver &gt; Inmovilizar &gt; 1 fila.</li>
 </ul>
 </section>
-<section id="ordenar" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="ordenar"><span class="header-section-number">3.5</span> Ordenar</h2>
+<section id="limpiar-datos" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="limpiar-datos"><span class="header-section-number">3.5</span> Limpiar datos</h2>
+<ul>
+<li>Uno de los pasos más importantes de ciencia de datos es la preparación de los datos para poder analizarlos y generar algo útil con ellos.</li>
+<li>Las bases de datos muy rara vez vienen completamente limpias y listas para su análisis, más bien vienen llenos de inconsistencias.</li>
+<li>Algunos de los principales problemas con los datos suelen ser:
+<ul>
+<li>Nombres de columna raros (en código, nombres muy largos, nombres en otros idiomas)</li>
+<li>Caracteres raros (caractéres no latinos, problemas de codificación)</li>
+<li>Formato de texto inconsistente (texto en mínusculas, en mayúsculas, capitalizado)</li>
+<li>Datos vacios y nulos (una forma común para representar datos nulos es <code>NA</code>)</li>
+<li>Valores inconsistentes (mezcla de números y texto en una misma columna, diversas formas de representar un mismo valor)</li>
+<li>Información repartida en varios archivos (información contenida en catálogos o archivos de metadatos)</li>
+<li>Registros duplicados</li>
+<li>Errores ortográficos</li>
+<li>etc.</li>
+</ul></li>
+<li>La limpieza de datos puede ser un proceso largo y requiere algo de investigación como si se fuera un detective. Muchas veces la limpieza de datos es el proceso que más tiempo toma al realizar un análisis de datos.</li>
+<li>En inglés al preprocesamiento de datos (que además de incluir la limpieza puede incluir otras modificaciones a los datos) se conoce como <a href="https://www.ibm.com/es-es/think/topics/data-wrangling">data wrangling</a>.</li>
+<li>Algunas herramientas útiles en Google sheets para la limpieza de datos son:
+<ul>
+<li><strong>Buscar y reemplazar</strong>
+<ul>
+<li><em>Editar</em> &gt; <em>Buscar y reemplazar</em> (<code>CTRL</code>+<code>H</code>)</li>
+<li>Permite buscar una cadena de texto en todo el documento, una hoja o un rango específico y reemplazarla por otra cadena de texto deseada (muchas veces la cadena de reemplazo deseada es un espacio en blanco)</li>
+</ul></li>
+<li><strong>Sugerencias de borrado</strong>
+<ul>
+<li><em>Datos</em> &gt; <em>Limpieza de datos</em> &gt; <em>Sugerencia de borrado</em></li>
+<li>Esta opción analiza los datos y abre una ventana emergente que sugiere cambios que podemos hacerle a los datos. En particular es útil para <strong>identificar y eliminar duplicados</strong>. En estas opciones uno puede reesaltar los datos duplicados y aceptar o rechazar eliminarlos uno por uno o todos de un jalón.</li>
+</ul></li>
+<li><strong>Estadística de columna</strong>
+<ul>
+<li><em>Datos</em> &gt; <em>Estadística de columna</em></li>
+<li>Esta opción genera un análisis estadístico rápido de los datos de una columna y provee una ventana emergente que da gráficos útiles para entender los valores en la columna (e.g., histogramas, listas de valores únicos, gráficos de barras de conteos de valores). Esta opción es útil para identificar valores raros en una columna que debamos tratar.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="ordenar" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="ordenar"><span class="header-section-number">3.6</span> Ordenar</h2>
 <ul>
 <li>Para ordenar datos de acuerdo a los valores de una columna podemos dar click en el triangulito en la letra de la columna y luego seleccionar si queremos ordenar los datos de manera ascendente (Ordenrar hoja de la A a la Z) o descendente (Ordenar hoja de la Z a la A).</li>
 <li>Si quisiéramos ordenar por los valores de dos columnas, debemos aplicar un ordenamiento seguido del otro.</li>
 </ul>
 </section>
-<section id="filtrar" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="filtrar"><span class="header-section-number">3.6</span> Filtrar</h2>
+<section id="filtrar" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="filtrar"><span class="header-section-number">3.7</span> Filtrar</h2>
 <ul>
 <li>Filtrar permite quedarse sólo con los valores que cumplen cierto criterio para una o varias columnas.</li>
 <li>Para filtrar primero debemos entrar al modo de filtro para una tabla. Para ello primero debemos seleccionar toda la tabla de datos. Para seleccionar una tabla podemos poner el cursor sobre cualquier celda que contenga datos de la tabla y presionar <code>CTRL</code>+<code>A</code> (nota que si presionas <code>CTRL</code>+<code>A</code> dos veces se seleccionarán todas las celdas de la hoja)</li>
@@ -285,21 +339,88 @@ ul.task-list li input[type="checkbox"] {
 <li>Para salir del modo filtro solo debemos dar click de nuevo en el ícono de filtro y se mostrarán de nuevo todos los valores.</li>
 </ul>
 </section>
-<section id="crear-gráficos" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="crear-gráficos"><span class="header-section-number">3.7</span> Crear gráficos</h2>
+<section id="crear-gráficos" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="crear-gráficos"><span class="header-section-number">3.8</span> Crear gráficos</h2>
 <ul>
 <li>Google sheets tiene funcionalidades básicas para crear gráficos. Para ello primero debemos seleccionar los datos que queremos graficar y luego dar click en Insertar &gt; Gráfico.</li>
 <li>A partir de los datos seleccionados Google sheets sugiere automáticamente un gráfico, que muchas veces es el adecuado, sin embargo, muchas veces es poco útil y uno debe configurar manualmente el tipo de gráfico y elegir correctamente los valores a mapear.</li>
 <li>En este momento no profundizaremos mucho en configurar gráficos ya que utilizaremos otras herramientas más poderosas para crear una mayor diversidad de gráficos.</li>
 </ul>
 </section>
-<section id="función-unique" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="función-unique"><span class="header-section-number">3.8</span> Función <code>UNIQUE</code></h2>
+<section id="función-unique" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="función-unique"><span class="header-section-number">3.9</span> Función <code>UNIQUE</code></h2>
 <ul>
 <li>La función <code>UNIQUE</code> permite quedarse únicamente con los valores distintos de un rango de valores. Esta función recibe como único argumento el rango de valores y retorna un arreglo con los valores únicos.</li>
 </ul>
+</section>
+<section id="funciones-de-búsqueda" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="funciones-de-búsqueda"><span class="header-section-number">3.10</span> Funciones de búsqueda</h2>
+<ul>
+<li>Muchas veces nos enfrentamos al problema de querer agregar una nueva columna en una tabla basada en un identificador que tenemos en otra columna.</li>
+<li>Por ejemplo podríamos tenemos una tabla con datos de la población de los países para distintos años pero la tabla podría no incluir el nombre de cada país sino un identificador numérico. Por otro lado podríamos tener una tabla que tiene los identificadores y el nombre del país. ¿Cómo las juntasmos?</li>
+<li>Para solucionar este problema existen las funciones de búsqueda <code>VLOOKUP</code>, <code>HLOOKUP</code> y <code>XLOOKUP</code>.</li>
+</ul>
+<section id="vlookup" class="level3" data-number="3.10.1">
+<h3 data-number="3.10.1" class="anchored" data-anchor-id="vlookup"><span class="header-section-number">3.10.1</span> <code>VLOOKUP</code></h3>
+<ul>
+<li><code>VLOOKUP</code> hace búsquedas verticales y recibe como argumentos:
+<ol type="1">
+<li>El valor que queremos buscar,</li>
+<li>El rango de datos donde está el valor que buscamos y el valor que queremos agregar</li>
+<li>El índice de la columna donde está el valor que queremos agregar considerando que la primera columna del rango es 1.</li>
+<li>Un argumento booleano que determina si se quiere una búsqueda exacta (FALSE) o si se busca el valor menor más cercano (TRUE), que es útil sobre todo cuando el rango de datos a buscar está ordenado por un valor numérico.</li>
+</ol></li>
+</ul>
+</section>
+<section id="hlookup" class="level3" data-number="3.10.2">
+<h3 data-number="3.10.2" class="anchored" data-anchor-id="hlookup"><span class="header-section-number">3.10.2</span> <code>HLOOKUP</code></h3>
+<ul>
+<li><code>HLOOKUP</code> es equivalente a <code>VLOOKUP</code> pero en lugar de hacer búsquedas verticales hace búsquedas horizontales. Sus argumentos son los mismos a excepción del tercro que en este caso es el índice de la fila donde esþa el valor que queremos agregar (igual considerando que la primera fila del rango es la 1).</li>
+</ul>
+</section>
+<section id="match" class="level3" data-number="3.10.3">
+<h3 data-number="3.10.3" class="anchored" data-anchor-id="match"><span class="header-section-number">3.10.3</span> <code>MATCH</code></h3>
+<ul>
+<li>Otra función util es la función <code>MATCH</code> la cual retorna el número de índice en el que está una búsqueda dentro de un rango. Esta tiene los siguientes argumentos:
+<ol type="1">
+<li>Valor a buscar,</li>
+<li>Intervalo donde buscar,</li>
+<li>El tipo de búsqueda, donde 0 es una búsqueda exacta, -1 el valor inferior más cercano y 1 el valor superior más cercano.</li>
+</ol></li>
+<li>Esta función es útil para usarla junto con <code>HLOOKUP</code> cuando se quiere cambiar de manera dinámica la fila con el valor a retronar.</li>
+</ul>
+</section>
+<section id="index" class="level3" data-number="3.10.4">
+<h3 data-number="3.10.4" class="anchored" data-anchor-id="index"><span class="header-section-number">3.10.4</span> <code>INDEX</code></h3>
+<ul>
+<li>Una función que muchas veces va de la mano de la función <code>MATCH</code> es la función <code>INDEX</code>, la cual retorna el contenido de un arreglo especificado por la fila y columna de lo que queremos obtener. Esta función recibe:
+<ol type="1">
+<li>El rango de datos (un arreglo)</li>
+<li>El número de fila de los datos que se buscan</li>
+<li>El número de columna de los datos que se buscan.</li>
+</ol></li>
+</ul>
+</section>
+<section id="xlookup" class="level3" data-number="3.10.5">
+<h3 data-number="3.10.5" class="anchored" data-anchor-id="xlookup"><span class="header-section-number">3.10.5</span> <code>XLOOKUP</code></h3>
+<ul>
+<li><code>VLOOKUP</code> es muy poderosa pero tiene un par de limitaciones:
+<ol type="1">
+<li>Solo permite usar índices positivos en su segundo argumento, lo cual implica que la columna con el valor para reemplazar debe siempre estar a la derecha de la columna con los valores de búsqueda.</li>
+<li>Cuando no encuntra una entrada nos pone un error que se ve feo (esto no es tanto un problema)</li>
+</ol></li>
+<li>Una solución para esto es <code>XLOOKUP</code> la cual es mas flexible y poderosa y tiene los siguientes argumentos:
+<ol type="1">
+<li>El valor a buscar,</li>
+<li>El rango de búsqueda</li>
+<li>El rango de los valores a reemplazar,</li>
+<li>El valor a poner cuando no se halla un valor en la búsqueda</li>
+<li>El modo de búsqueda: 0 búsqueda exacta, -1 buscar el valor menor más cercano, 1 buscar el valor mayor más cercano, y otras opciones más específicas.</li>
+</ol></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -709,8 +830,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../modulo_01/practica_01/practica_01.html" class="pagination-link" aria-label="Práctica 1: Incendios en ANP">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Práctica 1: Incendios en ANP</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../modulo_01/04_tablas_dinamicas/tablas_dinamicas.html" class="pagination-link" aria-label="Tablas dinámicas">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Tablas dinámicas</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -352,11 +352,22 @@
     ]
   },
   {
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#limpiar-datos",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#limpiar-datos",
+    "title": "3  Procesamiento y manejo de datos",
+    "section": "3.5 Limpiar datos",
+    "text": "3.5 Limpiar datos\n\nUno de los pasos más importantes de ciencia de datos es la preparación de los datos para poder analizarlos y generar algo útil con ellos.\nLas bases de datos muy rara vez vienen completamente limpias y listas para su análisis, más bien vienen llenos de inconsistencias.\nAlgunos de los principales problemas con los datos suelen ser:\n\nNombres de columna raros (en código, nombres muy largos, nombres en otros idiomas)\nCaracteres raros (caractéres no latinos, problemas de codificación)\nFormato de texto inconsistente (texto en mínusculas, en mayúsculas, capitalizado)\nDatos vacios y nulos (una forma común para representar datos nulos es NA)\nValores inconsistentes (mezcla de números y texto en una misma columna, diversas formas de representar un mismo valor)\nInformación repartida en varios archivos (información contenida en catálogos o archivos de metadatos)\nRegistros duplicados\nErrores ortográficos\netc.\n\nLa limpieza de datos puede ser un proceso largo y requiere algo de investigación como si se fuera un detective. Muchas veces la limpieza de datos es el proceso que más tiempo toma al realizar un análisis de datos.\nEn inglés al preprocesamiento de datos (que además de incluir la limpieza puede incluir otras modificaciones a los datos) se conoce como data wrangling.\nAlgunas herramientas útiles en Google sheets para la limpieza de datos son:\n\nBuscar y reemplazar\n\nEditar &gt; Buscar y reemplazar (CTRL+H)\nPermite buscar una cadena de texto en todo el documento, una hoja o un rango específico y reemplazarla por otra cadena de texto deseada (muchas veces la cadena de reemplazo deseada es un espacio en blanco)\n\nSugerencias de borrado\n\nDatos &gt; Limpieza de datos &gt; Sugerencia de borrado\nEsta opción analiza los datos y abre una ventana emergente que sugiere cambios que podemos hacerle a los datos. En particular es útil para identificar y eliminar duplicados. En estas opciones uno puede reesaltar los datos duplicados y aceptar o rechazar eliminarlos uno por uno o todos de un jalón.\n\nEstadística de columna\n\nDatos &gt; Estadística de columna\nEsta opción genera un análisis estadístico rápido de los datos de una columna y provee una ventana emergente que da gráficos útiles para entender los valores en la columna (e.g., histogramas, listas de valores únicos, gráficos de barras de conteos de valores). Esta opción es útil para identificar valores raros en una columna que debamos tratar.",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procesamiento y manejo de datos</span>"
+    ]
+  },
+  {
     "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#ordenar",
     "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#ordenar",
     "title": "3  Procesamiento y manejo de datos",
-    "section": "3.5 Ordenar",
-    "text": "3.5 Ordenar\n\nPara ordenar datos de acuerdo a los valores de una columna podemos dar click en el triangulito en la letra de la columna y luego seleccionar si queremos ordenar los datos de manera ascendente (Ordenrar hoja de la A a la Z) o descendente (Ordenar hoja de la Z a la A).\nSi quisiéramos ordenar por los valores de dos columnas, debemos aplicar un ordenamiento seguido del otro.",
+    "section": "3.6 Ordenar",
+    "text": "3.6 Ordenar\n\nPara ordenar datos de acuerdo a los valores de una columna podemos dar click en el triangulito en la letra de la columna y luego seleccionar si queremos ordenar los datos de manera ascendente (Ordenrar hoja de la A a la Z) o descendente (Ordenar hoja de la Z a la A).\nSi quisiéramos ordenar por los valores de dos columnas, debemos aplicar un ordenamiento seguido del otro.",
     "crumbs": [
       "I. Fundamentos del análisis de datos",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procesamiento y manejo de datos</span>"
@@ -366,8 +377,8 @@
     "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#filtrar",
     "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#filtrar",
     "title": "3  Procesamiento y manejo de datos",
-    "section": "3.6 Filtrar",
-    "text": "3.6 Filtrar\n\nFiltrar permite quedarse sólo con los valores que cumplen cierto criterio para una o varias columnas.\nPara filtrar primero debemos entrar al modo de filtro para una tabla. Para ello primero debemos seleccionar toda la tabla de datos. Para seleccionar una tabla podemos poner el cursor sobre cualquier celda que contenga datos de la tabla y presionar CTRL+A (nota que si presionas CTRL+A dos veces se seleccionarán todas las celdas de la hoja)\nYa que tenemos la tabla seleccionada damos click en el ícono de aplicar filtro en la barra de herramientas y notarás que los bordes de la tabla se ponen verdes indicando que estamos en el modo de filtro.\nPara filtrar podemos dar click en las tres rayas en forma de tríangulo que salen al lado del nombre de las columnas, ahí podemos elegir varias opciones:\n\nFiltrar por un valor, útil para filtrar por valores específicos de una columna de texto\nFiltrar por condición, útil para aplicar criterios más complejos como revisar si un valor numérico es mayor o menor que un valor determinado, o para reconocer un patrón de texto en una columna.\n\nNota que se pueden aplicar múltiples filtros de varias columnas simultáneamente.\nPara salir del modo filtro solo debemos dar click de nuevo en el ícono de filtro y se mostrarán de nuevo todos los valores.",
+    "section": "3.7 Filtrar",
+    "text": "3.7 Filtrar\n\nFiltrar permite quedarse sólo con los valores que cumplen cierto criterio para una o varias columnas.\nPara filtrar primero debemos entrar al modo de filtro para una tabla. Para ello primero debemos seleccionar toda la tabla de datos. Para seleccionar una tabla podemos poner el cursor sobre cualquier celda que contenga datos de la tabla y presionar CTRL+A (nota que si presionas CTRL+A dos veces se seleccionarán todas las celdas de la hoja)\nYa que tenemos la tabla seleccionada damos click en el ícono de aplicar filtro en la barra de herramientas y notarás que los bordes de la tabla se ponen verdes indicando que estamos en el modo de filtro.\nPara filtrar podemos dar click en las tres rayas en forma de tríangulo que salen al lado del nombre de las columnas, ahí podemos elegir varias opciones:\n\nFiltrar por un valor, útil para filtrar por valores específicos de una columna de texto\nFiltrar por condición, útil para aplicar criterios más complejos como revisar si un valor numérico es mayor o menor que un valor determinado, o para reconocer un patrón de texto en una columna.\n\nNota que se pueden aplicar múltiples filtros de varias columnas simultáneamente.\nPara salir del modo filtro solo debemos dar click de nuevo en el ícono de filtro y se mostrarán de nuevo todos los valores.",
     "crumbs": [
       "I. Fundamentos del análisis de datos",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procesamiento y manejo de datos</span>"
@@ -377,8 +388,8 @@
     "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#crear-gráficos",
     "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#crear-gráficos",
     "title": "3  Procesamiento y manejo de datos",
-    "section": "3.7 Crear gráficos",
-    "text": "3.7 Crear gráficos\n\nGoogle sheets tiene funcionalidades básicas para crear gráficos. Para ello primero debemos seleccionar los datos que queremos graficar y luego dar click en Insertar &gt; Gráfico.\nA partir de los datos seleccionados Google sheets sugiere automáticamente un gráfico, que muchas veces es el adecuado, sin embargo, muchas veces es poco útil y uno debe configurar manualmente el tipo de gráfico y elegir correctamente los valores a mapear.\nEn este momento no profundizaremos mucho en configurar gráficos ya que utilizaremos otras herramientas más poderosas para crear una mayor diversidad de gráficos.",
+    "section": "3.8 Crear gráficos",
+    "text": "3.8 Crear gráficos\n\nGoogle sheets tiene funcionalidades básicas para crear gráficos. Para ello primero debemos seleccionar los datos que queremos graficar y luego dar click en Insertar &gt; Gráfico.\nA partir de los datos seleccionados Google sheets sugiere automáticamente un gráfico, que muchas veces es el adecuado, sin embargo, muchas veces es poco útil y uno debe configurar manualmente el tipo de gráfico y elegir correctamente los valores a mapear.\nEn este momento no profundizaremos mucho en configurar gráficos ya que utilizaremos otras herramientas más poderosas para crear una mayor diversidad de gráficos.",
     "crumbs": [
       "I. Fundamentos del análisis de datos",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procesamiento y manejo de datos</span>"
@@ -388,33 +399,154 @@
     "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#función-unique",
     "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#función-unique",
     "title": "3  Procesamiento y manejo de datos",
-    "section": "3.8 Función UNIQUE",
-    "text": "3.8 Función UNIQUE\n\nLa función UNIQUE permite quedarse únicamente con los valores distintos de un rango de valores. Esta función recibe como único argumento el rango de valores y retorna un arreglo con los valores únicos.",
+    "section": "3.9 Función UNIQUE",
+    "text": "3.9 Función UNIQUE\n\nLa función UNIQUE permite quedarse únicamente con los valores distintos de un rango de valores. Esta función recibe como único argumento el rango de valores y retorna un arreglo con los valores únicos.",
     "crumbs": [
       "I. Fundamentos del análisis de datos",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procesamiento y manejo de datos</span>"
     ]
   },
   {
-    "objectID": "modulo_01/practica_01/practica_01.html",
-    "href": "modulo_01/practica_01/practica_01.html",
-    "title": "4  Práctica 1: Incendios en ANP",
-    "section": "",
-    "text": "4.1 Instrucciones\nEn esta práctica explorarás la base de datos del Monitor de incendios forestales en Áreas Naturales Protegidas de la Comisión Nacional Forestal (CONAFOR) y la Comisión Nacional de Áreas Naturales Protegidas (CONANP) para el año 2025.\nEl objetivo de esta práctica es que crees un dashboard interactivo que permita explorar los de incendios para cada entidad.",
+    "objectID": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#funciones-de-búsqueda",
+    "href": "modulo_01/03_procesamiento_y_manejo_de_datos/procesamiento_y_manejo_de_datos.html#funciones-de-búsqueda",
+    "title": "3  Procesamiento y manejo de datos",
+    "section": "3.10 Funciones de búsqueda",
+    "text": "3.10 Funciones de búsqueda\n\nMuchas veces nos enfrentamos al problema de querer agregar una nueva columna en una tabla basada en un identificador que tenemos en otra columna.\nPor ejemplo podríamos tenemos una tabla con datos de la población de los países para distintos años pero la tabla podría no incluir el nombre de cada país sino un identificador numérico. Por otro lado podríamos tener una tabla que tiene los identificadores y el nombre del país. ¿Cómo las juntasmos?\nPara solucionar este problema existen las funciones de búsqueda VLOOKUP, HLOOKUP y XLOOKUP.\n\n\n3.10.1 VLOOKUP\n\nVLOOKUP hace búsquedas verticales y recibe como argumentos:\n\nEl valor que queremos buscar,\nEl rango de datos donde está el valor que buscamos y el valor que queremos agregar\nEl índice de la columna donde está el valor que queremos agregar considerando que la primera columna del rango es 1.\nUn argumento booleano que determina si se quiere una búsqueda exacta (FALSE) o si se busca el valor menor más cercano (TRUE), que es útil sobre todo cuando el rango de datos a buscar está ordenado por un valor numérico.\n\n\n\n\n3.10.2 HLOOKUP\n\nHLOOKUP es equivalente a VLOOKUP pero en lugar de hacer búsquedas verticales hace búsquedas horizontales. Sus argumentos son los mismos a excepción del tercro que en este caso es el índice de la fila donde esþa el valor que queremos agregar (igual considerando que la primera fila del rango es la 1).\n\n\n\n3.10.3 MATCH\n\nOtra función util es la función MATCH la cual retorna el número de índice en el que está una búsqueda dentro de un rango. Esta tiene los siguientes argumentos:\n\nValor a buscar,\nIntervalo donde buscar,\nEl tipo de búsqueda, donde 0 es una búsqueda exacta, -1 el valor inferior más cercano y 1 el valor superior más cercano.\n\nEsta función es útil para usarla junto con HLOOKUP cuando se quiere cambiar de manera dinámica la fila con el valor a retronar.\n\n\n\n3.10.4 INDEX\n\nUna función que muchas veces va de la mano de la función MATCH es la función INDEX, la cual retorna el contenido de un arreglo especificado por la fila y columna de lo que queremos obtener. Esta función recibe:\n\nEl rango de datos (un arreglo)\nEl número de fila de los datos que se buscan\nEl número de columna de los datos que se buscan.\n\n\n\n\n3.10.5 XLOOKUP\n\nVLOOKUP es muy poderosa pero tiene un par de limitaciones:\n\nSolo permite usar índices positivos en su segundo argumento, lo cual implica que la columna con el valor para reemplazar debe siempre estar a la derecha de la columna con los valores de búsqueda.\nCuando no encuntra una entrada nos pone un error que se ve feo (esto no es tanto un problema)\n\nUna solución para esto es XLOOKUP la cual es mas flexible y poderosa y tiene los siguientes argumentos:\n\nEl valor a buscar,\nEl rango de búsqueda\nEl rango de los valores a reemplazar,\nEl valor a poner cuando no se halla un valor en la búsqueda\nEl modo de búsqueda: 0 búsqueda exacta, -1 buscar el valor menor más cercano, 1 buscar el valor mayor más cercano, y otras opciones más específicas.",
     "crumbs": [
       "I. Fundamentos del análisis de datos",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Práctica 1: Incendios en ANP</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Procesamiento y manejo de datos</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html",
+    "href": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html",
+    "title": "4  Tablas dinámicas",
+    "section": "",
+    "text": "4.1 Material de la sesión",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tablas dinámicas</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#material-de-la-sesión",
+    "href": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#material-de-la-sesión",
+    "title": "4  Tablas dinámicas",
+    "section": "",
+    "text": "4.1.1 Presentación\n\n\n\n4.1.2 Hoja de cálculo\n\nHoja de cálculo utilizada en esta sesión\n\n\n\n4.1.3 Datos\n\n4.1.3.1 Descarga los datos de la parte 1\n\nVisitar la página de la Dirección de Monitoreo Atmosférico\nNavegar a Datos &gt; Promedio 24 horas &gt; Partículas suspendidas\nDescargar el archivo csv para el año 2024\n\n\n\n4.1.3.2 Descarga los datos de la parte 2\n\nVisitar la página del Servicio Meteorológico Nacional\nNavegar a Climatología &gt; _Temperaturas y Lluvias &gt; Resúmenes Mensuales de Lluvia y Temperatura\nEn la sección Mapas Mensuales de Lluvia y Temperatura seleccionar año, mes y variables y descargar todos los datos\nColocar los datos en una carpeta data y ejecutar el script de preparación de datos.\n\n\n\n\n4.1.4 Scripts\n\nScript para preparar datos del ejercicio",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tablas dinámicas</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#tablas-dinámicas",
+    "href": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#tablas-dinámicas",
+    "title": "4  Tablas dinámicas",
+    "section": "4.2 Tablas dinámicas",
+    "text": "4.2 Tablas dinámicas",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tablas dinámicas</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#crear-tabla-dinámica",
+    "href": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#crear-tabla-dinámica",
+    "title": "4  Tablas dinámicas",
+    "section": "4.3 Crear tabla dinámica",
+    "text": "4.3 Crear tabla dinámica",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tablas dinámicas</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#agregar-valores",
+    "href": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#agregar-valores",
+    "title": "4  Tablas dinámicas",
+    "section": "4.4 Agregar valores",
+    "text": "4.4 Agregar valores",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tablas dinámicas</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#agregar-filtros",
+    "href": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#agregar-filtros",
+    "title": "4  Tablas dinámicas",
+    "section": "4.5 Agregar filtros",
+    "text": "4.5 Agregar filtros",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tablas dinámicas</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#agregar-columnas-y-filas",
+    "href": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#agregar-columnas-y-filas",
+    "title": "4  Tablas dinámicas",
+    "section": "4.6 Agregar columnas y filas",
+    "text": "4.6 Agregar columnas y filas",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tablas dinámicas</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#grupos-de-fechas",
+    "href": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#grupos-de-fechas",
+    "title": "4  Tablas dinámicas",
+    "section": "4.7 Grupos de fechas",
+    "text": "4.7 Grupos de fechas",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tablas dinámicas</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#ordenar-tabla-por-valores-de-una-fila",
+    "href": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#ordenar-tabla-por-valores-de-una-fila",
+    "title": "4  Tablas dinámicas",
+    "section": "4.8 Ordenar tabla por valores de una fila",
+    "text": "4.8 Ordenar tabla por valores de una fila",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tablas dinámicas</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#campos-personalizados",
+    "href": "modulo_01/04_tablas_dinamicas/tablas_dinamicas.html#campos-personalizados",
+    "title": "4  Tablas dinámicas",
+    "section": "4.9 Campos personalizados",
+    "text": "4.9 Campos personalizados",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tablas dinámicas</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_01/practica_01/practica_01.html",
+    "href": "modulo_01/practica_01/practica_01.html",
+    "title": "5  Práctica 1: Incendios en ANP",
+    "section": "",
+    "text": "5.1 Instrucciones\nEn esta práctica debes asesorar a una organización ambientalista que quieren empezar un programa de combate de incendios en las Áreas Naturales Protegidas (ANP). A esta organización le gustaría tener un reporte que hable la situación general de los incendios en las ANPs en México y que detalle la situación en una entidad particular. Te solicitan que investigues los datos del Monitor de incendios forestales en Áreas Naturales Protegidas administrada por la Comisión Nacional Forestal (CONAFOR) y la Comisión Nacional de Áreas Naturales Protegidas (CONANP).\nAlgunas preguntas interesantes que serían útiles a explorar para la organización ambientalista son:\nPara esta práctica deberás crear lo siguiente:",
+    "crumbs": [
+      "I. Fundamentos del análisis de datos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Práctica 1: Incendios en ANP</span>"
     ]
   },
   {
     "objectID": "modulo_01/practica_01/practica_01.html#instrucciones",
     "href": "modulo_01/practica_01/practica_01.html#instrucciones",
-    "title": "4  Práctica 1: Incendios en ANP",
+    "title": "5  Práctica 1: Incendios en ANP",
     "section": "",
-    "text": "4.1.1 Obtener los datos\n\nEntra a la página del Monitor de incendios forestales en Áreas Naturales Protegidas\nSelecciona el año 2025 y da click en Filtrar para quedarte solo con los datos del 2025.\nDescarga los datos en archivo csv en la tabla que se encuentra hasta abajo de la página.\nCarga los datos en una hoja de Google sheets\n\n\n\n4.1.2 Entendiendo los datos\nLas variables que contiene la base de datos son las siguentes:\n\nSemana: número de semana del año cuando se registró el incendio\nÁrea natural protegida: nombre del ANP donde se registró el incendio\nCategoría: categoría del ANP\nTipo: tipo de ANP (federal, estatal, municipal)\nEstado: entidad federativa en la cual ocurrió el incendio\nMunicipio: municipio en el cual ocurrió el incendio\nPosible causa: posible causa del incendio\nTipo de vegetación: tipo de vegetación donde ocurrió el incendio\nSuperficie: área afectada por el incendio (en ha)\nTotal dias persona: número de combatientes del incendio (calculado en días/persona, que corresponde a una jornada laboral de 8 horas)\nTipo de atención: tipo de atención que se le dió al incendio (combate o monitoreo)\nLatitud y Longitud: latitud y longitud del registro del incendio\n\n\n\n4.1.3 Construye un dashboard interactivo\nEl dashboard debe cumplir los siguientes requisitos:\n\nTener un desplegable que permita seleccionar una entidad.\nUn monitor que muestre el número total de incendios que hubo en la entidad seleccionada.\nUn monitor que muestre el área total afectada en la entidad seleccionada.\nUna gráfica de columnas que muestre el número de incendios que hubo en cada semana en la entidad seleccionada.\nUna gráfica de barras que muestre el las principales causas de incendios en la entidad seleccionada.\nUna gráfica extra que tu elijas que muestre información sobre la entidad seleccionada.\n\n\n\n4.1.4 Interpeta los datos\n\nElige una entidad.\nImprime una captura de tu dashboard.\nInterpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.\n\nEl reporte debe cumplir los siguientes requisitos:\n\nTener una extensión máxima de 300 palabras.\nIncluir:\n\nUn título descriptivo\nExplicar de donde provienen los datos\nExplicar los principales hallagos (e.g., temporadas con más incendios, principales causas, área total afectada)\nUna reflexión de qué se podría hacer para tener un mejor manejo de los incendios en la entidad que elegiste.\n\n\n\n\n4.1.5 Entrega\nAl Brightspace debes subir:\n\nUn solo archivo pdf que incluya la captura de tu dashboard y tu reporte\nEl enlace a tu hoja de cálculo donde esta tu dashboard",
+    "text": "5.1.1 Obtener los datos\n\nEntra a la página del Monitor de incendios forestales en Áreas Naturales Protegidas\nSelecciona el año 2025 y da click en Filtrar para quedarte solo con los datos del 2025.\nDescarga los datos en archivo csv en la tabla que se encuentra hasta abajo de la página.\nCarga los datos en una hoja de Google sheets\n\n\n\n5.1.2 Entendiendo los datos\nLas variables que contiene la base de datos son las siguentes:\n\nSemana: número de semana del año cuando se registró el incendio.\nÁrea natural protegida: nombre del ANP donde se registró el incendio.\nCategoría: categoría del ANP.\nTipo: tipo de ANP (federal, estatal, municipal)\nEstado: entidad federativa en la cual ocurrió el incendio.\nMunicipio: municipio en el cual ocurrió el incendio.\nPosible causa: posible causa del incendio.\nTipo de vegetación: tipo de vegetación donde ocurrió el incendio.\nSuperficie: área afectada por el incendio (en ha).\nTotal dias persona: número de combatientes del incendio (calculado en días/persona, que corresponde a una jornada laboral de 8 horas).\nTipo de atención: tipo de atención que se le dió al incendio (combate o monitoreo).\nLatitud y Longitud: latitud y longitud del registro del incendio.\n\n\n\n5.1.3 Construye una tabla dinámica\nCrea una tabla dinámica que resuma información a nivel de las entidades sobre los incendios. La tabla debe incluir:\n\nUna columna donde se resuma la la superficie total afectada por cada entidad.\nUna columna adicional que resuma información de una variable de tu interés.\nOpcionalmente puedes crear una gráfica a partir de los datos de tu tabla.\n\n\n\n5.1.4 Construye un tablero interactivo\nEl dashboard debe cumplir los siguientes requisitos:\n\nTener un desplegable que permita seleccionar una entidad.\nUn monitor que muestre el número total de incendios que hubo en la entidad seleccionada.\nUn monitor que muestre el área total afectada en la entidad seleccionada.\nUna gráfica que muestre el número de incendios que hubo por cada semana del año.\nUna gráfica de barras que muestre el las principales causas de incendios en la entidad seleccionada.\nUna gráfica extra que tu elijas que muestre información sobre la entidad seleccionada.\n\n\n\n5.1.5 Escribe un reporte\n\nElige una entidad.\nInterpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.\n\nEl reporte debe cumplir los siguientes requisitos:\n\nTener una extensión máxima de 300 palabras.\nIncluir:\n\nUn título descriptivo\nExplicar de donde provienen los datos\nExplicar los principales hallagos (e.g., temporadas con más incendios, principales causas, área total afectada, que posición de área afectada ocupa la entidad con respecto a todas las entidades de la república, etc.)\nUna reflexión de qué se podría hacer para tener un mejor manejo de los incendios en la entidad que elegiste.\n\n\n\n\n5.1.6 Entrega\nAl Brightspace debes subir:\n\nEl reporte como un archivo pdf\nEl enlace a tu hoja de cálculo donde estan tus tablas, gráficas y tablero (asegúrate de dar los permisos adecuados para que pueda acceder a tu hoja de cálculo).",
     "crumbs": [
       "I. Fundamentos del análisis de datos",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Práctica 1: Incendios en ANP</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Práctica 1: Incendios en ANP</span>"
     ]
   }
 ]
