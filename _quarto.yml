@@ -18,6 +18,8 @@ book:
         - modulo_01/04_tablas_dinamicas/tablas_dinamicas.qmd
         - modulo_01/practica_01/practica_01.qmd
     - part: "II. Visualización y comunicación de datos"
+      chapters:
+        - modulo_02/practica_02/practica_02.qmd
     - part: "III. Introducción a la programación en R"
     - part: "IV. Métodos computacionales para la sustentabilidad"
     - references.qmd

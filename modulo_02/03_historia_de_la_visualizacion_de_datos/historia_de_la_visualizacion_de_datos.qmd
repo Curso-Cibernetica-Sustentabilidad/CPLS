@@ -1,0 +1,33 @@
+# Historia de la visualización de datos
+
+## Introducción
+
+- Generalmente pensamos en que la visualizacion de informacion es un campo relativamente moderno, relacionado al desarrollo de la estadística. No obstante, la visualización tiene una historia larga.
+- La historia de la visualización de información se puede dividir en distintas épocas (basado en Friendly, 2006):
+   - La más antigua previa al 1600 estaba dominada por el uso de la visualización para crear mapas
+   - Posteriormente con el Renacimiento y el nacimiento de la ciencia moderna se empezaron a utilizar representaciones visuales para visualizar otro tipo de información.
+   - En los siglos 1700 a 1800 diversos autores introdujeron nuevas formas de visualizar información y por muchos conocida como la era de oro de la visualización.
+   - A inicios de 1900 hay una épocoa donde hubo pocos avances en la visualización de información ya que los nuevos desarrollos de la estadística hicieron que se priorizaran los métodos de la estadístistica inferencial.
+   - A mitades de 1900 hubo un nuevo interés por la visualización y la exploración de datos con el trabajo de Tukey. 
+   - A finales de 1900 hasta hoy en dia ha habido una explosión de los métodos de viualización gracias al desarrollo del cómupto.
+
+## Primeras visualizaciones
+
+- Las primeras formas de representar información visualmente fueron para crear mapas y tablas de posición de los cuerpos celestes. 
+- Uno de los que es considerado como el primer mapa es el mapa de Abauntz, España. Esta es una roca que data de 19,000 AC y los arqueólogos sostienen que los trasos representan un mapa que muestra coordilleras, ríos y zonas de caza y recolecta de recursos. 
+- Otro mapa que es considerado de los más antiguos es uno hallado en unas cuevas en Konya, Turquía datando de aproximadamente 6,200 A.C. Este describe a la ciuedad de Konya y muestra un volcán en erupción en la parte superior.
+- Durante mucho tiempo los mapas Babalónicos (~2400 A.C.) fueron considerados los primeros mapas.
+- La cartografía continuó perfeccionandose y en los egipcios ya vemos los primeros intentos de utilizar coordenadas. Y en 150 D.C ya vemos el manejo de proyecciones en los mapas de Ptolomeo que ya utilizaban latitudes y longitudes (se cree que el trabajo de Ptolomeo incluia mapas dibujados, pero no se han descubiero ningunos, los mapas que tenemos fueron reconsturidos a partir de las descipciones de la obra durante la edad media por monjes)
+- Uno de los primeros intentos por graficar series de tiempo es un gráfico creado por monjes aproximadamente en el 900 D.C. que muestra la inclinación del 
+
+## Desarrollo de la medición
+
+- Con la ilustración y el desarrollo de la ciencia moderna se empezó a desarrollar la medición en diversas áreas, con lo cual se generaron nuevos tipos de datos para representarse visualmente.
+- Scheiner desarrolló un diagrama que muestra las manchas solares en el tiempo (1626), este es un ejemplo temprano de una técnica en la visualización que se llama "small multiple", es decir, mostrar multiples gráficos lado a lado para facilitar su comparación.
+- Uno que es considerado como el primer gráfico de información estadística es el trabajo de van Langren (1644), que construyó un gráfico comparando distintas estimaciones de la distancia entre Toledo y Roma. Este es un ejemplo temprano de un gráfico de puntos. 
+
+## Nuevas formas de graficar
+
+- Fue hasta los siglos 1700 a 1800 que se desarrollo la visualización de información en un sentido más moderno, es decir, como una herramienta más enfocada a facilitar la comunicación de información estadística.
+- Un personaje importante es William Playfair, a quien se le atribuye haber creado los gráficos de línea, barras y pastel.
+- También se empezaron a introducir mapas pero para representar información estadística, por ejemplo el trabajo de Dupin con sus mapas de colores para Francia (e.g., eduación)

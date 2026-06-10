@@ -1,0 +1,88 @@
+---
+title: "Práctica 2: "
+---
+
+# Práctica 2: Consumo y Producción de energía en México
+
+En esta práctica debes asesorar a una organización dedicada a promover la transición hacia sistemas energéticos más sustentables en México. La organización quiere comprender cómo se distribuyen el consumo y la generación de energía eléctrica en el país, así como identificar diferencias importantes entre las entidades federativas. Para ello, te solicitan que investigues los datos del [Sistema de Información Energética (SIE)](https://sie.energia.gob.mx/inicio/#/) de la Secretaría de Energía (SENER), que integra información oficial sobre producción y consumo de energía en México.
+
+Algunas preguntas interesantes que serían útiles para la organización son:
+
+- ¿Qué entidades consumen más energía eléctrica?
+- ¿Qué entidades generan más energía eléctrica?
+- ¿Existen entidades que consumen mucha más energía de la que generan?
+- ¿Cómo han cambiado el consumo y la generación de energía entre 2013 y 2023?
+- ¿Qué diferencias se observan al comparar indicadores totales e indicadores per cápita?
+- ¿Qué entidades muestran los mayores crecimientos o disminuciones en consumo y generación durante el periodo analizado?
+
+::: {.callout-note}
+# Para saber más
+
+Para conocer más sobre el sistema energético mexicano y las estadísticas oficiales del sector, puedes consultar los [Balance Nacional de Energía](https://www.gob.mx/sener/es/articulos/balance-nacional-de-energia-296106) que produce anualmente la Secretaría de Energía.
+:::
+
+Para esta práctica deberás crear lo siguiente:
+
+- Al menos dos visualizaciones que comuniquen aspectos relevantes del consumo y/o la generación de energía en México utilizando Flourish.
+- Un breve reporte que acompañe las visualizaciones y explique los principales patrones, tendencias o contrastes que encontraste en los datos.
+
+
+```{=html}
+<div class="flourish-embed flourish-chart" data-src="visualisation/29323859"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/29323859/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+```
+
+# Instrucciones
+
+## Descarga los datos
+
+1. Descarga el [archivo con los datos](./data_energia_mexico_2013_2023.csv).
+2. Carga los en una hoja de cálculo de Google sheets.
+
+Ver [script de preparación de los datos](./preparar_datos.R).
+
+## Entendiendo los datos
+
+Las viariables que contiene la base de datos son las siguientes:
+
+- **entidad**: nombre de la entidad federativa
+- **ano**: año al cual corresponden los datos
+- **consumo_GWh**: consumo total de energía en la entidad en Giga Watts por hora
+- **generacion_GWh**: generacion total de energía en la entidad en Giga Watts por hora
+- **poblacion**: población total en la entidad 
+
+Los datos de consumo y generación fueron obtenidos del [Sistema de Información Energética (SIE)](https://sie.energia.gob.mx/inicio/#/) y los datos de población de la [Plataforma Nacional de Datos Abiertos (generados por el Consejo Nacional de Población)](https://www.datos.gob.mx/dataset/proyecciones-de-poblacion/resource/3c3092be-583e-4490-8c23-67ef9a64b198).
+
+**Nota**: hay entidades para los que no hay información sobre la generación de energía. ¿A qué crees que se deba?
+
+## Crea visualizaciones
+
+Explora los datos y **crea al menos dos** visualizaciones con Flourish.
+
+Tus visualizaciones deben:
+
+- incluir un título,
+- incluir un subtítulo,
+- incluir información sobre el origen de los datos,
+- incluir información sobre el año(s) a los que corresponden los datos,
+- [seguir buenas prácitcas sobre el diseño de visualizaciones](https://handsondataviz.org/chart-design.html)
+
+## Escribe un reporte
+
+Interpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.
+
+El reporte debe cumplir los siguientes requisitos:
+
+- Tener una extensión **máxima de 300 palabras**.
+- Incluir: 
+  - Un título descriptivo
+  - Explicar de donde provienen los datos
+  - Explicar tus principales hallazgos (e.g., las entidades con mayor consumo o generación de energía, cambios observados entre 2013 y 2023, diferencias entre indicadores totales y per cápita, entidades con superávit o déficit de generación, tendencias regionales, etc.)
+  - Una reflexión sobre los retos para tener un sistema energético más sustentable.
+  - Las dos visualizaciones que creaste
+
+### Entrega
+
+Al Brightspace debes subir:
+
+1. El reporte como un archivo pdf
+2. Opcionalmente puedes compartir el enlace a la versión interactiva de tus gráficas en Flourish (_Export & Publish_ > _View public project_ > Copiar el url de la página)
