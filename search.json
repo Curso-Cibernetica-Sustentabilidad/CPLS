@@ -561,44 +561,11 @@
     ]
   },
   {
-    "objectID": "modulo_02/practica_02/practica_02.html#descarga-los-datos",
-    "href": "modulo_02/practica_02/practica_02.html#descarga-los-datos",
+    "objectID": "modulo_02/practica_02/practica_02.html#instrucciones",
+    "href": "modulo_02/practica_02/practica_02.html#instrucciones",
     "title": "6  Práctica 2: Energía en México",
-    "section": "8.1 Descarga los datos",
-    "text": "8.1 Descarga los datos\n\nDescarga el archivo con los datos.\nCarga los en una hoja de cálculo de Google sheets.\n\nVer script de preparación de los datos.",
-    "crumbs": [
-      "II. Visualización y comunicación de datos",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Práctica 2: Energía en México</span>"
-    ]
-  },
-  {
-    "objectID": "modulo_02/practica_02/practica_02.html#entendiendo-los-datos",
-    "href": "modulo_02/practica_02/practica_02.html#entendiendo-los-datos",
-    "title": "6  Práctica 2: Energía en México",
-    "section": "8.2 Entendiendo los datos",
-    "text": "8.2 Entendiendo los datos\nLas viariables que contiene la base de datos son las siguientes:\n\nentidad: nombre de la entidad federativa\nano: año al cual corresponden los datos\nconsumo_GWh: consumo total de energía en la entidad en Giga Watts por hora\ngeneracion_GWh: generacion total de energía en la entidad en Giga Watts por hora\npoblacion: población total en la entidad\n\nLos datos de consumo y generación fueron obtenidos del Sistema de Información Energética (SIE) y los datos de población de la Plataforma Nacional de Datos Abiertos (generados por el Consejo Nacional de Población).\nNota: hay entidades para los que no hay información sobre la generación de energía. ¿A qué crees que se deba?",
-    "crumbs": [
-      "II. Visualización y comunicación de datos",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Práctica 2: Energía en México</span>"
-    ]
-  },
-  {
-    "objectID": "modulo_02/practica_02/practica_02.html#crea-visualizaciones",
-    "href": "modulo_02/practica_02/practica_02.html#crea-visualizaciones",
-    "title": "6  Práctica 2: Energía en México",
-    "section": "8.3 Crea visualizaciones",
-    "text": "8.3 Crea visualizaciones\nExplora los datos y crea al menos dos visualizaciones con Flourish.\nTus visualizaciones deben:\n\nincluir un título,\nincluir un subtítulo,\nincluir información sobre el origen de los datos,\nincluir información sobre el año(s) a los que corresponden los datos,\nseguir buenas prácitcas sobre el diseño de visualizaciones",
-    "crumbs": [
-      "II. Visualización y comunicación de datos",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Práctica 2: Energía en México</span>"
-    ]
-  },
-  {
-    "objectID": "modulo_02/practica_02/practica_02.html#escribe-un-reporte",
-    "href": "modulo_02/practica_02/practica_02.html#escribe-un-reporte",
-    "title": "6  Práctica 2: Energía en México",
-    "section": "8.4 Escribe un reporte",
-    "text": "8.4 Escribe un reporte\nInterpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.\nEl reporte debe cumplir los siguientes requisitos:\n\nTener una extensión máxima de 300 palabras.\nIncluir:\n\nUn título descriptivo\nExplicar de donde provienen los datos\nExplicar tus principales hallazgos (e.g., las entidades con mayor consumo o generación de energía, cambios observados entre 2013 y 2023, diferencias entre indicadores totales y per cápita, entidades con superávit o déficit de generación, tendencias regionales, etc.)\nUna reflexión sobre los retos para tener un sistema energético más sustentable.\nLas dos visualizaciones que creaste\n\n\n\n8.4.1 Entrega\nAl Brightspace debes subir:\n\nEl reporte como un archivo pdf\nOpcionalmente puedes compartir el enlace a la versión interactiva de tus gráficas en Flourish (Export & Publish &gt; View public project &gt; Copiar el url de la página)",
+    "section": "7.1 Instrucciones",
+    "text": "7.1 Instrucciones\n\n7.1.1 Descarga los datos\n\nDescarga el archivo con los datos.\nCarga los en una hoja de cálculo de Google sheets.\n\nVer script de preparación de los datos.\n\n\n7.1.2 Entendiendo los datos\nLas viariables que contiene la base de datos son las siguientes:\n\nentidad: nombre de la entidad federativa\nano: año al cual corresponden los datos\nconsumo_GWh: consumo total de energía en la entidad en Giga Watts por hora\ngeneracion_GWh: generacion total de energía en la entidad en Giga Watts por hora\npoblacion: población total en la entidad\n\nLos datos de consumo y generación fueron obtenidos del Sistema de Información Energética (SIE) y los datos de población de la Plataforma Nacional de Datos Abiertos (generados por el Consejo Nacional de Población).\nNota: hay entidades para los que no hay información sobre la generación de energía. ¿A qué crees que se deba?\n\n\n7.1.3 Crea visualizaciones\nExplora los datos y crea al menos dos visualizaciones con Flourish.\nTus visualizaciones deben:\n\nincluir un título,\nincluir un subtítulo,\nincluir información sobre el origen de los datos,\nincluir información sobre el año(s) a los que corresponden los datos,\nseguir buenas prácitcas sobre el diseño de visualizaciones\n\n\n\n7.1.4 Escribe un reporte\nInterpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.\nEl reporte debe cumplir los siguientes requisitos:\n\nTener una extensión máxima de 300 palabras.\nIncluir:\n\nUn título descriptivo\nExplicar de donde provienen los datos\nExplicar tus principales hallazgos (e.g., las entidades con mayor consumo o generación de energía, cambios observados entre 2013 y 2023, diferencias entre indicadores totales y per cápita, entidades con superávit o déficit de generación, tendencias regionales, etc.)\nUna reflexión sobre los retos para tener un sistema energético más sustentable.\nLas dos visualizaciones que creaste\n\n\n\n\n7.1.5 Entrega\nAl Brightspace debes subir:\n\nEl reporte como un archivo pdf\nOpcionalmente puedes compartir el enlace a la versión interactiva de tus gráficas en Flourish (Export & Publish &gt; View public project &gt; Copiar el url de la página)",
     "crumbs": [
       "II. Visualización y comunicación de datos",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Práctica 2: Energía en México</span>"
