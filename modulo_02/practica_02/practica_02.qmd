@@ -31,16 +31,16 @@ Para esta práctica deberás crear lo siguiente:
 <div class="flourish-embed flourish-chart" data-src="visualisation/29323859"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/29323859/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
 ```
 
-# Instrucciones
+## Instrucciones
 
-## Descarga los datos
+### Descarga los datos
 
 1. Descarga el [archivo con los datos](./data_energia_mexico_2013_2023.csv).
 2. Carga los en una hoja de cálculo de Google sheets.
 
 Ver [script de preparación de los datos](./preparar_datos.R).
 
-## Entendiendo los datos
+### Entendiendo los datos
 
 Las viariables que contiene la base de datos son las siguientes:
 
@@ -54,7 +54,7 @@ Los datos de consumo y generación fueron obtenidos del [Sistema de Información
 
 **Nota**: hay entidades para los que no hay información sobre la generación de energía. ¿A qué crees que se deba?
 
-## Crea visualizaciones
+### Crea visualizaciones
 
 Explora los datos y **crea al menos dos** visualizaciones con Flourish.
 
@@ -66,7 +66,7 @@ Tus visualizaciones deben:
 - incluir información sobre el año(s) a los que corresponden los datos,
 - [seguir buenas prácitcas sobre el diseño de visualizaciones](https://handsondataviz.org/chart-design.html)
 
-## Escribe un reporte
+### Escribe un reporte
 
 Interpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.
 
