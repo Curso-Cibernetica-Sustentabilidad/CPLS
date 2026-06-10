@@ -2,8 +2,6 @@
 title: "Práctica 1: Incendios en ANP"
 ---
 
-# Práctica 1: Incendios en ANP
-
 En esta práctica debes asesorar a una organización ambientalista que quiere empezar un programa de combate de incendios en las Áreas Naturales Protegidas (ANP). A esta organización le gustaría tener un reporte que hable la situación general de los incendios en las ANPs en México y que detalle la situación en una entidad particular. Te solicitan que investigues los datos del [Monitor de incendios forestales en Áreas Naturales Protegidas](https://monitor_incendios.cnf.gob.mx/incendios_anp) administrada por la Comisión Nacional Forestal (CONAFOR) y la Comisión Nacional de Áreas Naturales Protegidas (CONANP).
 
 Algunas preguntas interesantes que serían útiles a explorar para la organización ambientalista son:

@@ -2,8 +2,6 @@
 title: "Práctica 2: Energía en México"
 ---
 
-# Práctica 2: Consumo y Producción de energía en México
-
 En esta práctica debes asesorar a una organización dedicada a promover la transición hacia sistemas energéticos más sustentables en México. La organización quiere comprender cómo se distribuyen el consumo y la generación de energía eléctrica en el país, así como identificar diferencias importantes entre las entidades federativas. Para ello, te solicitan que investigues los datos del [Sistema de Información Energética (SIE)](https://sie.energia.gob.mx/inicio/#/) de la Secretaría de Energía (SENER), que integra información oficial sobre producción y consumo de energía en México.
 
 Algunas preguntas interesantes que serían útiles para la organización son:
