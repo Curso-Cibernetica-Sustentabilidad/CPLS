@@ -1,5 +1,5 @@
 ---
-title: "Práctica 2: "
+title: "Práctica 2: Energía en México"
 ---
 
 # Práctica 2: Consumo y Producción de energía en México
