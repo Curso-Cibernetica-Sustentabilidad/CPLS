@@ -1,0 +1,104 @@
+---
+title: "Práctica 3: Temperatura y precipitación en México"
+---
+
+En esta práctica vas a apoyar a una organización que se dedica a la educación ambiental. La organización quiere crear gráficos basados en datos reales que muestren los cambios de temperatura y precipitación que ha habido en México en los últimos 30 años. Te piden que analices los datos de [NASA POWER](https://power.larc.nasa.gov/), una plataforma de datos climáticos satelitales que cubre todo el planeta desde 1981 hasta la actualidad. 
+
+Algunas preguntas interesantes que podrías explorar son:
+
+- ¿Se observan tendencias de calentamiento en los últimos años?
+- ¿Cuál ha sido el año más caliente en México del cual hay registro?
+- ¿Cómo han cambiado las lluvias en los últimos 30 años?
+- ¿Qué ciudades presentan las temperaturas promedio más altas y más bajas?
+- ¿Cómo varía la temperatura a lo largo del año en distintas regiones del país?
+
+No es necesario que respondas todas estas preguntas. Elige las que te parezcan más interesantes o relevantes, y siéntete libre de explorar otras preguntas que surjan de los datos.
+
+::: {.callout-note}
+# Para saber más
+[NASA POWER (Prediction Of Worldwide Energy Resources)](https://power.larc.nasa.gov/) es un proyecto de la NASA que pública datos meteorológicos para cualquier punto del planeta, desde 1981 hasta la actualidad. Los datos de NASA POWER provienen de observaciones satelitales. Esto significa que los valores que vas a usar no son mediciones directas de estaciones meteorológicas, sino que son estimaciones calculadas con un modelo matemático. La principal ventaja de NASA POWER es que ofrece cobertura global y temporal continua incluso en zonas donde no existen estaciones meteorológicas en tierra. [Aquí puedes consultar los parámetros](https://power.larc.nasa.gov/parameters/)  que se puede obtener de NASA POWER.
+:::
+
+Para esta práctica deberás crear lo siguiente:
+
+- Al menos **dos visualizaciones** hechas con `ggplot2` que comuniquen aspectos relevantes de la temperatura y/o precipitación en México y/o en algúna de sus ciudades.
+- Un breve reporte que acompañe las visualizaciones y explique los principales patrones, tendencias o contrastes que encontraste en los datos.
+- Un proyecto de Posit Cloud con el código de tus visualizaciones y análisis.
+
+![[Climate stripes](https://ed-hawkins.github.io/climate-visuals/stripes.html) de México ([script](create_climate_stripes.R))](../../assets/img/climate_stripes_mex.png)
+
+## Instrucciones
+
+### Crea un nuevo proyecto de Posit Cloud
+
+1. Crea un nuevo proyecto de Posit Cloud dentro del _workspace_ del curso: CPLS - v2026 (esto asegura que yo pueda acceder a ver tu proyecto)
+2. Ponle a tu proyecto de nombre `Practica 3 - <NOMBRE COMPLETO>`
+
+### Descarga los datos
+
+1. Descarga el [archivo con los datos](./data_clima_mexico_2015_2024.csv).
+2. Súbelos a Posit Cloud
+
+Ver [script de preparación de los datos](./preparar_datos_clima.R) si tienes curiosidad de cómo se obtuvieron (usando el paquete [`nasapower`](https://docs.ropensci.org/nasapower/index.html)). Los datos también se pueden consultar y descargar interactivamente usando el [explorador interactivo web](https://power.larc.nasa.gov/data-access-viewer/).
+
+### Entendiendo los datos
+
+Las variables que contiene la base de datos son las siguientes:
+
+- **anio**: año al cual corresponde la observación
+- **mes**: número de mes al que corresponde la observación
+- **dia**: día del mes al que corresponde la observación
+- **dia_de_anio**: día del año al que corresponde la observación (1 a 365/366)
+- **fecha**: fecha a la que corresponde la observación en formato (año-mes-día)
+- **temp_prom**: temperatura promedio en °C
+- **temp_max**: temperatura máxima en °C
+- **temp_min**: temperatura mínima en °C
+- **precip**: precipiatación en mm por día 
+
+Los datos provienen de [NASA POWER](https://power.larc.nasa.gov/), y corresponden al periodo 1981-2025.
+
+### Explora los datos
+
+1. Crea un script para trabajar.
+2. Instala y carga `tidyverse`
+3. Explora los datos.
+
+::: {.callout-note}
+# Tip
+Para analizar tus datos y escribir tu código puedes apoyarte de los modelos de inteligencia articificial como ChatGPT, Claude, Gemini, etc. Te puede apoyar a encontrar errores en tu código y a orientarte a qué funciones y cosas puedes hacer. 
+
+**Para que te de código que sea apropiado a tu nivel asgurate de darle contexto** sobre lo que sabes (e.g., nombre de funciones que conoces, dile que usas `tidyverse`, pidele que te explique lo que no entiendes, etc.).
+:::
+
+### Crea visualizaciones
+
+Crea dos visualizaciones con `ggplot`.
+
+Tus visualizaciones deben:
+
+- incluir un título descriptivo,
+- incluir los ejes correctamente etiquetados.
+
+Para exportar tus visualizaciones en RStudio en el panel _Plots_ (donde se muestran las visualizaciones) da click en _Explort_ > _Save as image..._, luego ajusta el tamaño y elige un formato (PNG o JPEG) y guarda tu visualización.
+
+### Escribe un reporte
+
+Interpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.
+
+El reporte debe cumplir los siguientes requisitos:
+
+- Tener una extensión **máxima de 300 palabras**.
+- Incluir:
+  - Un título descriptivo
+  - Explicar de dónde provienen los datos.
+  - Explicar tus principales hallazgos (e.g., las entidades más cálidas o frías, patrones estacionales, tendencias en el tiempo en temperatura y precipitación, diferencias regionales, etc.)
+  - Una breve reflexión sobre las tendencias del cambio climático en México.
+  - Las dos visualizaciones que creaste.
+
+### Entrega
+
+Al Brightspace debes subir:
+
+- El archivo `pdf` con tu reporte.
+
+El proyecto de Posit Cloud no lo debes compartir ya que yo puedo acceder a él si lo creaste en el Workspace del curso.

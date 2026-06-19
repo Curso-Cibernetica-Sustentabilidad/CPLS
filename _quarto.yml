@@ -21,6 +21,8 @@ book:
       chapters:
         - modulo_02/practica_02/practica_02.qmd
     - part: "III. Introducción a la programación en R"
+      chapters:
+        - modulo_03/practica_03/practica_03.qmd
     - part: "IV. Métodos computacionales para la sustentabilidad"
     - references.qmd
 

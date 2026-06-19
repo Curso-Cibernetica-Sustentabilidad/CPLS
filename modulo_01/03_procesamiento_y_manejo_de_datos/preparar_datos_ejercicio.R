@@ -13,7 +13,7 @@ obesidad <- read_csv("https://ourworldindata.org/grapher/share-of-adults-defined
 malnutricion <- read_csv("https://ourworldindata.org/grapher/prevalence-of-undernourishment.csv?v=1&csvType=full&useColumnShortNames=true") |> filter(year == data_year)
 
 ### Juntar datos
-data <- owid_regions |>
+owid_regions |>
   select(entity, code, owid_region) |>
   left_join(trigo) |>
   left_join(maiz) |>
@@ -26,7 +26,7 @@ data <- owid_regions |>
     region = owid_region,
     fertilizer_per_ha = all_fertilizers_per_cropland,
     pesticide_tonnes = pesticides__total__00001357__agricultural_use__005157__tonnes,
-    obesity_percent = prevalence_of_obesity_among_adults__bmi__gt__30__crude_estimate__pct__sex_both_sexes__age_group_18plus__years_of_age,
+    obesity_percent = obesity_among_adults__bmi__gt__30_kg_m2__crude_estimate__pct__sex_both_sexes__age_group_18plus__years_of_age,
     undernourishment_percent = "_2_1_1_prevalence_of_undernourishment__000000000024000__value__006121__percent"
   )
 
