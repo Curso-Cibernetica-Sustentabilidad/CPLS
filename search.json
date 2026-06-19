@@ -570,5 +570,27 @@
       "II. Visualización y comunicación de datos",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Práctica 2: Energía en México</span>"
     ]
+  },
+  {
+    "objectID": "modulo_03/practica_03/practica_03.html",
+    "href": "modulo_03/practica_03/practica_03.html",
+    "title": "7  Práctica 3: Temperatura y precipitación en México",
+    "section": "",
+    "text": "7.1 Instrucciones\nEn esta práctica vas a apoyar a una organización que se dedica a la educación ambiental. La organización quiere crear gráficos basados en datos reales que muestren los cambios de temperatura y precipitación que ha habido en México en los últimos 30 años. Te piden que analices los datos de NASA POWER, una plataforma de datos climáticos satelitales que cubre todo el planeta desde 1981 hasta la actualidad.\nAlgunas preguntas interesantes que podrías explorar son:\nNo es necesario que respondas todas estas preguntas. Elige las que te parezcan más interesantes o relevantes, y siéntete libre de explorar otras preguntas que surjan de los datos.\nPara esta práctica deberás crear lo siguiente:",
+    "crumbs": [
+      "III. Introducción a la programación en R",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Práctica 3: Temperatura y precipitación en México</span>"
+    ]
+  },
+  {
+    "objectID": "modulo_03/practica_03/practica_03.html#instrucciones",
+    "href": "modulo_03/practica_03/practica_03.html#instrucciones",
+    "title": "7  Práctica 3: Temperatura y precipitación en México",
+    "section": "",
+    "text": "7.1.1 Crea un nuevo proyecto de Posit Cloud\n\nCrea un nuevo proyecto de Posit Cloud dentro del workspace del curso: CPLS - v2026 (esto asegura que yo pueda acceder a ver tu proyecto)\nPonle a tu proyecto de nombre Practica 3 - &lt;NOMBRE COMPLETO&gt;\n\n\n\n7.1.2 Descarga los datos\n\nDescarga el archivo con los datos.\nSúbelos a Posit Cloud\n\nVer script de preparación de los datos si tienes curiosidad de cómo se obtuvieron (usando el paquete nasapower). Los datos también se pueden consultar y descargar interactivamente usando el explorador interactivo web.\n\n\n7.1.3 Entendiendo los datos\nLas variables que contiene la base de datos son las siguientes:\n\nanio: año al cual corresponde la observación\nmes: número de mes al que corresponde la observación\ndia: día del mes al que corresponde la observación\ndia_de_anio: día del año al que corresponde la observación (1 a 365/366)\nfecha: fecha a la que corresponde la observación en formato (año-mes-día)\ntemp_prom: temperatura promedio en °C\ntemp_max: temperatura máxima en °C\ntemp_min: temperatura mínima en °C\nprecip: precipiatación en mm por día\n\nLos datos provienen de NASA POWER, y corresponden al periodo 1981-2025.\n\n\n7.1.4 Explora los datos\n\nCrea un script para trabajar.\nInstala y carga tidyverse\nExplora los datos.\n\n\n\n\n\n\n\nTip\n\n\n\nPara analizar tus datos y escribir tu código puedes apoyarte de los modelos de inteligencia articificial como ChatGPT, Claude, Gemini, etc. Te puede apoyar a encontrar errores en tu código y a orientarte a qué funciones y cosas puedes hacer.\nPara que te de código que sea apropiado a tu nivel asgurate de darle contexto sobre lo que sabes (e.g., nombre de funciones que conoces, dile que usas tidyverse, pidele que te explique lo que no entiendes, etc.).\n\n\n\n\n7.1.5 Crea visualizaciones\nCrea dos visualizaciones con ggplot.\nTus visualizaciones deben:\n\nincluir un título descriptivo,\nincluir los ejes correctamente etiquetados.\n\nPara exportar tus visualizaciones en RStudio en el panel Plots (donde se muestran las visualizaciones) da click en Explort &gt; Save as image…, luego ajusta el tamaño y elige un formato (PNG o JPEG) y guarda tu visualización.\n\n\n7.1.6 Escribe un reporte\nInterpreta tus gráficas y escribe un breve reporte describiendo tus principales hallazgos.\nEl reporte debe cumplir los siguientes requisitos:\n\nTener una extensión máxima de 300 palabras.\nIncluir:\n\nUn título descriptivo\nExplicar de dónde provienen los datos.\nExplicar tus principales hallazgos (e.g., las entidades más cálidas o frías, patrones estacionales, tendencias en el tiempo en temperatura y precipitación, diferencias regionales, etc.)\nUna breve reflexión sobre las tendencias del cambio climático en México.\nLas dos visualizaciones que creaste.\n\n\n\n\n7.1.7 Entrega\nAl Brightspace debes subir:\n\nEl archivo pdf con tu reporte.\n\nEl proyecto de Posit Cloud no lo debes compartir ya que yo puedo acceder a él si lo creaste en el Workspace del curso.",
+    "crumbs": [
+      "III. Introducción a la programación en R",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Práctica 3: Temperatura y precipitación en México</span>"
+    ]
   }
 ]
