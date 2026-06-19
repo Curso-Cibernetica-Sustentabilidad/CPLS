@@ -36,10 +36,10 @@ Para esta práctica deberás crear lo siguiente:
 
 ### Descarga los datos
 
-1. Descarga el [archivo con los datos](./data_clima_mexico_2015_2024.csv).
+1. Descarga el [archivo con los datos](./clima_mx.csv).
 2. Súbelos a Posit Cloud
 
-Ver [script de preparación de los datos](./preparar_datos_clima.R) si tienes curiosidad de cómo se obtuvieron (usando el paquete [`nasapower`](https://docs.ropensci.org/nasapower/index.html)). Los datos también se pueden consultar y descargar interactivamente usando el [explorador interactivo web](https://power.larc.nasa.gov/data-access-viewer/).
+Ver [script de preparación de los datos](./preparar_datos.R) si tienes curiosidad de cómo se obtuvieron (usando el paquete [`nasapower`](https://docs.ropensci.org/nasapower/index.html)). Los datos también se pueden consultar y descargar interactivamente usando el [explorador interactivo web](https://power.larc.nasa.gov/data-access-viewer/).
 
 ### Entendiendo los datos
 
